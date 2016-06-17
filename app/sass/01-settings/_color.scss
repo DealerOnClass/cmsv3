@@ -1,0 +1,56 @@
+/*
+ *  GrayScale
+ */
+$white: #fff;
+$black: #000;
+$gray__01:  mix($black, $white, 10%);
+$gray__02:  mix($black, $white, 20%);
+$gray__03:  mix($black, $white, 30%);
+$gray__04:  mix($black, $white, 40%);
+$gray__05:  mix($black, $white, 50%);
+$gray__06:  mix($black, $white, 60%);
+$gray__07:  mix($black, $white, 70%);
+$gray__08:  mix($black, $white, 80%);
+$gray__09:  mix($black, $white, 90%);
+/*
+ *	Colors
+ */
+$default__color:         $gray__01;
+$primary__color:         #3662ad;
+$accent__color:          #f36c0a;
+$inverse__color:         mix($primary__color, $gray__08, 20%);
+/*
+ * 	States
+ */
+$state--success:         #5cb85c !default;
+$state--info:            #5bc0de !default;
+$state--warning:         #f0ad4e !default;
+$state--danger:          #d9534f !default;
+/*
+ * 	Colors
+ */
+$default__palette: (
+    'default':  $default__color,
+) !default;
+$inverse__palette:  (
+    'inverse': $inverse__color,
+) !default;
+$primary__palette: (
+    'cta':   $accent__color,
+    'main':  $primary__color,
+) !default;
+$neutral__palette: (
+    'alt1':  mix($primary__color, $gray__07, 50%),
+    'alt2':  mix($primary__color, $gray__05, 45%),
+    'alt3':  mix($primary__color, $gray__03, 40%),
+) !default;
+$state__palette: (
+    'success':  $state--success,
+    'info':     $state--info,
+    'warning':  $state--warning,
+    'danger':   $state--danger,
+) !default;
+$classic__palette: (
+    'white':  $white,
+    'black':  $black,
+) !default;

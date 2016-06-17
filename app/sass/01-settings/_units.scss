@@ -1,0 +1,23 @@
+/*
+ *  Global Unit
+ *      $g-u: $global-unit
+ *      $g-m: $global-multiplier
+ */
+$g-u:  1rem;
+$g-m:  1;
+/*
+ *  Global Unit Abstracts
+ *      $g-c: $global-contrast
+ *      $g-r: $global-radius
+ *      $g-x: $global-leftandorright
+ *      $g-y: $global-topandorbottom
+ */
+$g-c:  (10% * $g-m);
+$g-r:  (($g-u * 0.25) * $g-m);
+$g-x:  (($g-u * 0.75) * $g-m);
+$g-y:  (($g-u * 0.50) * $g-m);
+/*
+ *	Typography
+ *		$g-fs: $global-fontsize
+ */
+$g-fs:  16px;

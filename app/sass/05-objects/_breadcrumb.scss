@@ -1,0 +1,51 @@
+/*
+ * 	Var
+ */
+$breadcrumb-c: $g-c;
+$breadcrumb-r: $g-r;
+$breadcrumb-x: $g-x;
+$breadcrumb-y: $g-y;
+/*
+ * 	Base
+ */
+.breadcrumb {
+	display: flex;
+}
+.breadcrumb-item {
+	display: inline-flex;
+	padding: $breadcrumb-y $breadcrumb-x;
+    border: 1px solid transparent;
+}
+.breadcrumb-link {
+	color: inherit;
+}
+/*
+ * 	Theme
+ */
+@mixin breadcrumb-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+		$font: check-color($color, 80, inherit, $white);
+		$border: transparent;
+		$background: $color;
+
+        .breadcrumb-#{$class__name} {
+            color: $font;
+            border-color: $border;
+            background-color: $background;
+
+			.breadcrumb-link {
+				@include state--hover('inherit', $background, $breadcrumb-c);
+				@include state--focus('inherit', $background, $breadcrumb-c);
+				@include state--active('inherit', $background, ($breadcrumb-c * 2));
+				@include state--class('active', 'inherit', $background, ($breadcrumb-c * 2));
+			}
+        }
+    }
+}
+//	@include breadcrumb-color-variation($default__palette);
+//	@include breadcrumb-color-variation($inverse__palette);
+@include breadcrumb-color-variation($primary__palette);
+//	@include breadcrumb-color-variation($neutral__palette);
+//	@include breadcrumb-color-variation($state__palette);
+//	@include breadcrumb-color-variation($classic__palette);
+

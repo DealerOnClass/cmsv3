@@ -1,0 +1,29 @@
+/*
+ *  Units
+ */
+$btn-c: $g-c;
+$btn-r: $g-r;
+$btn-x: $g-x;
+$btn-y: $g-y;
+/*
+ *  Colors
+ */
+$btn-fc: white;
+$btn-bg: dodgerblue;
+/*
+ *  Base
+ */
+.btn {
+    display: inline-flex;
+    padding: $btn-y $btn-x;
+    color: $btn-fc;
+    border: 1px solid transparent;
+    border-radius: $btn-r;
+    background-color: $btn-bg;
+
+    @include state--hover('inherit', $btn-bg, $btn-c);
+    @include state--focus('inherit', $btn-bg, $btn-c);
+    @include state--active('inherit', $btn-bg, ($btn-c * 2));
+    @include state--class('active', 'inherit', $btn-bg, ($btn-c * 2));
+    @include state--class('open', 'inherit', $btn-bg, ($btn-c * 2));
+}

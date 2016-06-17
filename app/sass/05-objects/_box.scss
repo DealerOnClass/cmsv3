@@ -1,0 +1,6 @@
+.box {
+	background-color: rgba(0,0,0,0.10);
+}
+.box[class*="col-"] {
+	background-clip: content-box;
+}

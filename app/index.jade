@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="IE=7")
+		link(rel="stylesheet" href="css/main.css")
+		title Fv3
+	body
+		main.container
+			section
+				header
+					h3 Grid
+				.row
+					.col-xs-8.box .col-xs-8
+					.col-xs-4.box .col-xs-4
+				header
+					h3 Grid Nesting
+				.row
+					.col-xs-9.box .col-xs-9
+						.row
+							.col-xs-8.box .col-xs-8
+							.col-xs-4.box .col-xs-4
+				header
+					h3 Grid Reordering
+				.row
+					.col-xs-4.col-xs-push-4.box .col-xs-4.col-xs-push-4
+					.col-xs-8.col-xs-pull-8.box .col-xs-8.col-xs-push-8
+			section
+				header
+					h3 Breadcrumb
+				nav.breadcrumb
+					a.breadcrumb-item.breadcrumb-link(href="") Home
+					a.breadcrumb-item.breadcrumb-link(href="") Library
+					span.breadcrumb-item.active Books
+				nav.breadcrumb.breadcrumb-main
+					a.breadcrumb-item.breadcrumb-link(href="") Home
+					a.breadcrumb-item.breadcrumb-link(href="") Library
+					span.breadcrumb-item.active Books

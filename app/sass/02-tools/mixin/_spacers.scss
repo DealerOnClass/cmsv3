@@ -1,0 +1,44 @@
+$units: (
+	"0": (($g-y * 0), ($g-x * 0)),
+	"1": (($g-y), ($g-x)),
+	"2": (($g-y * 2), ($g-x * 2)),
+	"3": (($g-y * 3), ($g-x * 3)),
+	"4": (($g-y * 4), ($g-x * 4)),
+	"5": (($g-y * 5), ($g-x * 5)),
+) !default;
+
+@mixin spacer($property, $type) {
+	$property--short: str-slice($property, 1, 1);
+	@each $unit, $a in $units {
+
+		$y: nth($a, 1);
+		$x: nth($a, 2);
+		$a: $y $x;
+
+		.#{$property--short}-#{$type}-#{$unit} {
+			@if ($type == 'a') {
+				#{$property}: $a;
+			}
+			@if ($type == 'x') {
+				#{$property}-right: $x;
+				#{$property}-left: $x;
+			}
+			@if ($type == 'y') {
+				#{$property}-top: $y;
+				#{$property}-bottom: $y;
+			}
+			@if ($type == 't') {
+				#{$property}-top: $y;
+			}
+			@if ($type == 'r') {
+				#{$property}-top: $x;
+			}
+			@if ($type == 'b') {
+				#{$property}-top: $y;
+			}
+			@if ($type == 'l') {
+				#{$property}-top: $x;
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+/*
+ * 	Var
+ */
+$grid-columns: 12;
+/*
+ * Grid - base
+ */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+}
+@media (min-width: 544px) {
+    .container {
+        max-width: 576px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/*
+ * Grid - Container Fluid
+ */
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+}
+/*
+ * Grid - Row
+ */
+.row {
+    margin-right: -0.8em;
+    margin-left: -0.8em;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+ * Grid - Columns
+ */
+[class*="col-"] {
+    float: left;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+}
+@include column('xs');
+@media (min-width: 544px) {
+	@include column('sm');
+}
+@media (min-width: 768px) {
+	@include column('md');
+}
+@media (min-width: 992px) {
+	@include column('lg');
+}
+@media (min-width: 1200px) {
+	@include column('xl');
+}

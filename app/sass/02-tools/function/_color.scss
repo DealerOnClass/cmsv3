@@ -1,0 +1,24 @@
+/// Correct shade function for a color
+/// @group Colors
+@function shade($input, $percentage) {
+    $output: mix($black, $input, $percentage);
+    @return $output;
+}
+
+/// Correct tint function for a color
+/// @group Colors
+@function tint($input, $percentage) {
+    $output: mix($white, $input, $percentage);
+    @return $output;
+}
+
+
+/// Return color based on lightness threshold
+/// @group Colors
+@function check-color($color, $threshold, $over: $body__color, $under: $white) {
+    @if (lightness($color) > $threshold) {
+        @return $over; // Lighter backgorund, return dark color
+    } @else {
+        @return $under; // Darker background, return light color
+    }
+}

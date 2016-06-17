@@ -1,0 +1,34 @@
+/*
+ *  Units
+ */
+$card-c: $g-c;
+$card-r: $g-r;
+$card-x: $g-x;
+$card-y: $g-y;
+/*
+ *  Colors
+ */
+$card-fc: white;
+$card-bg: dodgerblue;
+/*
+ * 	Base
+ */
+.card {
+    display: flex;
+}
+.card-item {
+    display: flex;
+    flex: 1 1 auto;
+    padding: $card-y $card-x;
+    border: 1px solid transparent;
+
+	&:first-child {
+		border-radius: $card-r $card-r 0 0;
+	}
+	&:last-child {
+		border-radius: 0 0 $card-r $card-r;
+	}
+	&:only-child {
+		border-radius: $card-r;
+	}
+}

@@ -1,0 +1,101 @@
+@mixin container() {
+	.container {
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: $grid-gutter;
+		padding-left: $grid-gutter;
+	}
+	@each $breakpoint, $size in $breakpoints {
+		@media (min-width: #{$size}) {
+			.container {
+				@if ($size == 544px) {
+					max-width: #{$size};
+				} @else {
+					max-width: #{$size - ($grid-gutter * 2)};
+				}
+			}
+		}
+	}
+	.container-fluid {
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: $grid-gutter;
+		padding-left: $grid-gutter;
+		max-width: 100%;
+	}
+}
+@mixin row() {
+	.row {
+		margin-right: negative($grid-gutter);
+		margin-left: negative($grid-gutter);
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+}
+@mixin column() {
+	[class*="col-"] {
+		float: left;
+		padding-right: $grid-gutter;
+		padding-left: $grid-gutter;
+	}
+	@for $i from 1 through $grid-columns {
+		.col-xs-#{$i} {
+			width: #{($i / $grid-columns) * 100%};
+		}
+	}
+	@if $grid-pull {
+		@for $i from 0 through $grid-columns {
+			.col-xs-pull-#{$i} {
+				right: #{($i / $grid-columns) * 100%};
+			}
+		}
+	}
+	@if $grid-push {
+		@for $i from 0 through $grid-columns {
+			.col-xs-push-#{$i} {
+				left: #{($i / $grid-columns) * 100%};
+			}
+		}
+	}
+	@if $grid-offset {
+		@for $i from 0 through $grid-columns {
+			.col-xs-offset-#{$i} {
+				margin-left: #{($i / $grid-columns) * 100%};
+			}
+		}
+	}
+	@each $breakpoint, $size in $breakpoints {
+		@media (min-width: #{$size}) {
+			@for $i from 1 through $grid-columns {
+				.col-#{$breakpoint}-#{$i} {
+					width: #{($i / $grid-columns) * 100%};
+				}
+			}
+			@if $grid-pull {
+				@for $i from 0 through $grid-columns {
+					.col-#{$breakpoint}-pull-#{$i} {
+						right: #{($i / $grid-columns) * 100%};
+					}
+				}
+			}
+			@if $grid-push {
+				@for $i from 0 through $grid-columns {
+					.col-#{$breakpoint}-push-#{$i} {
+						left: #{($i / $grid-columns) * 100%};
+					}
+				}
+			}
+			@if $grid-offset {
+				@for $i from 0 through $grid-columns {
+					.col-#{$breakpoint}-offset-#{$i} {
+						margin-left: #{($i / $grid-columns) * 100%};
+					}
+				}
+			}
+		}
+	}
+}

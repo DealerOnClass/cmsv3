@@ -1,0 +1,32 @@
+@mixin state--hover($color, $background,  $contrast) {
+    &:hover {
+        @if ($color != 'inherit') {
+            color: $color;
+        }
+        background-color: shade($background, $contrast);
+    }
+}
+@mixin state--focus($color, $background,  $contrast) {
+    &:focus {
+        @if ($color != 'inherit') {
+            color: $color;
+        }
+        background-color: shade($background, $contrast);
+    }
+}
+@mixin state--active($color, $background,  $contrast) {
+    &:active {
+        @if ($color != 'inherit') {
+            color: $color;
+        }
+        background-color: shade($background, $contrast);
+    }
+}
+@mixin state--class($class, $color, $background,  $contrast) {
+    &.#{$class} {
+        @if ($color != 'inherit') {
+            color: $color;
+        }
+        background-color: shade($background, $contrast);
+    }
+}
