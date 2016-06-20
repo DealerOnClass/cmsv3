@@ -68,6 +68,45 @@ html {
 *,:after,:before {
     box-sizing: inherit;
 }
+@font-face {
+    font-family: Avenir;
+    font-weight: 400; 
+
+    src: url(../font/avenirltstd-roman-webfont.woff2) format("woff2"),url(../font/avenirltstd-roman-webfont.woff) format("woff"),url(../font/avenirltstd-roman-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 500; 
+
+    src: url(../font/avenirltstd-medium-webfont.eot);
+    src: url(../font/avenirltstd-medium-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirltstd-medium-webfont.woff) format("woff"),url(../font/avenirltstd-medium-webfont.ttf) format("truetype"),url(../font/avenirltstd-medium-webfont.svg#svgavenirltstd-medium-webfont) format("#svg");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 700; 
+
+    src: url(../font/avenirheavy-webfont.eot);
+    src: url(../font/avenirheavy-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirheavy-webfont.woff) format("woff"),url(../font/avenirheavy-webfont.ttf) format("truetype"),url(../font/avenirheavy-webfont.svg#svgavenirheavy-webfont) format("#svg");
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Avenir,sans-serif;
+    line-height: 1.618;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+ol ol,ol ul,ul ol,ul ul {
+    padding-left: 0.75rem;
+}
 
 .box {
     background-color: rgba(0,0,0,0.1);
@@ -79,21 +118,98 @@ html {
 .btn {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    justify-content: center;
     padding: 0.5rem 0.75rem;
-    color: #fff;
     border: 1px solid transparent;
-    border-radius: 0.25rem;
-    background-color: #1e90ff;
+    border-radius: 0.3rem;
+    background-color: #e6e6e6; 
+
+    -ms-flex-pack: center;
 }
 .btn:focus,.btn:hover {
-    background-color: #1b82e6;
+    background-color: #cfcfcf;
 }
 .btn.active,.btn.open,.btn:active {
-    background-color: #1873cc;
+    background-color: #b8b8b8;
+}
+.btn-block {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.btn-cta {
+    color: #fff;
+    border-color: transparent;
+    background-color: #f36c0a;
+}
+.btn-cta:focus,.btn-cta:hover {
+    background-color: #db6109;
+}
+.btn-cta.active,.btn-cta:active {
+    background-color: #c25608;
+}
+
+.btn-main {
+    color: #fff;
+    border-color: transparent;
+    background-color: #3662ad;
+}
+.btn-main:focus,.btn-main:hover {
+    background-color: #31589c;
+}
+.btn-main.active,.btn-main:active {
+    background-color: #2b4e8a;
+}
+.btn-group {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.btn-group > .btn {
+    border-radius: 0;
+}
+
+.btn-group > .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.btn-group > .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.btn-group > .btn:only-child {
+    border-radius: 0.3rem;
+}
+.btn-group-stacked {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        flex-direction: column; 
+
+    -ms-flex-direction: column;
+}
+
+.btn-group-stacked > .btn {
+    border-radius: 0;
+}
+
+.btn-group-stacked > .btn:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.btn-group-stacked > .btn:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.btn-group-stacked > .btn:only-child {
+    border-radius: 0.3rem;
 }
 .breadcrumb {
     display: -ms-flexbox;
     display: flex;
+    align-items: baseline;
+    background-color: #e6e6e6; 
+
+    -ms-flex-align: baseline;
 }
 
 .breadcrumb-item {
@@ -102,9 +218,19 @@ html {
     padding: 0.5rem 0.75rem;
     border: 1px solid transparent;
 }
+.breadcrumb-item.active {
+    font-weight: 700;
+    margin-bottom: -1px;
+}
 
 .breadcrumb-link {
     color: inherit !important;
+}
+.breadcrumb-link:focus,.breadcrumb-link:hover {
+    background-color: #cfcfcf;
+}
+.breadcrumb-link:active {
+    background-color: #b8b8b8;
 }
 .breadcrumb-cta {
     color: #fff;
@@ -143,19 +269,19 @@ html {
     -ms-flex: 1 1 auto;
 }
 .card-item:first-child {
-    border-radius: 0.25rem 0.25rem 0 0;
+    border-radius: 0.3rem 0.3rem 0 0;
 }
 .card-item:last-child {
-    border-radius: 0 0 0.25rem 0.25rem;
+    border-radius: 0 0 0.3rem 0.3rem;
 }
 .card-item:only-child {
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
 }
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 @media (min-width:544px) {
@@ -166,19 +292,19 @@ html {
 
 @media (min-width:768px) {
     .container {
-        max-width: 738px;
+        max-width: calc(768px - 2rem);
     }
 }
 
 @media (min-width:992px) {
     .container {
-        max-width: 962px;
+        max-width: calc(992px - 2rem);
     }
 }
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1170px;
+        max-width: calc(1200px - 2rem);
     }
 }
 
@@ -186,13 +312,13 @@ html {
     max-width: 100%; 
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 .row:after {
     display: table;
@@ -202,8 +328,8 @@ html {
 
 [class*=col-] {
     float: left;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .col-xs-1 {
@@ -408,4 +534,57 @@ html {
     .col-xl-12 {
         width: 100%;
     }
+}
+.m-y-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.m-y-1 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.m-y-2 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.m-y-3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.m-y-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.m-y-5 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.m-b-0 {
+    margin-top: 0 !important;
+}
+
+.m-b-1 {
+    margin-top: 0.5rem !important;
+}
+
+.m-b-2 {
+    margin-top: 1rem !important;
+}
+
+.m-b-3 {
+    margin-top: 1.5rem !important;
+}
+
+.m-b-4 {
+    margin-top: 2rem !important;
+}
+
+.m-b-5 {
+    margin-top: 2.5rem !important;
 }

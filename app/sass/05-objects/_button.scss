@@ -8,22 +8,37 @@ $btn-y: $g-y;
 /*
  *  Colors
  */
-$btn-fc: white;
-$btn-bg: dodgerblue;
+$btn-bg: $gray__01;
 /*
  *  Base
  */
 .btn {
     display: inline-flex;
+    justify-content: center;
     padding: $btn-y $btn-x;
-    color: $btn-fc;
     border: 1px solid transparent;
     border-radius: $btn-r;
     background-color: $btn-bg;
 
-    @include state--hover('inherit', $btn-bg, $btn-c);
-    @include state--focus('inherit', $btn-bg, $btn-c);
-    @include state--active('inherit', $btn-bg, ($btn-c * 2));
-    @include state--class('active', 'inherit', $btn-bg, ($btn-c * 2));
-    @include state--class('open', 'inherit', $btn-bg, ($btn-c * 2));
+    @include state--hover("inherit", $btn-bg, $btn-c);
+    @include state--focus("inherit", $btn-bg, $btn-c);
+    @include state--active("inherit", $btn-bg, ($btn-c * 2));
+    @include state--class("active", "inherit", $btn-bg, ($btn-c * 2));
+    @include state--class("open", "inherit", $btn-bg, ($btn-c * 2));
 }
+/*
+ * 	Variations
+ */
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+/*
+ * 	Theme
+ */
+//	@include btn-color-variation($default__palette);
+//	@include btn-color-variation($inverse__palette);
+@include btn-color-variation($primary__palette);
+//	@include btn-color-variation($neutral__palette);
+//	@include btn-color-variation($state__palette);
+//	@include btn-color-variation($classic__palette);

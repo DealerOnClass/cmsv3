@@ -1,0 +1,35 @@
+@mixin font($fonts) {
+	@each $font-group-name, $font-groups in $fonts {
+		@each $font in $font-groups {
+
+			$names:    map-get($font, name);
+			$src:	   ();
+			$formats:  map-get($font, formats);
+			$weights:  map-get($font, weight);
+
+			@font-face {
+				font-family: quote(#{$font-group-name});
+				@each $format in $formats {
+					@if $format == "eot" {
+						src: url($g-font + $names + "." + $format);
+						$src: append($src, url($g-font + $names + "." + $format + "?#iefix") format("embedded-opentype"));
+					}
+					@if $format == "woff2" {
+						$src: append($src, url($g-font + $names + "." + $format) format($format), "comma");
+					}
+					@if $format == "woff" {
+						$src: append($src, url($g-font + $names + "." + $format) format($format), "comma");
+					}
+					@if $format == "ttf" {
+						$src: append($src, url($g-font + $names + "." + $format) format("truetype"), "comma");
+					}
+					@if $format == "svg" {
+						$src: append($src, url($g-font + $names + "." + $format + "#svg" + $names) format("#svg"), "comma");
+					}
+				}
+				src: $src;
+				font-weight: unquote($weights);
+			}
+		}
+	}
+}

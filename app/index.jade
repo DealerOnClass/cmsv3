@@ -9,31 +9,43 @@ html(lang="en")
 	body
 		main.container
 			section
-				header
+				header.m-y-2
 					h3 Grid
 				.row
 					.col-xs-8.box .col-xs-8
 					.col-xs-4.box .col-xs-4
-				header
+				header.m-y-2
 					h3 Grid Nesting
 				.row
 					.col-xs-9.box .col-xs-9
 						.row
 							.col-xs-8.box .col-xs-8
 							.col-xs-4.box .col-xs-4
-				header
+				header.m-y-2
 					h3 Grid Reordering
 				.row
 					.col-xs-4.col-xs-push-4.box .col-xs-4.col-xs-push-4
 					.col-xs-8.col-xs-pull-8.box .col-xs-8.col-xs-push-8
 			section
-				header
+				header.m-y-2
 					h3 Breadcrumb
-				nav.breadcrumb
+				nav.m-b-1.breadcrumb
 					a.breadcrumb-item.breadcrumb-link(href="") Home
 					a.breadcrumb-item.breadcrumb-link(href="") Library
 					span.breadcrumb-item.active Books
-				nav.breadcrumb.breadcrumb-main
-					a.breadcrumb-item.breadcrumb-link(href="") Home
-					a.breadcrumb-item.breadcrumb-link(href="") Library
-					span.breadcrumb-item.active Books
+			section
+				header.m-y-2
+					h3 Button
+				button.m-b-1.btn Button
+				button.m-b-1.btn.btn-block Button
+			section
+				header.m-y-2
+					h3 Button Group
+				.btn-group
+					button.btn Button
+					button.btn Button
+					button.btn Button
+				.btn-group-stacked
+					button.btn Button
+					button.btn Button
+					button.btn Button

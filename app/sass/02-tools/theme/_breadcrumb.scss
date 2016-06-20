@@ -1,0 +1,20 @@
+@mixin breadcrumb-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+		$font: check-color($color, 80, inherit, $white);
+		$border: transparent;
+		$background: $color;
+
+        .breadcrumb-#{$class__name} {
+            color: $font;
+            border-color: $border;
+            background-color: $background;
+
+			.breadcrumb-link {
+				@include state--hover('inherit', $background, $breadcrumb-c);
+				@include state--focus('inherit', $background, $breadcrumb-c);
+				@include state--active('inherit', $background, ($breadcrumb-c * 2));
+				@include state--class('active', 'inherit', $background, ($breadcrumb-c * 2));
+			}
+        }
+    }
+}

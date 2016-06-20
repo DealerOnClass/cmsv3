@@ -13,11 +13,13 @@ $g-m:  1;
  *      $g-y: $global-topandorbottom
  */
 $g-c:  (10% * $g-m);
-$g-r:  (($g-u * 0.25) * $g-m);
+$g-r:  (($g-u * 0.30) * $g-m);
 $g-x:  (($g-u * 0.75) * $g-m);
 $g-y:  (($g-u * 0.50) * $g-m);
 /*
  *	Typography
  *		$g-fs: $global-fontsize
+ *		$g-lh: $global-lineheight
  */
 $g-fs:  16px;
+$g-lh:  1.618;

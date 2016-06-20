@@ -1,6 +1,10 @@
 .breadcrumb {
     display: -ms-flexbox;
     display: flex;
+    align-items: baseline;
+    background-color: #e6e6e6; 
+
+    -ms-flex-align: baseline;
 }
 
 .breadcrumb-item {
@@ -9,9 +13,19 @@
     padding: 0.5rem 0.75rem;
     border: 1px solid transparent;
 }
+.breadcrumb-item.active {
+    font-weight: 700;
+    margin-bottom: -1px;
+}
 
 .breadcrumb-link {
     color: inherit !important;
+}
+.breadcrumb-link:focus,.breadcrumb-link:hover {
+    background-color: #cfcfcf;
+}
+.breadcrumb-link:active {
+    background-color: #b8b8b8;
 }
 .breadcrumb-cta {
     color: #fff;

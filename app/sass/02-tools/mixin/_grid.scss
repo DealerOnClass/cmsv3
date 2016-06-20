@@ -2,7 +2,7 @@
 	.container {
 		margin-right: auto;
 		margin-left: auto;
-		padding-right: $grid-gutter;
+		padding-right: #{$grid-gutter};
 		padding-left: $grid-gutter;
 	}
 	@each $breakpoint, $size in $breakpoints {
@@ -11,7 +11,7 @@
 				@if ($size == 544px) {
 					max-width: #{$size};
 				} @else {
-					max-width: #{$size - ($grid-gutter * 2)};
+					max-width: calc(#{$size} - #{$grid-gutter * 2});
 				}
 			}
 		}

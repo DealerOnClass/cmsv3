@@ -11,9 +11,7 @@
 }
 
 @function remtopix($input) {
-	$pxbase: strip-unit($g-fs);
-	$input: strip-unit($input);
-	$output: ($input * $pxbase) * 1px;
+	$output: strip-unit($input);
 	@return $output;
 }
 

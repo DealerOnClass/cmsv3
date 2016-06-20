@@ -1,0 +1,20 @@
+/*
+ * 	Sans Serif
+ */
+$sans: (
+    "Avenir": (
+        (
+            "name": "avenirltstd-roman-webfont",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "400"
+        ), (
+            "name": "avenirltstd-medium-webfont",
+            "formats": ("eot", "woff", "ttf", "svg"),
+            "weight": "500"
+        ), (
+            "name": "avenirheavy-webfont",
+            "formats": ("eot", "woff", "ttf", "svg"),
+            "weight": "700"
+        ),
+    )
+);

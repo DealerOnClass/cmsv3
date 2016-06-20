@@ -1,0 +1,37 @@
+/*
+ * 	Base
+ */
+.btn-group {
+	display: inline-flex;
+}
+.btn-group > .btn {
+	border-radius: 0;
+}
+.btn-group > .btn:first-child {
+	border-radius: $btn-r 0 0 $btn-r;
+}
+.btn-group > .btn:last-child {
+	border-radius: 0 $btn-r $btn-r 0;
+}
+.btn-group > .btn:only-child {
+	border-radius: $btn-r;
+}
+/*
+ * 	Variations
+ */
+.btn-group-stacked {
+    display: inline-flex;
+	flex-direction: column;
+}
+.btn-group-stacked > .btn {
+	border-radius: 0;
+}
+.btn-group-stacked > .btn:first-child {
+	border-radius: $btn-r $btn-r 0 0;
+}
+.btn-group-stacked > .btn:last-child {
+	border-radius: 0 0$btn-r $btn-r;
+}
+.btn-group-stacked > .btn:only-child {
+	border-radius: $btn-r;
+}

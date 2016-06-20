@@ -30,17 +30,25 @@ var paths = {
     }
 }
 
+gulp.task(font);
 gulp.task(html);
 gulp.task(serve);
 gulp.task(styles);
 gulp.task(watch);
 gulp.task('default',
     gulp.series(
+        font,
         html,
         styles,
         gulp.parallel(watch, serve)
     )
 );
+
+function font() {
+	return gulp.src(paths.font.src)
+		.pipe(gulp.dest(paths.font.dist))
+        .pipe(browserSync.stream());
+}
 
 function html() {
     return gulp.src(paths.html.src)
@@ -80,6 +88,7 @@ function styles() {
 }
 
 function watch() {
+    gulp.watch(paths.font.src, font);
     gulp.watch(paths.html.src, html);
     gulp.watch(paths.styles.src, styles);
 }

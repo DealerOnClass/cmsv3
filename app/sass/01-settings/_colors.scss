@@ -15,17 +15,17 @@ $gray__09:  mix($black, $white, 90%);
 /*
  *	Colors
  */
-$default__color:         $gray__01;
-$primary__color:         #3662ad;
-$accent__color:          #f36c0a;
-$inverse__color:         mix($primary__color, $gray__08, 20%);
+$default__color:  $gray__01;
+$primary__color:  #3662ad;
+$accent__color:   #f36c0a;
+$inverse__color:  mix($primary__color, $gray__08, 20%);
 /*
  * 	States
  */
-$state--success:         #5cb85c !default;
-$state--info:            #5bc0de !default;
-$state--warning:         #f0ad4e !default;
-$state--danger:          #d9534f !default;
+$state--success:  #5cb85c !default;
+$state--info:     #5bc0de !default;
+$state--warning:  #f0ad4e !default;
+$state--danger:   #d9534f !default;
 /*
  * 	Colors
  */

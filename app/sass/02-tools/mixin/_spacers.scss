@@ -17,27 +17,27 @@ $units: (
 
 		.#{$property--short}-#{$type}-#{$unit} {
 			@if ($type == 'a') {
-				#{$property}: $a;
+				#{$property}: $a !important;
 			}
 			@if ($type == 'x') {
-				#{$property}-right: $x;
-				#{$property}-left: $x;
+				#{$property}-right: $x !important;
+				#{$property}-left: $x !important;
 			}
 			@if ($type == 'y') {
-				#{$property}-top: $y;
-				#{$property}-bottom: $y;
+				#{$property}-top: $y !important;
+				#{$property}-bottom: $y !important;
 			}
 			@if ($type == 't') {
-				#{$property}-top: $y;
+				#{$property}-top: $y !important;
 			}
 			@if ($type == 'r') {
-				#{$property}-top: $x;
+				#{$property}-top: $x !important;
 			}
 			@if ($type == 'b') {
-				#{$property}-top: $y;
+				#{$property}-top: $y !important;
 			}
 			@if ($type == 'l') {
-				#{$property}-top: $x;
+				#{$property}-top: $x !important;
 			}
 		}
 	}

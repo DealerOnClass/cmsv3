@@ -1,0 +1,21 @@
+html {
+    font-size: (strip-unit($g-fs) / 16) * 100%;
+}
+body {
+	font-family: "Avenir", sans-serif;
+	line-height: $g-lh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	padding-left: $g-x;
+}
