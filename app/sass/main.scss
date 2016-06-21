@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
- *  Imports
+ *  01 Settings
  */
 @import
 	"01-settings/breakpoints",
@@ -8,6 +8,9 @@
 	"01-settings/fonts",
 	"01-settings/paths",
 	"01-settings/units";
+/*
+ *  02 Tools
+ */
 @import
 	"02-tools/function/colors",
 	"02-tools/function/math",
@@ -16,13 +19,26 @@
 	"02-tools/mixin/grid",
 	"02-tools/mixin/spacers",
 	"02-tools/mixin/states",
+	"02-tools/theme/alert",
 	"02-tools/theme/breadcrumb",
 	"02-tools/theme/button",
 	"02-tools/theme/text-colors";
-@import "03-generic/reset";
-@import "04-base/fonts",
-	"04-base/typography";
+/*
+ *  03 Generic
+ */
 @import
+	"03-generic/reset";
+/*
+ *  04 Base
+ */
+@import
+	"04-base/fonts",
+	"04-base/typography";
+/*
+ *  05 Objects
+ */
+@import
+	"05-objects/alert",
 	"05-objects/box",
 	"05-objects/button",
 	"05-objects/button-group",
@@ -30,10 +46,19 @@
 	"05-objects/card",
 	"05-objects/dropdown",
 	"05-objects/grid";
+/*
+ *  06 Components
+ */
 //@import "06-components/root";
+/*
+ *  07 Trumps
+ */
 @import
 	"07-trumps/spacers",
 	"07-trumps/text-colors",
 	"07-trumps/text-transform",
 	"07-trumps/utilities";
+/*
+ *  08 Shame
+ */
 //@import "08-shame/root";

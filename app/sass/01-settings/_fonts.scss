@@ -1,11 +1,22 @@
 /*
+ * 	Icon
+ */
+$icon: (
+	"FontAwesome": (
+		(
+            "name": "fontawesome-webfont",
+            "formats": ("eot", "woff2", "woff", "ttf", "svg")
+		),
+	)
+);
+/*
  * 	Sans Serif
  */
 $sans: (
     "Avenir": (
         (
             "name": "avenirltstd-roman-webfont",
-            "formats": ("woff2", "woff", "ttf"),
+            "formats": ("eot", "woff", "ttf", "svg"),
             "weight": "400"
         ), (
             "name": "avenirltstd-medium-webfont",

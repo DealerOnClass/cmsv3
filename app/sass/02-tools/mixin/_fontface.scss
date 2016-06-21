@@ -28,7 +28,9 @@
 					}
 				}
 				src: $src;
-				font-weight: unquote($weights);
+				@if $weights {
+					font-weight: unquote($weights);
+				}
 			}
 		}
 	}

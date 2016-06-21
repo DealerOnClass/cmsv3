@@ -28,6 +28,16 @@ html(lang="en")
 			section.m-b-5
 				header.m-b-1.m-t-2.text-main.text-small-caps
 					h3 Breadcrumb
+				h3 Alert
+				.alert I'm an alert.
+				h3 Alert Dismissible
+				.alert I'm an alert.
+					button.btn.close(data-dismiss="alert")
+						span(aria-hidden="true") &times;
+
+			section.m-b-5
+				header.m-b-1.m-t-2.text-main.text-small-caps
+					h3 Breadcrumb
 				h3 Breadcrumb
 				nav.m-b-2.breadcrumb
 					a.breadcrumb-item.breadcrumb-link(href="") Home
@@ -45,6 +55,11 @@ html(lang="en")
 					h3 Button Group
 				h3 Button Group
 				.btn-group
+					button.btn Button
+					button.btn Button
+					button.btn Button
+				h3 Button Group Justified
+				.btn-group-justified
 					button.btn Button
 					button.btn Button
 					button.btn Button
@@ -85,10 +100,6 @@ html(lang="en")
 						a.dropdown-item.dropdown-link(href="#") Item 2
 						a.dropdown-item.dropdown-link(href="#") Item 3
 				h3 Dropdown Menu
-				.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
-					a.dropdown-item.dropdown-link(href="#") Item 1
-					a.dropdown-item.dropdown-link(href="#") Item 2
-					a.dropdown-item.dropdown-link(href="#") Item 3
 				.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
 					a.dropdown-item.dropdown-link(href="#") Item 1
 					a.dropdown-item.dropdown-link(href="#") Item 2

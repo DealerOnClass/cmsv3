@@ -2,22 +2,38 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
-
-.btn-group > .btn {
+.btn-group .btn {
     border-radius: 0;
 }
-
-.btn-group > .btn:first-child {
+.btn-group .btn:first-child {
     border-radius: 0.3rem 0 0 0.3rem;
 }
-
-.btn-group > .btn:last-child {
+.btn-group .btn:last-child {
     border-radius: 0 0.3rem 0.3rem 0;
 }
-
-.btn-group > .btn:only-child {
+.btn-group .btn:only-child {
     border-radius: 0.3rem;
 }
+.btn-group-justified {
+    display: -ms-flexbox;
+    display: flex;
+}
+.btn-group-justified .btn {
+        flex: 1 1 0;
+    border-radius: 0; 
+
+    -ms-flex: 1 1 0;
+}
+.btn-group-justified .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.btn-group-justified .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+.btn-group-justified .btn:only-child {
+    border-radius: 0.3rem;
+}
+
 .btn-group-stacked {
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -25,19 +41,15 @@
 
     -ms-flex-direction: column;
 }
-
-.btn-group-stacked > .btn {
+.btn-group-stacked .btn {
     border-radius: 0;
 }
-
-.btn-group-stacked > .btn:first-child {
+.btn-group-stacked .btn:first-child {
     border-radius: 0.3rem 0.3rem 0 0;
 }
-
-.btn-group-stacked > .btn:last-child {
+.btn-group-stacked .btn:last-child {
     border-radius: 0 0 0.3rem 0.3rem;
 }
-
-.btn-group-stacked > .btn:only-child {
+.btn-group-stacked .btn:only-child {
     border-radius: 0.3rem;
 }

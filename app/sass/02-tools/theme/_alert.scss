@@ -1,0 +1,24 @@
+@mixin alert-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+
+		$font: check-color($color, 80, inherit, $white);
+		$border: transparent;
+		$background: $color;
+
+        .alert-#{$class__name} {
+            color: $font;
+            border-color: $border;
+            background-color: $background;
+
+			.close {
+				color: $font;
+				border-color: $border;
+				background-color: $background;
+
+				@include state--hover('inherit', $background, $alert-c);
+				@include state--focus('inherit', $background, $alert-c);
+				@include state--active('inherit', $background, ($alert-c * 2));
+			}
+        }
+    }
+}

@@ -172,11 +172,13 @@ html {
 :before {
     box-sizing: inherit;
 }
+
 @font-face {
     font-family: Avenir;
     font-weight: 400; 
 
-    src: url(../font/avenirltstd-roman-webfont.woff2) format("woff2"),url(../font/avenirltstd-roman-webfont.woff) format("woff"),url(../font/avenirltstd-roman-webfont.ttf) format("truetype");
+    src: url(../font/avenirltstd-roman-webfont.eot);
+    src: url(../font/avenirltstd-roman-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirltstd-roman-webfont.woff) format("woff"),url(../font/avenirltstd-roman-webfont.ttf) format("truetype"),url(../font/avenirltstd-roman-webfont.svg#svgavenirltstd-roman-webfont) format("#svg");
 }
 
 @font-face {
@@ -220,6 +222,28 @@ ul ol,
 ul ul {
     padding-left: 0.75rem;
 }
+.alert {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    background-color: #e4e4e4; 
+
+    -ms-flex-pack: justify;
+}
+.alert .close {
+    font-weight: 700;
+    line-height: 1;
+        flex: 0 0 auto;
+    align-self: flex-start;
+    margin-bottom: -0.5rem;
+    padding: 0.375rem; 
+
+    -ms-flex: 0 0 auto;
+    -ms-flex-item-align: start;
+}
 .box {
     background-color: #e4e4e4;
 }
@@ -256,53 +280,42 @@ ul ul {
     display: flex;
     width: 100%;
 }
-.btn-cta {
-    color: #fff;
-    border-color: transparent;
-    background-color: #f36c0a;
-}
-.btn-cta:focus,
-.btn-cta:hover {
-    background-color: #db6109;
-}
-.btn-cta.active,
-.btn-cta:active {
-    background-color: #c25608;
-}
-
-.btn-main {
-    color: #fff;
-    border-color: transparent;
-    background-color: #3662ad;
-}
-.btn-main:focus,
-.btn-main:hover {
-    background-color: #31589c;
-}
-.btn-main.active,
-.btn-main:active {
-    background-color: #2b4e8a;
-}
 .btn-group {
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
-
-.btn-group > .btn {
+.btn-group .btn {
     border-radius: 0;
 }
-
-.btn-group > .btn:first-child {
+.btn-group .btn:first-child {
     border-radius: 0.3rem 0 0 0.3rem;
 }
-
-.btn-group > .btn:last-child {
+.btn-group .btn:last-child {
     border-radius: 0 0.3rem 0.3rem 0;
 }
-
-.btn-group > .btn:only-child {
+.btn-group .btn:only-child {
     border-radius: 0.3rem;
 }
+.btn-group-justified {
+    display: -ms-flexbox;
+    display: flex;
+}
+.btn-group-justified .btn {
+        flex: 1 1 0;
+    border-radius: 0; 
+
+    -ms-flex: 1 1 0;
+}
+.btn-group-justified .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.btn-group-justified .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+.btn-group-justified .btn:only-child {
+    border-radius: 0.3rem;
+}
+
 .btn-group-stacked {
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -310,20 +323,16 @@ ul ul {
 
     -ms-flex-direction: column;
 }
-
-.btn-group-stacked > .btn {
+.btn-group-stacked .btn {
     border-radius: 0;
 }
-
-.btn-group-stacked > .btn:first-child {
+.btn-group-stacked .btn:first-child {
     border-radius: 0.3rem 0.3rem 0 0;
 }
-
-.btn-group-stacked > .btn:last-child {
+.btn-group-stacked .btn:last-child {
     border-radius: 0 0 0.3rem 0.3rem;
 }
-
-.btn-group-stacked > .btn:only-child {
+.btn-group-stacked .btn:only-child {
     border-radius: 0.3rem;
 }
 .breadcrumb {
@@ -341,9 +350,17 @@ ul ul {
     padding: 0.5rem 0.75rem;
     border: 1px solid transparent;
 }
+.breadcrumb-item:after {
+    position: relative;
+    right: -0.75rem;
+    content: "/";
+}
 .breadcrumb-item.active {
     font-weight: 700;
     margin-bottom: -1px;
+}
+.breadcrumb-item.active:after {
+    display: none;
 }
 
 .breadcrumb-link {
@@ -355,33 +372,6 @@ ul ul {
 }
 .breadcrumb-link:active {
     background-color: #b6b6b6;
-}
-.breadcrumb-cta {
-    color: #fff;
-    border-color: transparent;
-    background-color: #f36c0a;
-}
-.breadcrumb-cta .breadcrumb-link:focus,
-.breadcrumb-cta .breadcrumb-link:hover {
-    background-color: #db6109;
-}
-.breadcrumb-cta .breadcrumb-link.active,
-.breadcrumb-cta .breadcrumb-link:active {
-    background-color: #c25608;
-}
-
-.breadcrumb-main {
-    color: #fff;
-    border-color: transparent;
-    background-color: #3662ad;
-}
-.breadcrumb-main .breadcrumb-link:focus,
-.breadcrumb-main .breadcrumb-link:hover {
-    background-color: #31589c;
-}
-.breadcrumb-main .breadcrumb-link.active,
-.breadcrumb-main .breadcrumb-link:active {
-    background-color: #2b4e8a;
 }
 .card {
     display: -ms-flexbox;
@@ -913,6 +903,6 @@ ul ul {
 .text-small-caps {
     font-size: 65%;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
 }
