@@ -8,20 +8,23 @@ $card-y: $g-y;
 /*
  *  Colors
  */
-$card-fc: white;
-$card-bg: dodgerblue;
+$card-border: transparent;
+$card-bg: $default__color;
 /*
  * 	Base
  */
 .card {
     display: flex;
+	flex-direction: column;
 }
-.card-item {
+.card-header,
+.card-block,
+.card-footer,
+.card-actions {
     display: flex;
     flex: 1 1 auto;
     padding: $card-y $card-x;
-    border: 1px solid transparent;
-
+    border: 1px solid $card-border;
 	&:first-child {
 		border-radius: $card-r $card-r 0 0;
 	}
@@ -30,5 +33,54 @@ $card-bg: dodgerblue;
 	}
 	&:only-child {
 		border-radius: $card-r;
+	}
+}
+.card-header {
+	background-color: $card-bg;
+}
+.card-footer {
+	background-color: $card-bg;
+}
+.card-actions {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	border: 0;
+	.btn {
+		flex: 1 1 0;
+		border-radius: 0;
+	}
+	&:first-child {
+		.btn:first-child {
+			border-radius: $card-r 0 0 0;
+		}
+		.btn:last-child {
+			border-radius: 0 $card-r 0 0;
+		}
+		.btn:only-child {
+			border-radius: $card-r $card-r 0 0;
+		}
+	}
+	&:last-child {
+		.btn:first-child {
+			border-radius: 0 0 0 $card-r;
+		}
+		.btn:last-child {
+			border-radius: 0 0 $card-r 0;
+		}
+		.btn:only-child {
+			border-radius: 0 0 $card-r $card-r;
+		}
+	}
+	&:only-child {
+		.btn:first-child {
+			border-radius: $card-r 0 0 $card-r;
+		}
+		.btn:last-child {
+			border-radius: 0 $card-r $card-r 0;
+		}
+		.btn:only-child {
+			border-radius: $card-r;
+		}
 	}
 }

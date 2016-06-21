@@ -8,7 +8,8 @@ $breadcrumb-y: $g-y;
 /*
  * 	Colors
  */
-$breadcrumb-bg: $gray__01;
+$breadcrumb-border: transparent;
+$breadcrumb-bg: $default__color;
 /*
  * 	Base
  */
@@ -20,7 +21,7 @@ $breadcrumb-bg: $gray__01;
 .breadcrumb-item {
     display: inline-flex;
     padding: $breadcrumb-y $breadcrumb-x;
-    border: 1px solid transparent;
+    border: 1px solid $breadcrumb-border;
 
     &.active {
         font-weight: 700;
@@ -28,7 +29,7 @@ $breadcrumb-bg: $gray__01;
     }
 }
 .breadcrumb-link {
-    color: inherit !important;
+    color: inherit;
 
     @include state--hover("inherit", $breadcrumb-bg, $breadcrumb-c);
     @include state--focus("inherit", $breadcrumb-bg, $breadcrumb-c);

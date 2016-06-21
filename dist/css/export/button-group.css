@@ -1,0 +1,43 @@
+.btn-group {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.btn-group > .btn {
+    border-radius: 0;
+}
+
+.btn-group > .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.btn-group > .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.btn-group > .btn:only-child {
+    border-radius: 0.3rem;
+}
+.btn-group-stacked {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        flex-direction: column; 
+
+    -ms-flex-direction: column;
+}
+
+.btn-group-stacked > .btn {
+    border-radius: 0;
+}
+
+.btn-group-stacked > .btn:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.btn-group-stacked > .btn:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.btn-group-stacked > .btn:only-child {
+    border-radius: 0.3rem;
+}

@@ -32,6 +32,7 @@ var paths = {
 
 gulp.task(font);
 gulp.task(html);
+gulp.task(scripts);
 gulp.task(serve);
 gulp.task(styles);
 gulp.task(watch);
@@ -39,6 +40,7 @@ gulp.task('default',
     gulp.series(
         font,
         html,
+        scripts,
         styles,
         gulp.parallel(watch, serve)
     )
@@ -57,6 +59,12 @@ function html() {
             pretty: true
         }))
         .pipe(gulp.dest(paths.html.dist))
+        .pipe(browserSync.stream());
+}
+
+function scripts() {
+	return gulp.src(paths.scripts.src)
+		.pipe(gulp.dest(paths.scripts.dist))
         .pipe(browserSync.stream());
 }
 
@@ -90,5 +98,6 @@ function styles() {
 function watch() {
     gulp.watch(paths.font.src, font);
     gulp.watch(paths.html.src, html);
+    gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.styles.src, styles);
 }

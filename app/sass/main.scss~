@@ -17,8 +17,7 @@
 	"02-tools/mixin/spacers",
 	"02-tools/mixin/states",
 	"02-tools/theme/breadcrumb",
-	"02-tools/theme/button",
-	"02-tools/theme/text-colors";
+	"02-tools/theme/button";
 @import "03-generic/reset";
 @import "04-base/fonts",
 	"04-base/typography";
@@ -28,12 +27,10 @@
 	"05-objects/button-group",
 	"05-objects/breadcrumb",
 	"05-objects/card",
-	"05-objects/dropdown",
 	"05-objects/grid";
 //@import "06-components/root";
 @import
 	"07-trumps/spacers",
 	"07-trumps/text-colors",
-	"07-trumps/text-transform",
 	"07-trumps/utilities";
 //@import "08-shame/root";

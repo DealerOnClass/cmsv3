@@ -8,7 +8,8 @@ $btn-y: $g-y;
 /*
  *  Colors
  */
-$btn-bg: $gray__01;
+$btn-border: transparent;
+$btn-bg: $default__color;
 /*
  *  Base
  */
@@ -16,7 +17,7 @@ $btn-bg: $gray__01;
     display: inline-flex;
     justify-content: center;
     padding: $btn-y $btn-x;
-    border: 1px solid transparent;
+    border: 1px solid $btn-border;
     border-radius: $btn-r;
     background-color: $btn-bg;
 

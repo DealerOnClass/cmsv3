@@ -85,14 +85,9 @@ html(lang="en")
 						a.dropdown-item.dropdown-link(href="#") Item 2
 						a.dropdown-item.dropdown-link(href="#") Item 3
 				h3 Dropdown Menu
-				.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
+				.dropdown-menu(style="position: static; display: inline-flex;")
 					a.dropdown-item.dropdown-link(href="#") Item 1
 					a.dropdown-item.dropdown-link(href="#") Item 2
-					a.dropdown-item.dropdown-link(href="#") Item 3
-				.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
-					a.dropdown-item.dropdown-link(href="#") Item 1
-					a.dropdown-item.dropdown-link(href="#") Item 2
-					.dropdown-item.dropdown-divider
 					a.dropdown-item.dropdown-link(href="#") Item 3
 		script(src="js/jquery.min.js")
 		script(src="js/tether.min.js")

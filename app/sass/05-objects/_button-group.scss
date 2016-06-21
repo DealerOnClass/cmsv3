@@ -1,4 +1,16 @@
 /*
+ *  Units
+ */
+$btn-group-c: $g-c;
+$btn-group-r: $g-r;
+$btn-group-x: $g-x;
+$btn-group-y: $g-y;
+/*
+ *  Colors
+ */
+$btn-group-border: transparent;
+$btn-group-bg: $default__color;
+/*
  * 	Base
  */
 .btn-group {
@@ -8,13 +20,13 @@
 	border-radius: 0;
 }
 .btn-group > .btn:first-child {
-	border-radius: $btn-r 0 0 $btn-r;
+	border-radius: $btn-group-r 0 0 $btn-group-r;
 }
 .btn-group > .btn:last-child {
-	border-radius: 0 $btn-r $btn-r 0;
+	border-radius: 0 $btn-group-r $btn-group-r 0;
 }
 .btn-group > .btn:only-child {
-	border-radius: $btn-r;
+	border-radius: $btn-group-r;
 }
 /*
  * 	Variations
@@ -27,11 +39,11 @@
 	border-radius: 0;
 }
 .btn-group-stacked > .btn:first-child {
-	border-radius: $btn-r $btn-r 0 0;
+	border-radius: $btn-group-r $btn-group-r 0 0;
 }
 .btn-group-stacked > .btn:last-child {
-	border-radius: 0 0$btn-r $btn-r;
+	border-radius: 0 0$btn-group-r $btn-group-r;
 }
 .btn-group-stacked > .btn:only-child {
-	border-radius: $btn-r;
+	border-radius: $btn-group-r;
 }

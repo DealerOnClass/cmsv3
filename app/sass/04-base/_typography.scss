@@ -11,7 +11,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	margin-top: ($g-y * 2);
+	margin-bottom: $g-y;
 }
 ul ul,
 ol ol,

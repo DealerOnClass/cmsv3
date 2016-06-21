@@ -1,5 +1,22 @@
+/*
+ *  Units
+ */
+$box-c: $g-c;
+$box-r: $g-r;
+$box-x: $g-x;
+$box-y: $g-y;
+/*
+ * 	Colors
+ */
+$box-bg: $default__color;
+/*
+ * 	Base
+ */
 .box {
-	background-color: rgba(0,0,0,0.10);
+	background-color: $box-bg;
+}
+.box .box {
+	background-color: shade($box-bg, $box-c);
 }
 .box[class*="col-"] {
 	background-clip: content-box;

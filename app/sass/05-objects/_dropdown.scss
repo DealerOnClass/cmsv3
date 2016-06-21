@@ -1,0 +1,105 @@
+/*
+ *  Units
+ */
+$dropdown-c: $g-c;
+$dropdown-r: $g-r;
+$dropdown-x: $g-x;
+$dropdown-y: $g-y;
+$dropdown-caret-size: ($dropdown-y / 2);
+/*
+ *  Colors
+ */
+$dropdown-border: transparent;
+$dropdown-bg: $default__color;
+/*
+ *  Base
+ */
+.dropdown,
+.dropup {
+    position: relative;
+    display: inline-flex;
+}
+.dropdown-item,
+.dropdown-toggle {
+    display: inline-flex;
+    padding: $dropdown-y $dropdown-x;
+    border: 1px solid $dropdown-border;
+    border-radius: $dropdown-r;
+    background-color: $dropdown-bg;
+}
+.dropdown-divider {
+    height: 1px;
+    padding: 0;
+    border: 0;
+    background-color: shade($dropdown-bg, $dropdown-c);
+}
+.dropdown-link,
+.dropdown-toggle {
+    color: inherit;
+
+    @include state--hover("inherit", $dropdown-bg, $dropdown-c);
+    @include state--focus("inherit", $dropdown-bg, $dropdown-c);
+    @include state--active("inherit", $dropdown-bg, ($dropdown-c * 2));
+    @include state--class("active", "inherit", $dropdown-bg, ($dropdown-c * 2));
+    @include state--class("open", "inherit", $dropdown-bg, ($dropdown-c * 2));
+}
+.dropdown-toggle {
+    align-items: baseline;
+    &:after {
+        position: relative;
+        margin-left: $dropdown-x;
+        content: "";
+        border: $dropdown-caret-size solid transparent;
+        border-top-color: currentColor;
+    }
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    border-radius: $dropdown-r;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    .open & {
+        display: flex;
+    }
+    .dropdown-item {
+        border-radius: 0;
+    }
+    .dropdown-item:first-child {
+        border-radius: $dropdown-r $dropdown-r 0 0;
+    }
+    .dropdown-item:last-child {
+        border-radius: 0 0 $dropdown-r $dropdown-r;
+    }
+    .dropdown-item:only-child {
+        border-radius: $dropdown-r;
+    }
+}
+/*
+ * 	Variations
+ */
+.dropup {
+    .dropdown-menu {
+        top: auto;
+        bottom: 100%;
+    }
+    .dropdown-toggle {
+        &:after {
+            top: negative($dropdown-caret-size);
+            border-top-color: transparent;
+            border-bottom-color: currentColor;
+        }
+    }
+}
+/*
+ * 	Theme
+ */
+//	@include dropdown-color-variation($default__palette);
+//	@include dropdown-color-variation($inverse__palette);
+//	@include dropdown-color-variation($primary__palette);
+//	@include dropdown-color-variation($neutral__palette);
+//	@include dropdown-color-variation($state__palette);
+//	@include dropdown-color-variation($classic__palette);

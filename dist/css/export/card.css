@@ -1,0 +1,86 @@
+.card {
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column; 
+
+    -ms-flex-direction: column;
+}
+
+.card-actions,
+.card-block,
+.card-footer,
+.card-header {
+    display: -ms-flexbox;
+    display: flex;
+        flex: 1 1 auto;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent; 
+
+    -ms-flex: 1 1 auto;
+}
+.card-actions:first-child,
+.card-block:first-child,
+.card-footer:first-child,
+.card-header:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-actions:last-child,
+.card-block:last-child,
+.card-footer:last-child,
+.card-header:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.card-actions:only-child,
+.card-block:only-child,
+.card-footer:only-child,
+.card-header:only-child {
+    border-radius: 0.3rem;
+}
+
+.card-footer,
+.card-header {
+    background-color: #e4e4e4;
+}
+
+.card-actions {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: 0; 
+
+    -ms-flex-pack: justify;
+}
+.card-actions .btn {
+        flex: 1 1 0;
+    border-radius: 0; 
+
+    -ms-flex: 1 1 0;
+}
+.card-actions:first-child .btn:first-child {
+    border-radius: 0.3rem 0 0 0;
+}
+.card-actions:first-child .btn:last-child {
+    border-radius: 0 0.3rem 0 0;
+}
+.card-actions:first-child .btn:only-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-actions:last-child .btn:first-child {
+    border-radius: 0 0 0 0.3rem;
+}
+.card-actions:last-child .btn:last-child {
+    border-radius: 0 0 0.3rem 0;
+}
+.card-actions:last-child .btn:only-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.card-actions:only-child .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.card-actions:only-child .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+.card-actions:only-child .btn:only-child {
+    border-radius: 0.3rem;
+}

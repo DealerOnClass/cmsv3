@@ -2,7 +2,7 @@
     display: -ms-flexbox;
     display: flex;
     align-items: baseline;
-    background-color: #e6e6e6; 
+    background-color: #e4e4e4; 
 
     -ms-flex-align: baseline;
 }
@@ -19,23 +19,26 @@
 }
 
 .breadcrumb-link {
-    color: inherit !important;
+    color: inherit;
 }
-.breadcrumb-link:focus,.breadcrumb-link:hover {
-    background-color: #cfcfcf;
+.breadcrumb-link:focus,
+.breadcrumb-link:hover {
+    background-color: #cdcdcd;
 }
 .breadcrumb-link:active {
-    background-color: #b8b8b8;
+    background-color: #b6b6b6;
 }
 .breadcrumb-cta {
     color: #fff;
     border-color: transparent;
     background-color: #f36c0a;
 }
-.breadcrumb-cta .breadcrumb-link:focus,.breadcrumb-cta .breadcrumb-link:hover {
+.breadcrumb-cta .breadcrumb-link:focus,
+.breadcrumb-cta .breadcrumb-link:hover {
     background-color: #db6109;
 }
-.breadcrumb-cta .breadcrumb-link.active,.breadcrumb-cta .breadcrumb-link:active {
+.breadcrumb-cta .breadcrumb-link.active,
+.breadcrumb-cta .breadcrumb-link:active {
     background-color: #c25608;
 }
 
@@ -44,9 +47,11 @@
     border-color: transparent;
     background-color: #3662ad;
 }
-.breadcrumb-main .breadcrumb-link:focus,.breadcrumb-main .breadcrumb-link:hover {
+.breadcrumb-main .breadcrumb-link:focus,
+.breadcrumb-main .breadcrumb-link:hover {
     background-color: #31589c;
 }
-.breadcrumb-main .breadcrumb-link.active,.breadcrumb-main .breadcrumb-link:active {
+.breadcrumb-main .breadcrumb-link.active,
+.breadcrumb-main .breadcrumb-link:active {
     background-color: #2b4e8a;
 }
