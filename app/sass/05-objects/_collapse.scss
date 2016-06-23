@@ -1,0 +1,33 @@
+/*
+ * Var
+ */
+$collapse-c: $g-c;
+$collapse-r: $g-r;
+$collapse-x: $g-x;
+$collapse-y: $g-y;
+/*
+ * Base
+ */
+.fade {
+    transition: opacity 0.15s linear;
+    opacity: 0;
+}
+.fade.in {
+    opacity: 1;
+}
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+.collapse-inner {
+	display: flex;
+	padding: $collapse-y $collapse-x;
+}
+.collapsing {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.35s ease;
+}

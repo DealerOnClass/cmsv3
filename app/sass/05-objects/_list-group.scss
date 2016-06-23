@@ -38,6 +38,7 @@ $list-group-bg: $default__color;
 	@include state--hover("inherit", $list-group-bg, $list-group-c);
 	@include state--focus("inherit", $list-group-bg, $list-group-c);
 	@include state--active("inherit", $list-group-bg, ($list-group-c * 2));
+	@include state--attr("aria-expanded=true", "inherit", $list-group-bg, ($list-group-c * 2));
 }
 .list-group-divider {
 	height: 1px;
@@ -69,6 +70,17 @@ $list-group-bg: $default__color;
 	.list-group-divider {
 		flex: 0 0 1px;
 		height: initial;
+	}
+}
+.list-group-accordion {
+	.collapse-inner {
+		background-color: $list-group-bg;
+	}
+	.list-group-item[aria-expanded=false]:nth-last-child(2) {
+		border-radius: 0 0 $list-group-r $list-group-r;
+	}
+	.list-group-item + :last-child .collapse-inner  {
+		border-radius: 0 0 $list-group-r $list-group-r;
 	}
 }
 /*

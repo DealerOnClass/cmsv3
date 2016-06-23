@@ -402,7 +402,7 @@ html(lang="en")
 				.btn-group
 					a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
 						| Link with href
-					button.btn.collapsed(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
+					a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
 						| Button with data-targe
 				.collapse#collapseExample(aria-expanded="false")
 					.collapse-inner
@@ -420,7 +420,6 @@ html(lang="en")
 					.collapse#collapseTwo(role="tabpanel" aria-labelledby="" aria-expanded="false")
 						.collapse-inner
 							| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
-					.list-group-item.list-group-divider
 					a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
 						| Collapsible Group Item #3
 					.collapse#collapseThree(role="tabpanel" aria-labelledby="" aria-expanded="false")
@@ -538,21 +537,17 @@ html(lang="en")
 							a.dropdown-item.dropdown-link(href="#") Item 2
 							a.dropdown-item.dropdown-link(href="#") Item 3
 				h3.text-danger Navbar Responsive(WIP)
-				nav.navbar.navbar-responsive
-					.navbar-header
-						button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
-							| Toggle
-						a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-					.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
-						span.navbar-item I'm text
-						a.navbar-item.navbar-link(href="#") I'm a link
-						button.navbar-item.navbar-link I'm a button
-						.dropdown
-							button.dropdown-toggle(data-toggle="dropdown") Dropdown
-							.dropdown-menu
-								a.dropdown-item.dropdown-link(href="#") Item 1
-								a.dropdown-item.dropdown-link(href="#") Item 2
-								a.dropdown-item.dropdown-link(href="#") Item 3
+				nav.navbar
+					a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
+					span.navbar-item I'm text
+					a.navbar-item.navbar-link(href="#") I'm a link
+					button.navbar-item.navbar-link I'm a button
+					.dropdown
+						button.dropdown-toggle(data-toggle="dropdown") Dropdown
+						.dropdown-menu
+							a.dropdown-item.dropdown-link(href="#") Item 1
+							a.dropdown-item.dropdown-link(href="#") Item 2
+							a.dropdown-item.dropdown-link(href="#") Item 3
 			//
 			//	Tags
 			section.m-b-5.section-tags

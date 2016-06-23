@@ -455,6 +455,34 @@
         </div>
       </section>
       <!---->
+      <!--	Collapse-->
+      <section class="m-b-5 section-collapse">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Collapse</h3>
+        </header>
+        <h3 class="text-danger">Collapse</h3>
+        <div class="btn-group"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn collapsed">Link with href</a>
+          <button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn collapsed">Button with data-targe</button>
+        </div>
+        <div id="collapseExample" aria-expanded="false" class="collapse">
+          <div class="collapse-inner">Amet dolore facilis esse sapiente error nisi modi corrupti sint magni, excepturi, ad dolorem! Accusantium dolor quibusdam corrupti et quisquam! Pariatur rerum rem ducimus dolorum enim animi alias! Quod dolore.</div>
+        </div>
+        <h3 class="text-danger">Collapse Accordion</h3>
+        <div id="accordion" role="tablist" aria-multiselectable="true" class="list-group list-group-accordion"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="list-group-item list-group-link">Collapsible Group Item #1</a>
+          <div id="collapseOne" role="tabpanel" aria-labelledby="" aria-expanded="true" class="collapse in">
+            <div class="collapse-inner">Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.</div>
+          </div>
+          <div class="list-group-item list-group-divider"></div><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="list-group-item list-group-link">Collapsible Group Item #2</a>
+          <div id="collapseTwo" role="tabpanel" aria-labelledby="" aria-expanded="false" class="collapse">
+            <div class="collapse-inner">Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.</div>
+          </div>
+          <div class="list-group-item list-group-divider"></div><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="list-group-item list-group-link">Collapsible Group Item #3</a>
+          <div id="collapseThree" role="tabpanel" aria-labelledby="" aria-expanded="false" class="collapse">
+            <div class="collapse-inner">Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.</div>
+          </div>
+        </div>
+      </section>
+      <!---->
       <!--	Dropdown-->
       <section class="m-b-5 section-dropdown">
         <header class="m-b-1 m-t-2 text-small-caps">
@@ -544,6 +572,19 @@
           <div class="dropdown">
             <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
             <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
+          </div>
+        </nav>
+        <h3 class="text-danger">Navbar Responsive(WIP)</h3>
+        <nav class="navbar navbar-responsive">
+          <div class="navbar-header">
+            <button data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" class="navbar-item navbar-link navbar-toggle">Toggle</button><a href="#" class="navbar-item navbar-link navbar-logo">I'm a Logo</a>
+          </div>
+          <div id="navbar-collapse" aria-expanded="true" class="navbar-collapse collapse"><span class="navbar-item">I'm text</span><a href="#" class="navbar-item navbar-link">I'm a link</a>
+            <button class="navbar-item navbar-link">I'm a button</button>
+            <div class="dropdown">
+              <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
+            </div>
           </div>
         </nav>
       </section>

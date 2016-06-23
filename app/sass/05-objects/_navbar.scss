@@ -31,7 +31,9 @@ $navbar-bg: $default__color;
     @include state--hover("inherit", $navbar-bg, $navbar-c);
     @include state--focus("inherit", $navbar-bg, $navbar-c);
     @include state--active("inherit", $navbar-bg, ($navbar-c * 2));
+	@include state--attr("aria-expanded=true", "inherit", $navbar-bg, ($navbar-c * 2));
 }
+.navbar-header,
 .navbar-logo {
     margin-right: auto;
 }
@@ -50,3 +52,42 @@ $navbar-bg: $default__color;
 /*
  * Variations
  */
+.navbar-responsive {
+	flex-direction: column;
+	@media (min-width: $m-tablet) {
+		flex-direction: row;
+	}
+	.navbar-toggle {
+		@media (min-width: $m-tablet) {
+			display: none;
+		}
+	}
+	.navbar-item {
+		flex: 1 0 auto;
+	}
+	.navbar-collapse, {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $m-tablet) {
+			flex-direction: row;
+		}
+		&.collapse {
+			display: none;
+			@media (min-width: $m-tablet) {
+				display: flex;
+			}
+		}
+		&.in {
+			display: flex;
+		}
+	}
+}
+/*
+ * Theme
+ */
+//	@include navbar-color-variation($default__palette);
+//	@include navbar-color-variation($inverse__palette);
+//	@include navbar-color-variation($primary__palette);
+//	@include navbar-color-variation($neutral__palette);
+//	@include navbar-color-variation($state__palette);
+//	@include navbar-color-variation($classic__palette);

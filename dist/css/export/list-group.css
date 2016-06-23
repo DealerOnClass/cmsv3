@@ -29,7 +29,8 @@
 .list-group-link:hover {
     background-color: #cdcdcd;
 }
-.list-group-link:active {
+.list-group-link:active,
+.list-group-link[aria-expanded=true] {
     background-color: #b6b6b6;
 }
 
@@ -70,4 +71,13 @@
     height: auto; 
 
     -ms-flex: 0 0 1px;
+}
+
+.list-group-accordion .collapse-inner {
+    background-color: #e4e4e4;
+}
+
+.list-group-accordion .list-group-item + :last-child .collapse-inner,
+.list-group-accordion .list-group-item[aria-expanded=false]:nth-last-child(2) {
+    border-radius: 0 0 0.3rem 0.3rem;
 }

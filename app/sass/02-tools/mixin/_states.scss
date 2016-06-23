@@ -30,3 +30,8 @@
 		@include state($color, $background, $contrast);
     }
 }
+@mixin state--attr($attr, $color, $background,  $contrast: 1) {
+    &[#{$attr}] {
+		@include state($color, $background, $contrast);
+    }
+}
