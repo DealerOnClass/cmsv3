@@ -1,5 +1,5 @@
 /*
- *  GrayScale
+ * GrayScale
  */
 $white: #fff;
 $black: #000;
@@ -13,21 +13,21 @@ $gray__07:  mix($black, $white, 70%);
 $gray__08:  mix($black, $white, 80%);
 $gray__09:  mix($black, $white, 90%);
 /*
- *	Colors
+ * Colors
  */
 $default__color:  #e4e4e4;
 $primary__color:  #3662ad;
 $accent__color:   #f36c0a;
 $inverse__color:  mix($primary__color, $gray__08, 20%);
 /*
- * 	States
+ * States
  */
 $state--success:  #5cb85c !default;
 $state--info:     #5bc0de !default;
 $state--warning:  #f0ad4e !default;
 $state--danger:   #d9534f !default;
 /*
- * 	Colors
+ * Colors
  */
 $default__palette: (
     'default':  $default__color,

@@ -1,7 +1,15 @@
-.text-cta {
-    color: #f36c0a;
+.text-success {
+    color: #5cb85c;
 }
 
-.text-main {
-    color: #3662ad;
+.text-info {
+    color: #5bc0de;
+}
+
+.text-warning {
+    color: #f0ad4e;
+}
+
+.text-danger {
+    color: #d9534f;
 }

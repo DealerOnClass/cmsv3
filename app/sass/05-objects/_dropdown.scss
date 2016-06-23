@@ -1,5 +1,5 @@
 /*
- *  Units
+ * Units
  */
 $dropdown-c: $g-c;
 $dropdown-r: $g-r;
@@ -7,12 +7,12 @@ $dropdown-x: $g-x;
 $dropdown-y: $g-y;
 $dropdown-caret-size: ($dropdown-y / 2);
 /*
- *  Colors
+ * Colors
  */
 $dropdown-border: transparent;
 $dropdown-bg: $default__color;
 /*
- *  Base
+ * Base
  */
 .dropdown,
 .dropup {
@@ -79,7 +79,7 @@ $dropdown-bg: $default__color;
     }
 }
 /*
- * 	Variations
+ * Variations
  */
 .dropup {
     .dropdown-menu {
@@ -95,7 +95,7 @@ $dropdown-bg: $default__color;
     }
 }
 /*
- * 	Theme
+ * Theme
  */
 //	@include dropdown-color-variation($default__palette);
 //	@include dropdown-color-variation($inverse__palette);

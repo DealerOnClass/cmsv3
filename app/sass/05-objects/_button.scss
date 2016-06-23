@@ -1,17 +1,17 @@
 /*
- *  Units
+ * Units
  */
 $btn-c: $g-c;
 $btn-r: $g-r;
 $btn-x: $g-x;
 $btn-y: $g-y;
 /*
- *  Colors
+ * Colors
  */
 $btn-border: transparent;
 $btn-bg: $default__color;
 /*
- *  Base
+ * Base
  */
 .btn {
     display: inline-flex;
@@ -25,17 +25,24 @@ $btn-bg: $default__color;
     @include state--focus("inherit", $btn-bg, $btn-c);
     @include state--active("inherit", $btn-bg, ($btn-c * 2));
     @include state--class("active", "inherit", $btn-bg, ($btn-c * 2));
-    @include state--class("open", "inherit", $btn-bg, ($btn-c * 2));
 }
 /*
- * 	Variations
+ * Variations
  */
 .btn-block {
     display: flex;
     width: 100%;
 }
+label.btn {
+	input {
+		display: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
 /*
- * 	Theme
+ * Theme
  */
 //	@include btn-color-variation($default__palette);
 //	@include btn-color-variation($inverse__palette);

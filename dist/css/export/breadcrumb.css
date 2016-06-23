@@ -2,6 +2,7 @@
     display: -ms-flexbox;
     display: flex;
     align-items: baseline;
+    border-radius: 0.3rem;
     background-color: #e4e4e4; 
 
     -ms-flex-align: baseline;
@@ -17,6 +18,9 @@
     position: relative;
     right: -0.75rem;
     content: "/";
+}
+.breadcrumb-item:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
 }
 .breadcrumb-item.active {
     font-weight: 700;

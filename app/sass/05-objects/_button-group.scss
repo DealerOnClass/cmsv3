@@ -1,39 +1,44 @@
 /*
- *  Units
+ * Units
  */
 $btn-group-c: $g-c;
 $btn-group-r: $g-r;
 $btn-group-x: $g-x;
 $btn-group-y: $g-y;
 /*
- *  Colors
+ * Colors
  */
 $btn-group-border: rgba(0,0,0,0.1);
 $btn-group-bg: $default__color;
 /*
- * 	Base
+ * Base
  */
 .btn-group {
 	display: inline-flex;
-	.btn {
+	.btn,
+    .dropdown-toggle {
 		border-radius: 0;
 	}
-	.btn:first-child {
+	.btn:first-child,
+    .dropdown:first-child .dropdown-toggle {
 		border-radius: $btn-group-r 0 0 $btn-group-r;
 	}
-	.btn:last-child {
+	.btn:last-child,
+    .dropdown:last-child .dropdown-toggle {
 		border-radius: 0 $btn-group-r $btn-group-r 0;
 	}
-	.btn:only-child {
+	.btn:only-child,
+    .dropdown:only-child .dropdown-toggle {
 		border-radius: $btn-group-r;
 	}
 }
 /*
- * 	Variations
+ * Variations
  */
 .btn-group-justified {
 	display: flex;
-	.btn {
+	.btn,
+    .dropdown-toggle {
 		flex: 1 1 0;
 		border-radius: 0;
 	}
@@ -50,14 +55,15 @@ $btn-group-bg: $default__color;
 .btn-group-stacked {
     display: inline-flex;
 	flex-direction: column;
-	.btn {
+	.btn,
+    .dropdown-toggle {
 		border-radius: 0;
 	}
 	.btn:first-child {
 		border-radius: $btn-group-r $btn-group-r 0 0;
 	}
 	.btn:last-child {
-		border-radius: 0 0$btn-group-r $btn-group-r;
+		border-radius: 0 0 $btn-group-r $btn-group-r;
 	}
 	.btn:only-child {
 		border-radius: $btn-group-r;

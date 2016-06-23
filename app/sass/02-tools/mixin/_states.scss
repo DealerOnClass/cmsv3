@@ -1,32 +1,32 @@
-@mixin state--hover($color, $background,  $contrast) {
+/*
+ * Base
+ */
+@mixin state($color, $background, $contrast) {
+	@if ($color != 'inherit') {
+		color: $color;
+	}
+	background-color: shade($background, $contrast);
+}
+/*
+ * Variations
+ */
+@mixin state--hover($color, $background,  $contrast: 1) {
     &:hover {
-        @if ($color != 'inherit') {
-            color: $color;
-        }
-        background-color: shade($background, $contrast);
+		@include state($color, $background, $contrast);
     }
 }
-@mixin state--focus($color, $background,  $contrast) {
+@mixin state--focus($color, $background,  $contrast: 1) {
     &:focus {
-        @if ($color != 'inherit') {
-            color: $color;
-        }
-        background-color: shade($background, $contrast);
+		@include state($color, $background, $contrast);
     }
 }
-@mixin state--active($color, $background,  $contrast) {
+@mixin state--active($color, $background,  $contrast: 1) {
     &:active {
-        @if ($color != 'inherit') {
-            color: $color;
-        }
-        background-color: shade($background, $contrast);
+		@include state($color, $background, $contrast);
     }
 }
-@mixin state--class($class, $color, $background,  $contrast) {
+@mixin state--class($class, $color, $background,  $contrast: 1) {
     &.#{$class} {
-        @if ($color != 'inherit') {
-            color: $color;
-        }
-        background-color: shade($background, $contrast);
+		@include state($color, $background, $contrast);
     }
 }

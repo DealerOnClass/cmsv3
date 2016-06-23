@@ -1,0 +1,29 @@
+.label {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: baseline; 
+
+    -ms-flex-align: baseline;
+}
+
+.label-item {
+    line-height: 1;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    background-color: #e4e4e4;
+}
+
+.label-link {
+    color: inherit;
+}
+.label-link:focus,
+.label-link:hover {
+    background-color: #cdcdcd;
+}
+.label-link:active {
+    background-color: #b6b6b6;
+}

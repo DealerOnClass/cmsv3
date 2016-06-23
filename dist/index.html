@@ -7,18 +7,273 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Fv3</title>
   </head>
-  <body>
-    <main class="container">
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+  <body class="m-y-5 p-y-5">
+    <main class="container m-y-5 p-y-5">
+      <!---->
+      <!--	Heading-->
+      <section class="m-b-5 section-heading">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Heading</h3>
+        </header>
+        <h3 class="text-danger">Heading</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </section>
+      <!---->
+      <!--	List-->
+      <section class="m-b-5 section-list">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>List</h3>
+        </header>
+        <h3 class="text-danger">Ordered List</h3>
+        <ul>
+          <li>Dolor quidem quod laboriosam.</li>
+          <li>Dolor corporis at placeat?</li>
+          <li>Elit eius doloribus sunt!</li>
+          <li>Amet magnam corporis officiis.</li>
+          <ul>
+            <li>Dolor quidem quod laboriosam.</li>
+            <li>Dolor corporis at placeat?</li>
+            <li>Elit eius doloribus sunt!</li>
+            <li>Amet magnam corporis officiis.</li>
+          </ul>
+        </ul>
+        <h3 class="text-danger">Unordered List</h3>
+        <ol>
+          <li>Dolor quidem quod laboriosam.</li>
+          <li>Dolor corporis at placeat?</li>
+          <li>Elit eius doloribus sunt!</li>
+          <li>Amet magnam corporis officiis.</li>
+          <ol>
+            <li>Dolor quidem quod laboriosam.</li>
+            <li>Dolor corporis at placeat?</li>
+            <li>Elit eius doloribus sunt!</li>
+            <li>Amet magnam corporis officiis.</li>
+          </ol>
+        </ol>
+        <h3 class="text-danger">Definition List</h3>
+        <dl>
+          <dt>Description lists</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+          <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+          <dt>Malesuada porta</dt>
+          <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        </dl>
+      </section>
+      <!---->
+      <!--	Code-->
+      <section class="m-b-5 section-code">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Code</h3>
+        </header>
+        <h3 class="text-danger">Preformatted text</h3>
+        <pre>.something-element {
+	margin-bottom: 1rem;
+}</pre>
+      </section>
+      <!---->
+      <!--	Tables-->
+      <section class="m-b-5 section-tables">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Tables</h3>
+        </header>
+        <h3 class="text-danger">Tables</h3>
+        <table>
+          <caption>This is an example table, and this is its caption to describe the contents.</caption>
+          <thead>
+            <tr>
+              <th>Table heading</th>
+              <th>Table heading</th>
+              <th>Table heading</th>
+              <th>Table heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!---->
+      <!--	Forms-->
+      <section class="m-b-5 section-forms">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Forms</h3>
+        </header>
+        <h3 class="text-danger">Forms</h3>
+        <form>
+          <fieldset>
+            <legend>Example Legend</legend>
+          </fieldset>
+          <p>
+            <label for="input">Example Input</label>
+            <input id="input" type="text" placeholder="Example Input">
+          </p>
+          <p>
+            <label for="select">Example Select</label>
+            <select id="select">
+              <option></option>
+              <optgroup label="Option group 1">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </optgroup>
+              <optgroup label="Option group 2">
+                <option>Option 4</option>
+                <option>Option 5</option>
+                <option>Option 6</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">Check this checkbox
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="option1" type="radio" name="Radios" value="option1" checked>Option one
+            </label>
+            <label>
+              <input id="option2" type="radio" name="Radios" value="option2">Option two
+            </label>
+            <label>
+              <input id="option3" type="radio" name="Radios" value="option3" disabled>Option three
+            </label>
+          </p>
+          <p>
+            <label for="textarea">Example Textarea</label>
+            <textarea id="textarea" rows="3"></textarea>
+          </p>
+          <p>
+            <label for="time">Example temporal</label>
+            <input id="time" type="datetime">
+          </p>
+          <p>
+            <label for="output">Example output</label>
+            <output id="output" name="result"></output>
+          </p>
+          <p>
+            <button type="submit">Button Submit</button>
+            <input type="submit" value="Input submit button">
+            <input type="button" value="Input button">
+          </p>
+          <p>
+            <button type="submit" disabled>Button Submit</button>
+            <input type="submit" value="Input submit button" disabled>
+            <input type="button" value="Input button" disabled>
+          </p>
+        </form>
+      </section>
+      <!---->
+      <!--	Address-->
+      <section class="m-b-5 section-address">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Address</h3>
+        </header>
+        <h3 class="text-danger">Address</h3>
+        <address><strong>Twitter, Inc.</strong><br>1355 Market St, Suite 900<br>San Francisco, CA 94103</address>
+        <address><strong>Full Name</strong><br><a href="mailto:#">first.last@example.com</a></address>
+      </section>
+      <!---->
+      <!--	Blockquote-->
+      <section class="m-b-5 section-blockquote">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Blockquote</h3>
+        </header>
+        <h3 class="text-danger">Blockquote</h3>
+        <blockquote>
+          <p>Some important quote here yup yup Lorem saepe amet asperiores esse.</p>
+          <footer>
+            <cite title="Blockquote Source">Blockquote Source</cite>
+          </footer>
+        </blockquote>
+      </section>
+      <!---->
+      <!--	Headings-->
+      <section class="m-b-5 section-headings">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Headings</h3>
+        </header>
+        <h3 class="text-danger">Headings</h3>
+        <h1 class="h1">Heading 1</h1>
+        <h2 class="h2">Heading 2</h2>
+        <h3 class="h3">Heading 3</h3>
+        <h4 class="h4">Heading 4</h4>
+        <h5 class="h5">Heading 5</h5>
+        <h6 class="h6">Heading 6</h6>
+        <h3 class="text-danger">Display Headings</h3>
+        <h3 class="display-1">Display 1</h3>
+        <h3 class="display-2">Display 2</h3>
+        <h3 class="display-3">Display 3</h3>
+        <h3 class="display-4">Display 4</h3>
+      </section>
+      <!---->
+      <!--	Lead-->
+      <section class="m-b-5 section-leads">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Lead</h3>
+        </header>
+        <h3 class="text-danger">Lead</h3>
+        <p class="lead">Consectetur nesciunt tempora architecto animi corporis. Laborum suscipit beatae veniam ipsum impedit fugiat. Rem saepe fuga culpa dolores dolorem? Recusandae consequuntur in blanditiis harum deleniti perferendis vel aliquid libero facilis ea nesciunt praesentium, harum facere adipisci enim libero qui! Amet facere ut repudiandae unde delectus tenetur distinctio praesentium obcaecati? Placeat!</p>
+        <p>Lorem commodi ullam similique itaque dolorem, placeat odit soluta non! Pariatur saepe nisi iste mollitia adipisci ipsum. Reiciendis voluptatibus doloremque quia rem dolore quo illum accusamus libero natus! Voluptatibus reprehenderit quia et quos animi laboriosam et. Aperiam dolores quod temporibus!</p>
+      </section>
+      <!---->
+      <!--	Inline Text Elements-->
+      <section class="m-b-5 section-inline">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Inline Text Elements</h3>
+        </header>
+        <h3 class="text-danger">Highlight</h3>
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        <h3 class="text-danger">Deleted</h3>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+        <h3 class="text-danger">Strike-Through</h3>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <h3 class="text-danger">Insert</h3>
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+        <h3 class="text-danger">Underlined</h3>
+        <p><u>This line of text will render as underlined</u></p>
+        <h3 class="text-danger">Fine Print</h3>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <h3 class="text-danger">Bold</h3>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <h3 class="text-danger">Italic</h3>
+        <p><em>This line rendered as italicized text.</em></p>
+        <h3 class="text-danger">Abbreviations</h3>
+        <p><abbr title="attribute">attr</abbr></p>
+        <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+      </section>
+      <!---->
+      <!---->
+      <!--//////-->
+      <!---->
+      <hr class="m-y-5">
+      <!---->
+      <!--//////-->
+      <!---->
+      <!---->
+      <!--	Grid-->
+      <section class="m-b-5 section-grid">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Grid</h3>
         </header>
-        <h3>Grid</h3>
+        <h3 class="text-danger">Grid</h3>
         <div class="row">
           <div class="col-xs-8 box">.col-xs-8</div>
           <div class="col-xs-4 box">.col-xs-4</div>
         </div>
-        <h3>Grid Nesting</h3>
+        <h3 class="text-danger">Grid Nesting</h3>
         <div class="row">
           <div class="col-xs-9 box">.col-xs-9
             <div class="row">
@@ -27,87 +282,185 @@
             </div>
           </div>
         </div>
-        <h3>Grid Reordering</h3>
+        <h3 class="text-danger">Grid Reordering</h3>
         <div class="row">
           <div class="col-xs-4 col-xs-push-4 box">.col-xs-4.col-xs-push-4</div>
           <div class="col-xs-8 col-xs-pull-8 box">.col-xs-8.col-xs-push-8</div>
         </div>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
-          <h3>Breadcrumb</h3>
+      <!---->
+      <!--	Alert-->
+      <section class="m-b-5 section-alert">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Alert</h3>
         </header>
-        <h3>Alert</h3>
+        <h3 class="text-danger">Alert</h3>
         <div class="alert">I'm an alert.</div>
-        <h3>Alert Dismissible</h3>
+        <h3 class="text-danger">Alert Dismissible</h3>
         <div class="alert">I'm an alert.
           <button data-dismiss="alert" class="btn close"><span aria-hidden="true">&times;</span></button>
         </div>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+      <!---->
+      <!--	Breadcrumb-->
+      <section class="m-b-5 section-breadcrumb">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Breadcrumb</h3>
         </header>
-        <h3>Breadcrumb</h3>
+        <h3 class="text-danger">Breadcrumb</h3>
         <nav class="m-b-2 breadcrumb"><a href="" class="breadcrumb-item breadcrumb-link">Home</a><a href="" class="breadcrumb-item breadcrumb-link">Library</a><span class="breadcrumb-item active">Books</span></nav>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+      <!---->
+      <!--	Button-->
+      <section class="m-b-5 section-button">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Button</h3>
         </header>
-        <h3>Button</h3>
+        <h3 class="text-danger">Button</h3>
         <button class="m-b-2 btn">Button</button>
-        <h3>Button Block</h3>
+        <h3 class="text-danger">Button Block</h3>
         <button class="m-b-2 btn btn-block">Button</button>
+        <h3 class="text-danger">Button Toggle</h3>
+        <button data-toggle="button" class="m-b-2 btn">Button</button>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+      <!---->
+      <!--	Button Group-->
+      <section class="m-b-5 section-button-group">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Button Group</h3>
         </header>
-        <h3>Button Group</h3>
+        <h3 class="text-danger">Button Group</h3>
         <div class="btn-group">
           <button class="btn">Button</button>
           <button class="btn">Button</button>
-          <button class="btn">Button</button>
+          <div class="dropdown">
+            <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
+          </div>
         </div>
-        <h3>Button Group Justified</h3>
+        <h3 class="text-danger">Button Group Justified</h3>
         <div class="btn-group-justified">
           <button class="btn">Button</button>
           <button class="btn">Button</button>
           <button class="btn">Button</button>
         </div>
-        <h3>Button Group Stacked</h3>
+        <h3 class="text-danger">Button Group Stacked</h3>
         <div class="btn-group-stacked">
           <button class="btn">Button</button>
           <button class="btn">Button</button>
           <button class="btn">Button</button>
         </div>
+        <h3 class="text-danger">Button Group Radio</h3>
+        <div data-toggle="buttons" class="btn-group">
+          <label class="btn active">
+            <input id="option1" type="radio" name="options" autocomplete="off" checked>Radio 1 (pre-selected)
+          </label>
+          <label class="btn">
+            <input id="option2" type="radio" name="options" autocomplete="off">Radio 2
+          </label>
+          <label class="btn">
+            <input id="option3" type="radio" name="options" autocomplete="off">Radio 3
+          </label>
+        </div>
+        <h3 class="text-danger">Button Group Checkbox</h3>
+        <div data-toggle="buttons" class="btn-group">
+          <label class="btn active">
+            <input type="checkbox" autocomplete="off" checked>Checkbox 1 (pre-checked)
+          </label>
+          <label class="btn">
+            <input type="checkbox" autocomplete="off">Checkbox 2
+          </label>
+          <label class="btn">
+            <input type="checkbox" autocomplete="off">Checkbox 3
+          </label>
+        </div>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+      <!---->
+      <!--	Card-->
+      <section class="m-b-5 section-card">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Card</h3>
         </header>
-        <h3>Card</h3>
+        <h3 class="text-danger">Card</h3>
         <div style="max-width: 14em;" class="m-b-2 card">
-          <div class="card-header">Card Header</div>
-          <div class="card-block">Card Block</div>
-          <div class="card-footer">Card Footer</div>
+          <div class="card-item card-header">Card Header</div>
+          <div class="card-item card-block">Card Block</div>
+          <div class="card-item card-footer">Card Footer</div>
         </div>
-        <h3>Card Actions</h3>
+        <h3 class="text-danger">Card Actions</h3>
         <div style="max-width: 14em;" class="m-b-2 card">
-          <div class="card-header">Card Header</div>
-          <div class="card-block">Card Block</div>
-          <div class="card-actions">
+          <div class="card-item card-header">Card Header</div>
+          <div class="card-item card-block">Card Block</div>
+          <div class="card-item card-actions">
             <button class="btn">Button</button>
             <button class="btn">Button</button>
           </div>
         </div>
+        <h3 class="text-danger">Card Group</h3>
+        <div class="card-group">
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+            <div class="card-item card-footer">Card Footer</div>
+          </div>
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+          </div>
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+            <div class="card-item card-footer">Card Footer</div>
+          </div>
+        </div>
+        <h3 class="text-danger">Card Deck</h3>
+        <div class="card-deck">
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+            <div class="card-item card-actions">
+              <button class="btn">Button</button>
+              <button class="btn">Button</button>
+            </div>
+          </div>
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+          </div>
+          <div class="m-b-2 card">
+            <div class="card-item card-header">Card Header</div>
+            <div class="card-item card-block">Card Block</div>
+            <div class="card-item card-footer">Card Footer</div>
+          </div>
+        </div>
       </section>
-      <section class="m-b-5">
-        <header class="m-b-1 m-t-2 text-main text-small-caps">
+      <!---->
+      <!--	Carousel-->
+      <section class="m-b-5 section-carousel">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Carousel</h3>
+        </header>
+        <h3 class="text-danger">Carousel</h3>
+        <div id="carousel-example-generic-1" data-ride="carousel" data-interval="0" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+          </ol>
+          <div role="listbox" class="carousel-inner">
+            <div class="carousel-item active"><img src="img/bug.jpg" alt="First slide"></div>
+            <div class="carousel-item"><img src="img/bug2.jpg" alt="Second slide"></div>
+            <div class="carousel-item"><img src="img/bug3.jpg" alt="Third slide"></div>
+          </div><a href="#carousel-example-generic-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="icon-prev"></span><span class="sr-only">Previous</span></a><a href="#carousel-example-generic-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="icon-next"></span><span class="sr-only">Next</span></a>
+        </div>
+      </section>
+      <!---->
+      <!--	Dropdown-->
+      <section class="m-b-5 section-dropdown">
+        <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Dropdown</h3>
         </header>
-        <h3>Dropdown</h3>
+        <h3 class="text-danger">Dropdown</h3>
         <div class="dropdown">
           <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
           <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
@@ -116,14 +469,76 @@
           <button data-toggle="dropdown" class="dropdown-toggle">Dropup</button>
           <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
         </div>
-        <h3>Dropdown Menu</h3>
+        <h3 class="text-danger">Dropdown Menu</h3>
         <div style="position: static; display: flex; max-width: 200px;" class="m-b-1 dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a>
           <div class="dropdown-item dropdown-divider"></div><a href="#" class="dropdown-item dropdown-link">Item 3</a>
         </div>
       </section>
+      <!---->
+      <!--	Labels-->
+      <section class="m-b-5 section-labels">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Labels</h3>
+        </header>
+        <h3 class="text-danger">Labels</h3>
+        <h1 class="h1 label">Heading<span class="label-item">Label</span></h1>
+        <h2 class="h2 label">Heading<span class="label-item">Label</span></h2>
+        <h3 class="h3 label">Heading<span class="label-item">Label</span></h3>
+        <h4 class="h4 label">Heading<span class="label-item">Label</span></h4>
+        <h5 class="h5 label">Heading<span class="label-item">Label</span></h5>
+        <h6 class="h6 label">Heading<span class="label-item">Label</span></h6>
+        <h3 class="text-danger">Label Link</h3>
+        <h1 class="h1 label">Heading<a href="#" class="label-item label-link">Label</a></h1>
+        <h2 class="h2 label">Heading<a href="#" class="label-item label-link">Label</a></h2>
+        <h3 class="h3 label">Heading<a href="#" class="label-item label-link">Label</a></h3>
+        <h4 class="h4 label">Heading<a href="#" class="label-item label-link">Label</a></h4>
+        <h5 class="h5 label">Heading<a href="#" class="label-item label-link">Label</a></h5>
+        <h6 class="h6 label">Heading<a href="#" class="label-item label-link">Label</a></h6>
+      </section>
+      <!---->
+      <!--	List Groups-->
+      <section class="m-b-5 section-labels">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>List Group</h3>
+        </header>
+        <h3 class="text-danger">List Group</h3>
+        <div class="list-group">
+          <div class="list-group-item">I"m a list group item.</div>
+          <div class="list-group-item">I"m a list group item too.</div>
+          <div class="list-group-item">I"m a list group item also.</div>
+        </div>
+        <h3 class="text-danger">List Group Divider</h3>
+        <div class="list-group">
+          <div class="list-group-item">I"m a list group item.</div>
+          <div class="list-group-item">I"m a list group item too.</div>
+          <div class="list-group-item list-group-divider"></div>
+          <div class="list-group-item">I"m a list group item also.</div>
+        </div>
+        <h3 class="text-danger">List Group Links</h3>
+        <div class="list-group"><a href="#" class="list-group-item list-group-link">I"m a list group item.</a><a href="#" class="list-group-item list-group-link">I"m a list group item too.</a><a href="#" class="list-group-item list-group-link">I"m a list group item also.</a></div>
+        <h3 class="text-danger">List Group Inline</h3>
+        <div class="list-group-inline">
+          <div class="list-group-item">I"m a list group item.</div>
+          <div class="list-group-item">I"m a list group item too.</div>
+          <div class="list-group-item list-group-divider"></div>
+          <div class="list-group-item">I"m a list group item also.</div>
+        </div>
+      </section>
+      <!---->
+      <!--	Tags-->
+      <section class="m-b-5 section-tags">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Tags</h3>
+        </header>
+        <h3 class="text-danger">Tag</h3><span class="tag">Hello,
+          <button data-dismiss="tag" class="btn close"><span aria-hidden="true">&times;</span></button></span><span class="tag">I'm
+          <button data-dismiss="tag" class="btn close"><span aria-hidden="true">&times;</span></button></span><span class="tag">a
+          <button data-dismiss="tag" class="btn close"><span aria-hidden="true">&times;</span></button></span><span class="tag">tag.
+          <button data-dismiss="tag" class="btn close"><span aria-hidden="true">&times;</span></button></span>
+      </section>
     </main>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/tether.min.js"></script>
+    <script defer src="js/bootstrap.js"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+/*
+ * Units
+ */
+$tag-c: $g-c;
+$tag-r: $g-r;
+$tag-x: $g-x;
+$tag-y: $g-y;
+$tag-close-size: ($tag-y + 1);
+/*
+ * Colors
+ */
+$tag-border: transparent;
+$tag-bg: $default__color;
+/*
+ * Base
+ */
+.tag {
+    line-height: 1;
+    position: relative;
+    display: inline-flex;
+    padding: $tag-y ($tag-x + $tag-close-size) $tag-y $tag-x;
+    border: 1px solid $tag-border;
+    border-radius: ($tag-r + $t-lh);
+    background-color: $tag-bg;
+	+ .tag {
+		margin-left: $tag-x;
+	}
+    .close {
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        right: $tag-x;
+        display: inline-flex;
+        width: $tag-close-size;
+        height: $tag-close-size;
+        margin-top: negative($tag-close-size / 2);
+        margin-right: negative($tag-x / 2);
+        padding: 0;
+        border-color: rgba(0,0,0,0.1);
+        border-radius: 50%;
+    }
+}

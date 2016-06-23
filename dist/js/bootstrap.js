@@ -2765,6 +2765,192 @@ var Tab = (function ($) {
 
 /**
  * --------------------------------------------------------------------------
+ * Essentially a clone of Alert.js: tag.js
+ * ...
+ * --------------------------------------------------------------------------
+ */
+
+var Tag = (function ($) {
+
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  var NAME = 'tag';
+  var VERSION = '4.0.0-alpha';
+  var DATA_KEY = 'bs.tag';
+  var EVENT_KEY = '.' + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  var TRANSITION_DURATION = 150;
+
+  var Selector = {
+    DISMISS: '[data-dismiss="tag"]'
+  };
+
+  var Event = {
+    CLOSE: 'close' + EVENT_KEY,
+    CLOSED: 'closed' + EVENT_KEY,
+    CLICK_DATA_API: 'click' + EVENT_KEY + DATA_API_KEY
+  };
+
+  var ClassName = {
+    TAG: 'tag',
+    FADE: 'fade',
+    IN: 'in'
+  };
+
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
+
+  var Tag = (function () {
+    function Tag(element) {
+      _classCallCheck(this, Tag);
+
+      this._element = element;
+    }
+
+    /**
+     * ------------------------------------------------------------------------
+     * Data Api implementation
+     * ------------------------------------------------------------------------
+     */
+
+    // getters
+
+    _createClass(Tag, [{
+      key: 'close',
+
+      // public
+
+      value: function close(element) {
+        element = element || this._element;
+
+        var rootElement = this._getRootElement(element);
+        var customEvent = this._triggerCloseEvent(rootElement);
+
+        if (customEvent.isDefaultPrevented()) {
+          return;
+        }
+
+        this._removeElement(rootElement);
+      }
+    }, {
+      key: 'dispose',
+      value: function dispose() {
+        $.removeData(this._element, DATA_KEY);
+        this._element = null;
+      }
+
+      // private
+
+    }, {
+      key: '_getRootElement',
+      value: function _getRootElement(element) {
+        var selector = Util.getSelectorFromElement(element);
+        var parent = false;
+
+        if (selector) {
+          parent = $(selector)[0];
+        }
+
+        if (!parent) {
+          parent = $(element).closest('.' + ClassName.TAG)[0];
+        }
+
+        return parent;
+      }
+    }, {
+      key: '_triggerCloseEvent',
+      value: function _triggerCloseEvent(element) {
+        var closeEvent = $.Event(Event.CLOSE);
+
+        $(element).trigger(closeEvent);
+        return closeEvent;
+      }
+    }, {
+      key: '_removeElement',
+      value: function _removeElement(element) {
+        $(element).removeClass(ClassName.IN);
+
+        if (!Util.supportsTransitionEnd() || !$(element).hasClass(ClassName.FADE)) {
+          this._destroyElement(element);
+          return;
+        }
+
+        $(element).one(Util.TRANSITION_END, $.proxy(this._destroyElement, this, element)).emulateTransitionEnd(TRANSITION_DURATION);
+      }
+    }, {
+      key: '_destroyElement',
+      value: function _destroyElement(element) {
+        $(element).detach().trigger(Event.CLOSED).remove();
+      }
+
+      // static
+
+    }], [{
+      key: '_jQueryInterface',
+      value: function _jQueryInterface(config) {
+        return this.each(function () {
+          var $element = $(this);
+          var data = $element.data(DATA_KEY);
+
+          if (!data) {
+            data = new Tag(this);
+            $element.data(DATA_KEY, data);
+          }
+
+          if (config === 'close') {
+            data[config](this);
+          }
+        });
+      }
+    }, {
+      key: '_handleDismiss',
+      value: function _handleDismiss(tagInstance) {
+        return function (event) {
+          if (event) {
+            event.preventDefault();
+          }
+
+          tagInstance.close(this);
+        };
+      }
+    }, {
+      key: 'VERSION',
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return Tag;
+  })();
+
+  $(document).on(Event.CLICK_DATA_API, Selector.DISMISS, Tag._handleDismiss(new Tag()));
+
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  $.fn[NAME] = Tag._jQueryInterface;
+  $.fn[NAME].Constructor = Tag;
+  $.fn[NAME].noConflict = function () {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Tag._jQueryInterface;
+  };
+
+  return Tag;
+})(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.2): tooltip.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------

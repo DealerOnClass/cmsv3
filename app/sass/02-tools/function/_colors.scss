@@ -12,7 +12,6 @@
     @return $output;
 }
 
-
 /// Return color based on lightness threshold
 /// @group Colors
 @function check-color($color, $threshold, $over: $body__color, $under: $white) {

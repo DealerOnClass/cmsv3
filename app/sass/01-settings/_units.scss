@@ -1,25 +1,70 @@
 /*
- *  Global Unit
- *      $g-u: $global-unit
- *      $g-m: $global-multiplier
+ * Ratios
+ */
+$minor-second:      1.067;
+$major-second:      1.125;
+$minor-third:       1.200;
+$major-third:       1.250;
+$perfect-fourth:    1.333;
+$augmented-fourth:  1.414;
+$perfect-fifth:     1.500;
+$golden-ratio:      1.618;
+/*
+ * Global Unit
+ * $g-u:  $global-unit:        1rem;
+ * $g-m:  $global-multiplier:  1;
  */
 $g-u:  1rem;
 $g-m:  1;
 /*
- *  Global Unit Abstracts
- *      $g-c: $global-contrast
- *      $g-r: $global-radius
- *      $g-x: $global-leftandorright
- *      $g-y: $global-topandorbottom
+ * Global Unit Abstracts
+ * $g-c:  $global-contrast:        (10% * $g-m);
+ * $g-r:  $global-radius:          (($g-u * 0.30) * $g-m);
+ * $g-x:  $global-leftandorright:  (($g-u * 0.75) * $g-m);
+ * $g-y:  $global-topandorbottom:  (($g-u * 0.50) * $g-m);
  */
 $g-c:  (10% * $g-m);
 $g-r:  (($g-u * 0.30) * $g-m);
 $g-x:  (($g-u * 0.75) * $g-m);
 $g-y:  (($g-u * 0.50) * $g-m);
 /*
- *	Typography
- *		$g-fs: $global-fontsize
- *		$g-lh: $global-lineheight
+ * Typography
+ * $t-u:   $type-unit:        1em;
+ * $t-r:   $type-ratio:       $major-third;
+ * $t-fs:  $type-fontsize:    16px;
+ * $t-lh:  $type-lineheight:  1.618;
  */
-$g-fs:  16px;
-$g-lh:  1.618;
+$t-u:     1em;
+$t-r:     $major-third;
+$t-fs:    16px;
+$t-lh:    $golden-ratio;
+$rhythm:  ($t-u * $t-lh);
+/*
+ * Global Spacers
+ * $s-x-1:  $spacer-x-1:  $g-x;
+ * ...
+ * $s-y-1:  $spacer-y-1:  $g-y;
+ * ...
+ * $spacers: map for mixin
+ */
+$g-y-0: 0;
+$g-y-1: $g-y;
+$g-y-2: $g-y-1 * $t-lh;
+$g-y-3: $g-y-2 * $t-lh;
+$g-y-4: $g-y-3 * $t-lh;
+$g-y-5: $g-y-4 * $t-lh;
+$g-x-0: 0;
+$g-x-1: $g-x;
+$g-x-2: $g-x-1 * $t-lh;
+$g-x-3: $g-x-2 * $t-lh;
+$g-x-4: $g-x-3 * $t-lh;
+$g-x-5: $g-x-4 * $t-lh;
+$spacers: (
+	"0": (($g-y-0), ($g-x-0)),
+	"1": (($g-y-1), ($g-x-1)),
+	"2": (($g-y-2), ($g-x-2)),
+	"3": (($g-y-3), ($g-x-3)),
+	"4": (($g-y-4), ($g-x-4)),
+	"5": (($g-y-5), ($g-x-5)),
+) !default;
+

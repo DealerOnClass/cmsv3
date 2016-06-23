@@ -1,0 +1,47 @@
+/*
+ * Units
+ */
+$label-c: $g-c;
+$label-r: $g-r;
+$label-x: $g-x;
+$label-y: $g-y;
+/*
+ * Colors
+ */
+$label-border: transparent;
+$label-bg: $default__color;
+/*
+ * Base
+ */
+.label {
+    display: flex;
+    align-items: baseline;
+}
+.label-item {
+    line-height: 1;
+    display: inline-flex;
+    margin-left: $label-x;
+    padding: $label-y $label-x;
+    border: 1px solid $label-border;
+    border-radius: $label-r;
+    background-color: $label-bg;
+}
+.label-link {
+	color: inherit;
+
+    @include state--hover("inherit", $label-bg, $label-c);
+    @include state--focus("inherit", $label-bg, $label-c);
+    @include state--active("inherit", $label-bg, ($label-c * 2));
+}
+/*
+ * Variations
+ */
+/*
+ * Theme
+ */
+//	@include label-color-variation($default__palette);
+//	@include label-color-variation($inverse__palette);
+//	@include label-color-variation($primary__palette);
+//	@include label-color-variation($neutral__palette);
+//	@include label-color-variation($state__palette);
+//	@include label-color-variation($classic__palette);

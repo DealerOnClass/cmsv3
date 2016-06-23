@@ -1,0 +1,82 @@
+/*
+ * Units
+ */
+$list-group-c: $g-c;
+$list-group-r: $g-r;
+$list-group-x: $g-x;
+$list-group-y: $g-y;
+/*
+ * Colors
+ */
+$list-group-border: transparent;
+$list-group-bg: $default__color;
+/*
+ * Base
+ */
+.list-group {
+	display: flex;
+	flex-direction: column;
+}
+.list-group-item {
+	padding: $list-group-y $list-group-x;
+	border: 1px solid $list-group-border;
+	border-radius: 0;
+	background-color: $list-group-bg;
+	&:first-child {
+		border-radius: $list-group-r $list-group-r 0 0;
+	}
+	&:last-child {
+		border-radius: 0 0 $list-group-r $list-group-r;
+	}
+	&:only-child {
+		border-radius: $list-group-r;
+	}
+}
+.list-group-link {
+	color: inherit;
+
+	@include state--hover("inherit", $list-group-bg, $list-group-c);
+	@include state--focus("inherit", $list-group-bg, $list-group-c);
+	@include state--active("inherit", $list-group-bg, ($list-group-c * 2));
+}
+.list-group-divider {
+	height: 1px;
+	padding: 0;
+	border: 0;
+	background-color: shade($list-group-bg, $list-group-c);
+}
+/*
+ * Variations
+ */
+.list-group-inline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.list-group-item {
+		flex: 1 1 0;
+		display: inline-flex;
+		border-radius: 0;
+		&:first-child {
+			border-radius: $list-group-r 0 0 $list-group-r;
+		}
+		&:last-child {
+			border-radius: 0 $list-group-r $list-group-r 0;
+		}
+		&:only-child {
+			border-radius: $list-group-r;
+		}
+	}
+	.list-group-divider {
+		flex: 0 0 1px;
+		height: initial;
+	}
+}
+/*
+ * Theme
+ */
+//	@include list-group-color-variation($default__palette);
+//	@include list-group-color-variation($inverse__palette);
+//	@include list-group-color-variation($primary__palette);
+//	@include list-group-color-variation($neutral__palette);
+//	@include list-group-color-variation($state__palette);
+//	@include list-group-color-variation($classic__palette);

@@ -1,45 +1,55 @@
 .card {
-    display: -ms-flexbox;
-    display: flex;
         flex-direction: column; 
 
     -ms-flex-direction: column;
 }
 
-.card-actions,
-.card-block,
-.card-footer,
-.card-header {
+.card,
+.card-item {
     display: -ms-flexbox;
     display: flex;
+}
+
+.card-item {
         flex: 1 1 auto;
     padding: 0.5rem 0.75rem;
     border: 1px solid transparent; 
 
     -ms-flex: 1 1 auto;
 }
-.card-actions:first-child,
-.card-block:first-child,
-.card-footer:first-child,
-.card-header:first-child {
+.card-item:first-child {
     border-radius: 0.3rem 0.3rem 0 0;
 }
-.card-actions:last-child,
-.card-block:last-child,
-.card-footer:last-child,
-.card-header:last-child {
+.card-item:last-child {
     border-radius: 0 0 0.3rem 0.3rem;
 }
-.card-actions:only-child,
-.card-block:only-child,
-.card-footer:only-child,
-.card-header:only-child {
+.card-item:only-child {
     border-radius: 0.3rem;
 }
 
-.card-footer,
 .card-header {
+    flex-grow: 0; 
     background-color: #e4e4e4;
+
+    -ms-flex-positive: 0;
+}
+
+.card-block {
+    flex-grow: 1; 
+    border-color: #e4e4e4;
+
+    -ms-flex-positive: 1;
+}
+
+.card-footer {
+    background-color: #e4e4e4;
+}
+
+.card-actions,
+.card-footer {
+    flex-grow: 0; 
+
+    -ms-flex-positive: 0;
 }
 
 .card-actions {
@@ -83,4 +93,67 @@
 }
 .card-actions:only-child .btn:only-child {
     border-radius: 0.3rem;
+}
+.card-group {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-group .card {
+        flex: 1 1 0; 
+
+    -ms-flex: 1 1 0;
+}
+.card-group .card .card-item {
+    border-radius: 0;
+}
+
+.card-group .card:first-child .card-item:first-child {
+    border-radius: 0.3rem 0 0 0;
+}
+
+.card-group .card:first-child .card-item:last-child {
+    border-radius: 0 0 0 0.3rem;
+}
+
+.card-group .card:first-child .card-item:only-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.card-group .card:last-child .card-item:first-child {
+    border-radius: 0 0.3rem 0 0;
+}
+
+.card-group .card:last-child .card-item:last-child {
+    border-radius: 0 0 0.3rem 0;
+}
+
+.card-group .card:last-child .card-item:only-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.card-group .card:only-child .card-item:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.card-group .card:only-child .card-item:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.card-group .card:only-child .card-item:only-child {
+    border-radius: 0.3rem;
+}
+
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+.card-deck .card {
+        flex: 1 1 0;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem; 
+
+    -ms-flex: 1 1 0;
 }

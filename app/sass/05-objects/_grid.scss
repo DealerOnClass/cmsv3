@@ -1,5 +1,5 @@
 /*
- * 	Var
+ * Var
  */
 $grid-columns:  12;
 $grid-gutter:   $g-u;
@@ -7,7 +7,7 @@ $grid-pull:     false;
 $grid-push:     false;
 $grid-offset:   false;
 /*
- *	Base
+ * Base
  */
 @include container;
 @include row;

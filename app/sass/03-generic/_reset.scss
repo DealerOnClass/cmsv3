@@ -24,6 +24,10 @@ time, mark, audio, video {
     outline: 0;
     background: none;
 }
+ul,
+ol {
+	list-style-position: inside;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -31,9 +35,6 @@ table {
 img {
     max-width: 100%;
     height: auto;
-}
-abbr[title] {
-    border-bottom: 1px dotted;
 }
 input[type="button"],
 input[type="submit"],

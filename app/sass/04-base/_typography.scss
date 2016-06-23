@@ -1,22 +1,197 @@
+/*
+ * Var
+ */
+$h5: $t-u;
+$h6: $h5 / $t-r;
+$h4: $h5 * $t-r;
+$h3: $h4 * $t-r;
+$h2: $h3 * $t-r;
+$h1: $h2 * $t-r;
+$d4: $h1 * $t-r;
+$d3: $d4 * $t-r;
+$d2: $d3 * $t-r;
+$d1: $d2 * $t-r;
+/*
+ * Colors
+ */
+$link-fc: $primary__color;
+$body-fc: $inverse__color;
+/*
+ * Base
+ */
 html {
-    font-size: (strip-unit($g-fs) / 16) * 100%;
+    font-size: (strip-unit($t-fs) / 16) * 100%;
 }
 body {
-	font-family: "Avenir", sans-serif;
-	line-height: $g-lh;
+	font-weight: 400;
+    font-family: "Avenir", sans-serif;
+    line-height: $t-lh;
+    color: $body-fc;
 }
+/*
+ * Headings
+ */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin-top: ($g-y * 2);
-	margin-bottom: $g-y;
+	line-height: 1;
+    margin-top: tounit($rhythm, rem);
+    margin-bottom: tounit(($rhythm / 2), rem);
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: 700;
+}
+.h1 {
+    font-size: $h1;
+}
+.h2 {
+    font-size: $h2;
+}
+.h3 {
+    font-size: $h3;
+}
+.h4 {
+    font-size: $h4;
+}
+.h5 {
+    font-size: $h5;
+}
+.h6 {
+    font-size: $h6;
+}
+/*
+ * Paragraphs
+ */
+p {
+	margin-bottom: ($rhythm / 2);
+}
+/*
+ * Strong
+ */
+strong {
+	font-weight: 700;
+}
+/*
+ * Italics
+ */
+em {
+	font-style: italic;
+}
+/*
+ * Links
+ */
+a {
+	color: $link-fc;
+}
+/*
+ * Lists
+ */
 ul ul,
 ol ol,
 ul ol,
 ol ul {
-	padding-left: $g-x;
+    padding-left: $g-u;
+}
+ul,
+ol {
+	margin-bottom: $rhythm;
+}
+/*
+ * Definition List
+ */
+dl {
+	margin-bottom: $rhythm;
+}
+/*
+ * Code
+ */
+/*
+ * Tables
+ */
+table {
+	margin-bottom: $rhythm;
+}
+/*
+ * Forms
+ */
+form {
+	margin-bottom: $rhythm;
+}
+/*
+ * Address
+ */
+address {
+	margin-bottom: $rhythm;
+}
+/*
+ * Blockquote
+ */
+blockquote {
+	margin-bottom: $rhythm;
+	cite:before {
+		content: "\2014"
+	}
+}
+/*
+ * Display Headings
+ */
+.display-1 {
+	font-size: $d1;
+}
+.display-2 {
+	font-size: $d2;
+}
+.display-3 {
+	font-size: $d3;
+}
+.display-4 {
+	font-size: $d4;
+}
+/*
+ * Lead
+ */
+.lead {
+	font-size: (($h4 + $h5) / 2);
+}
+/*
+ * Marks
+ */
+mark {
+	background-color: yellow;
+}
+/*
+ * Delete
+ */
+del,
+s {
+	text-decoration: line-through;
+}
+/*
+ * Insert
+ */
+ins,
+u {
+	text-decoration: underline;
+}
+/*
+ * Abbreviations
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+/*
+ * Horizontal Rule
+ */
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $body-fc;
 }

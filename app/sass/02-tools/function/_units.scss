@@ -6,7 +6,6 @@
     @if type-of($number) == 'number' and not unitless($number) {
         @return $number / ($number * 0 + 1);
     }
-
     @return $number;
 }
 
@@ -15,3 +14,9 @@
 	@return $output;
 }
 
+@function tounit($input, $unit) {
+	$input: strip-unit($input);
+	$unit: inspect($unit);
+	$output: $input * (1 + $unit);
+	@return $output;
+}

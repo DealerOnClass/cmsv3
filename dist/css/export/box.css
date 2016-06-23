@@ -1,0 +1,11 @@
+.box {
+    background-color: #e4e4e4;
+}
+
+.box .box {
+    background-color: #cdcdcd;
+}
+
+.box[class*=col-] {
+    background-clip: content-box;
+}

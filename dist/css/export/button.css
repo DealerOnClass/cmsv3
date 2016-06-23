@@ -14,7 +14,6 @@
     background-color: #cdcdcd;
 }
 .btn.active,
-.btn.open,
 .btn:active {
     background-color: #b6b6b6;
 }
@@ -22,4 +21,12 @@
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+}
+
+label.btn input {
+    display: none;
+}
+
+label.btn:hover {
+    cursor: pointer;
 }

@@ -1,40 +1,40 @@
 /*
- *  Units
+ * Units
  */
 $alert-c: $g-c;
 $alert-r: $g-r;
 $alert-x: $g-x;
 $alert-y: $g-y;
 /*
- *  Colors
+ * Colors
  */
 $alert-border: transparent;
 $alert-bg: $default__color;
 /*
- *  Base
+ * Base
  */
 .alert {
-    display: flex;
-    justify-content: space-between;
-    padding: $alert-y $alert-x;
-    border: 1px solid $alert-border;
-    border-radius: $alert-r;
-    background-color: $alert-bg;
+	display: flex;
+	justify-content: space-between;
+	padding: $alert-y $alert-x;
+	border: 1px solid $alert-border;
+	border-radius: $alert-r;
+	background-color: $alert-bg;
 
-    .close {
-        font-weight: 700;
-        line-height: 1;
-        flex: 0 0 auto;
-        align-self: flex-start;
-        margin-bottom: negative($alert-y);
-        padding: ($alert-x / 2);
-    }
+	.close {
+		font-weight: 700;
+		line-height: 1;
+		flex: 0 0 auto;
+		align-self: flex-start;
+		margin-bottom: negative($alert-y);
+		padding: ($alert-x / 2);
+	}
 }
 /*
- *  Variations
+ * Variations
  */
 /*
- *  Theme
+ * Theme
  */
 //	@include alert-color-variation($default__palette);
 //	@include alert-color-variation($inverse__palette);

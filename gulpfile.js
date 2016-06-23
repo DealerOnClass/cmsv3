@@ -32,6 +32,7 @@ var paths = {
 
 gulp.task(font);
 gulp.task(html);
+gulp.task(img);
 gulp.task(scripts);
 gulp.task(serve);
 gulp.task(styles);
@@ -40,6 +41,7 @@ gulp.task('default',
     gulp.series(
         font,
         html,
+        img,
         scripts,
         styles,
         gulp.parallel(watch, serve)
@@ -62,6 +64,13 @@ function html() {
         .pipe(browserSync.stream());
 }
 
+function img() {
+	return gulp.src(paths.img.src)
+        .pipe(plumber())
+        .pipe(gulp.dest(paths.img.dist))
+        .pipe(browserSync.stream());
+}
+
 function scripts() {
 	return gulp.src(paths.scripts.src)
 		.pipe(gulp.dest(paths.scripts.dist))
@@ -78,7 +87,7 @@ function serve() {
 function styles() {
     return gulp.src(paths.styles.src)
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false
@@ -88,9 +97,6 @@ function styles() {
             discardComments: { removeAll: true }
         }))
         .pipe(csscomb())
-		.on('error', function() {
-			this.emit('end');
-		})
         .pipe(gulp.dest(paths.styles.dist))
         .pipe(browserSync.stream());
 }
@@ -98,6 +104,7 @@ function styles() {
 function watch() {
     gulp.watch(paths.font.src, font);
     gulp.watch(paths.html.src, html);
+    gulp.watch(paths.img.src, img);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.styles.src, styles);
 }
