@@ -67,4 +67,8 @@ $spacers: (
 	"4": (($g-y-4), ($g-x-4)),
 	"5": (($g-y-5), ($g-x-5)),
 ) !default;
-
+/*
+ * Global Z
+ * $g-z-dropdown:  $global-z-dropdown:  1000
+ */
+$g-z-dropdown: 1000;

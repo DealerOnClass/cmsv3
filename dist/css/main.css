@@ -967,6 +967,7 @@ label.btn:hover {
 
 .dropdown-menu {
     position: absolute;
+    z-index: 4;
     top: 100%;
     left: 0;
     display: none;
@@ -1378,6 +1379,7 @@ label.btn:hover {
 }
 .tag .close {
     line-height: 1;
+    position: absolute;
     top: 50%;
     right: 0.75rem;
     display: -ms-inline-flexbox;
@@ -1386,20 +1388,64 @@ label.btn:hover {
     height: 1.5rem;
     margin-top: -0.75rem;
     margin-right: -0.375rem;
+    padding: 0;
     border-color: rgba(0,0,0,0.1);
     border-radius: 50%;
 }
-.sr-only,
-.tag .close {
-    position: absolute;
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #e4e4e4;
+}
+
+.navbar-item,
+.navbar .dropdown {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    background-color: #e4e4e4;
+}
+
+.navbar-link,
+.navbar .dropdown-toggle {
+    color: inherit;
+}
+.navbar-link:focus,
+.navbar-link:hover,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:hover {
+    background-color: #cdcdcd;
+}
+.navbar-link:active,
+.navbar .dropdown-toggle:active {
+    background-color: #b6b6b6;
+}
+
+.navbar-logo {
+    margin-right: auto;
+}
+
+.navbar .dropdown {
     padding: 0;
+    border: 0;
+}
+.navbar .dropdown .dropdown-toggle {
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.navbar .dropdown:last-child .dropdown-menu {
+    right: 0;
+    left: auto;
 }
 .sr-only {
+    position: absolute;
     overflow: hidden;
     clip: rect(0,0,0,0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    padding: 0;
     border: 0;
 }
 

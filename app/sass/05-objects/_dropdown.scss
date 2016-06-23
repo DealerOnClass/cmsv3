@@ -55,6 +55,7 @@ $dropdown-bg: $default__color;
 }
 .dropdown-menu {
     position: absolute;
+    z-index: $g-z-dropdown;
     top: 100%;
     left: 0;
     display: none;

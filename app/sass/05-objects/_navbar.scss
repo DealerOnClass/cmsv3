@@ -1,0 +1,52 @@
+/*
+ * Units
+ */
+$navbar-c: $g-c;
+$navbar-r: $g-r;
+$navbar-x: $g-x;
+$navbar-y: $g-y;
+/*
+ * Colors
+ */
+$navbar-border: transparent;
+$navbar-bg: $default__color;
+/*
+ * Base
+ */
+.navbar {
+    display: flex;
+    background-color: $navbar-bg;
+}
+.navbar .dropdown,
+.navbar-item {
+    display: inline-flex;
+    padding: $navbar-y $navbar-x;
+    border: 1px solid $navbar-border;
+    background-color: $navbar-bg;
+}
+.navbar .dropdown-toggle,
+.navbar-link {
+    color: inherit;
+
+    @include state--hover("inherit", $navbar-bg, $navbar-c);
+    @include state--focus("inherit", $navbar-bg, $navbar-c);
+    @include state--active("inherit", $navbar-bg, ($navbar-c * 2));
+}
+.navbar-logo {
+    margin-right: auto;
+}
+.navbar .dropdown {
+    padding: 0;
+    border: 0;
+    .dropdown-toggle {
+        border: 1px solid $navbar-border;
+        border-radius: 0;
+    }
+    &:last-child .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+}
+/*
+ * Variations
+ */

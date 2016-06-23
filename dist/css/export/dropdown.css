@@ -61,6 +61,7 @@
 
 .dropdown-menu {
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     display: none;
