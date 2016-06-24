@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Avenir;
+    font-weight: 400; 
+
+    src: url(../font/avenirltstd-roman-webfont.eot);
+    src: url(../font/avenirltstd-roman-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirltstd-roman-webfont.woff) format("woff"),url(../font/avenirltstd-roman-webfont.ttf) format("truetype"),url(../font/avenirltstd-roman-webfont.svg#svgavenirltstd-roman-webfont) format("#svg");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 500; 
+
+    src: url(../font/avenirltstd-medium-webfont.eot);
+    src: url(../font/avenirltstd-medium-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirltstd-medium-webfont.woff) format("woff"),url(../font/avenirltstd-medium-webfont.ttf) format("truetype"),url(../font/avenirltstd-medium-webfont.svg#svgavenirltstd-medium-webfont) format("#svg");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 700; 
+
+    src: url(../font/avenirheavy-webfont.eot);
+    src: url(../font/avenirheavy-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirheavy-webfont.woff) format("woff"),url(../font/avenirheavy-webfont.ttf) format("truetype"),url(../font/avenirheavy-webfont.svg#svgavenirheavy-webfont) format("#svg");
+}

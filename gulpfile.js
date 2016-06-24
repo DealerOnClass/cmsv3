@@ -94,7 +94,8 @@ function styles() {
         }))
         .pipe(cssnano({
             core: false,
-            discardComments: { removeAll: true }
+            discardComments: { removeAll: true },
+			discardUnused: false
         }))
         .pipe(csscomb())
         .pipe(gulp.dest(paths.styles.dist))

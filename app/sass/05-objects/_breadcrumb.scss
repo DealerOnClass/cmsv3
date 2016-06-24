@@ -2,7 +2,7 @@
  * Var
  */
 $breadcrumb-c: $g-c;
-$breadcrumb-r: $g-r;
+$breadcrumb-r: $g-r * 0;
 $breadcrumb-x: $g-x;
 $breadcrumb-y: $g-y;
 /*
@@ -51,7 +51,7 @@ $breadcrumb-bg: $default__color;
  */
 //	@include breadcrumb-color-variation($default__palette);
 //	@include breadcrumb-color-variation($inverse__palette);
-//	@include breadcrumb-color-variation($primary__palette);
+@include breadcrumb-color-variation($primary__palette);
 //	@include breadcrumb-color-variation($neutral__palette);
 //	@include breadcrumb-color-variation($state__palette);
 //	@include breadcrumb-color-variation($classic__palette);

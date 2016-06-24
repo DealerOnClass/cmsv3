@@ -173,7 +173,6 @@ html {
 :before {
     box-sizing: inherit;
 }
-
 @font-face {
     font-family: Avenir;
     font-weight: 400; 
@@ -196,6 +195,51 @@ html {
 
     src: url(../font/avenirheavy-webfont.eot);
     src: url(../font/avenirheavy-webfont.eot?#iefix) format("embedded-opentype"),url(../font/avenirheavy-webfont.woff) format("woff"),url(../font/avenirheavy-webfont.ttf) format("truetype"),url(../font/avenirheavy-webfont.svg#svgavenirheavy-webfont) format("#svg");
+}
+@font-face {
+    font-family: FontAwesome;
+
+    src: url(../font/fontawesome-webfont.eot);
+    src: url(../font/fontawesome-webfont.eot?#iefix) format("embedded-opentype"),url(../font/fontawesome-webfont.woff2) format("woff2"),url(../font/fontawesome-webfont.woff) format("woff"),url(../font/fontawesome-webfont.ttf) format("truetype"),url(../font/fontawesome-webfont.svg#svgfontawesome-webfont) format("#svg");
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    display: inline-block;
+
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-sm {
+    font-size: 0.8em;
+}
+
+.fa-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+.fa-fw {
+    width: 1.28571em;
+    text-align: center;
 }
 html {
     font-size: 100%;
@@ -440,7 +484,6 @@ label.btn:hover {
 .btn-group-stacked .btn:last-child {
     border-radius: 0 0 0.3rem 0.3rem;
 }
-.breadcrumb,
 .btn-group-stacked .btn:only-child {
     border-radius: 0.3rem;
 }
@@ -448,6 +491,7 @@ label.btn:hover {
     display: -ms-flexbox;
     display: flex;
     align-items: baseline;
+    border-radius: 0;
     background-color: #e4e4e4; 
 
     -ms-flex-align: baseline;
@@ -465,7 +509,7 @@ label.btn:hover {
     content: "/";
 }
 .breadcrumb-item:first-child {
-    border-radius: 0.3rem 0 0 0.3rem;
+    border-radius: 0 0 0 0;
 }
 .breadcrumb-item.active {
     font-weight: 700;
@@ -484,6 +528,33 @@ label.btn:hover {
 }
 .breadcrumb-link:active {
     background-color: #b6b6b6;
+}
+.breadcrumb-cta {
+    color: #fff;
+    border-color: transparent;
+    background-color: #f36c0a;
+}
+.breadcrumb-cta .breadcrumb-link:focus,
+.breadcrumb-cta .breadcrumb-link:hover {
+    background-color: #db6109;
+}
+.breadcrumb-cta .breadcrumb-link.active,
+.breadcrumb-cta .breadcrumb-link:active {
+    background-color: #c25608;
+}
+
+.breadcrumb-main {
+    color: #fff;
+    border-color: transparent;
+    background-color: #3662ad;
+}
+.breadcrumb-main .breadcrumb-link:focus,
+.breadcrumb-main .breadcrumb-link:hover {
+    background-color: #31589c;
+}
+.breadcrumb-main .breadcrumb-link.active,
+.breadcrumb-main .breadcrumb-link:active {
+    background-color: #2b4e8a;
 }
 .card {
         flex-direction: column; 
