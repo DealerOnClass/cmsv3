@@ -23,8 +23,8 @@ html {
     font-size: (strip-unit($t-fs) / 16) * 100%;
 }
 body {
-	font-weight: 400;
     font-family: "Avenir", sans-serif;
+    font-weight: 400;
     line-height: $t-lh;
     color: $body-fc;
 }
@@ -37,17 +37,9 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1;
+    line-height: 1;
     margin-top: tounit($rhythm, rem);
     margin-bottom: tounit(($rhythm / 2), rem);
-}
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-	font-weight: 700;
 }
 .h1 {
     font-size: $h1;
@@ -71,25 +63,25 @@ h6 {
  * Paragraphs
  */
 p {
-	margin-bottom: ($rhythm / 2);
+    margin-bottom: ($rhythm / 2);
 }
 /*
  * Strong
  */
 strong {
-	font-weight: 700;
+    font-weight: 700;
 }
 /*
  * Italics
  */
 em {
-	font-style: italic;
+    font-style: italic;
 }
 /*
  * Links
  */
 a {
-	color: $link-fc;
+    color: $link-fc;
 }
 /*
  * Lists
@@ -102,13 +94,13 @@ ol ul {
 }
 ul,
 ol {
-	margin-bottom: $rhythm;
+    margin-bottom: $rhythm;
 }
 /*
  * Definition List
  */
 dl {
-	margin-bottom: $rhythm;
+    margin-bottom: $rhythm;
 }
 /*
  * Code
@@ -117,69 +109,69 @@ dl {
  * Tables
  */
 table {
-	margin-bottom: $rhythm;
+    margin-bottom: $rhythm;
 }
 /*
  * Forms
  */
 form {
-	margin-bottom: $rhythm;
+    margin-bottom: $rhythm;
 }
 /*
  * Address
  */
 address {
-	margin-bottom: $rhythm;
+    margin-bottom: $rhythm;
 }
 /*
  * Blockquote
  */
 blockquote {
-	margin-bottom: $rhythm;
-	cite:before {
-		content: "\2014"
-	}
+    margin-bottom: $rhythm;
+    cite:before {
+        content: "\2014";
+    }
 }
 /*
  * Display Headings
  */
 .display-1 {
-	font-size: $d1;
+    font-size: $d1;
 }
 .display-2 {
-	font-size: $d2;
+    font-size: $d2;
 }
 .display-3 {
-	font-size: $d3;
+    font-size: $d3;
 }
 .display-4 {
-	font-size: $d4;
+    font-size: $d4;
 }
 /*
  * Lead
  */
 .lead {
-	font-size: (($h4 + $h5) / 2);
+    font-size: (($h4 + $h5) / 2);
 }
 /*
  * Marks
  */
 mark {
-	background-color: yellow;
+    background-color: yellow;
 }
 /*
  * Delete
  */
 del,
 s {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 /*
  * Insert
  */
 ins,
 u {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 /*
  * Abbreviations
@@ -191,7 +183,29 @@ abbr[title] {
  * Horizontal Rule
  */
 hr {
-	border: 0;
-	height: 1px;
-	background-color: $body-fc;
+    height: 1px;
+    border: 0;
+    background-color: $body-fc;
+}
+/*
+ * Horizontal Description List
+ */
+.dl-horizontal {
+    margin-right: negative($g-g);
+    margin-left: negative($g-g);
+}
+/*
+ * Code
+ */
+code,
+mark,
+kbd,
+pre,
+samp {
+    font-family: monospace;
+}
+kbd {
+    padding: 0.2rem;
+    color: white;
+    background-color: black;
 }

@@ -19,11 +19,13 @@ $g-m:  1;
 /*
  * Global Unit Abstracts
  * $g-c:  $global-contrast:        (10% * $g-m);
+ * $g-g:  $global-gutter:          ($g-u * $g-m);
  * $g-r:  $global-radius:          (($g-u * 0.30) * $g-m);
  * $g-x:  $global-leftandorright:  (($g-u * 0.75) * $g-m);
  * $g-y:  $global-topandorbottom:  (($g-u * 0.50) * $g-m);
  */
 $g-c:  (10% * $g-m);
+$g-g:  ($g-u * $g-m);
 $g-r:  (($g-u * 0.30) * $g-m);
 $g-x:  (($g-u * 0.75) * $g-m);
 $g-y:  (($g-u * 0.50) * $g-m);
@@ -72,3 +74,4 @@ $spacers: (
  * $g-z-dropdown:  $global-z-dropdown:  1000
  */
 $g-z-dropdown: 1000;
+$g-z-modal:	1040;

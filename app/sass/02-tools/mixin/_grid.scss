@@ -38,7 +38,6 @@
 }
 @mixin column() {
 	[class*="col-"] {
-		float: left;
 		padding-right: $grid-gutter;
 		padding-left: $grid-gutter;
 	}
@@ -72,6 +71,7 @@
 		@media (min-width: #{$size}) {
 			@for $i from 1 through $grid-columns {
 				.col-#{$breakpoint}-#{$i} {
+					float: left;
 					width: #{($i / $grid-columns) * 100%};
 				}
 			}

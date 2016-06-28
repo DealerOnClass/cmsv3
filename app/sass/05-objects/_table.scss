@@ -1,0 +1,96 @@
+/*
+ * Units
+ */
+$table-c: $g-c;
+$table-r: $g-r;
+$table-x: $g-x;
+$table-y: $g-y;
+/*
+ * Colors
+ */
+$table-border: $default__color;
+$table-bg: tint($default__color, 70%);
+/*
+ * Base
+ */
+.table {
+    width: 100%;
+    text-align: left;
+    th,
+    td {
+        padding: $table-y $table-x;
+        border-top: 1px solid $table-border;
+    }
+    th {
+        font-weight: 700;
+    }
+}
+/*
+ * Variations
+ */
+.table-striped,
+.table-striped-x {
+    tbody tr:nth-of-type(odd) {
+        background-color: $table-bg;
+    }
+}
+.table-striped-y {
+    tbody td:nth-of-type(odd) {
+        background-color: $table-bg;
+    }
+}
+.table-striped.table-striped-y,
+.table-striped-x.table-striped-y {
+    tbody td:nth-of-type(odd) {
+        border-color: shade($table-border, 04%);
+        background-color: shade($table-bg, 04%);
+    }
+}
+.table-bordered {
+    th,
+    td {
+        border: 1px solid $table-border;
+    }
+}
+.table-borderless {
+    th,
+    td {
+        border-color: transparent;
+    }
+}
+.table-hover {
+    tr:hover {
+        background-color: $table-bg;
+    }
+}
+.table-responsive {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    min-height: 0.01%;
+}
+.table-reflow {
+	thead {
+		float: left;
+	}
+	tbody {
+		display: block;
+		white-space: nowrap;
+	}
+	tr {
+		float: left;
+	}
+	tr th,
+	tr td {
+		display: block !important;
+	}
+}
+/*
+ * Theme
+ */
+//	@include table-color-variation($default__palette);
+//	@include table-color-variation($inverse__palette);
+//	@include table-color-variation($primary__palette);
+//	@include table-color-variation($neutral__palette);
+//	@include table-color-variation($state__palette);
+//	@include table-color-variation($classic__palette);

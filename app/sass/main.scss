@@ -41,29 +41,40 @@
  */
 @import
 	"05-objects/alert",
+	"05-objects/blockquote",
 	"05-objects/box",
 	"05-objects/button",
 	"05-objects/button-group",
 	"05-objects/breadcrumb",
 	"05-objects/card",
 	"05-objects/carousel",
+	"05-objects/close",
 	"05-objects/collapse",
 	"05-objects/dropdown",
 	"05-objects/grid",
+	"05-objects/image",
 	"05-objects/label",
+	"05-objects/list",
 	"05-objects/list-group",
+	"05-objects/modal",
+	"05-objects/navbar",
+	"05-objects/table",
 	"05-objects/tag",
-	"05-objects/navbar";
+	"05-objects/tooltip";
 /*
  * 06 Utilities
  */
 @import
+	"06-utilities/floats",
 	"06-utilities/screen-readers",
 	"06-utilities/spacers",
+	"06-utilities/text-align",
 	"06-utilities/text-colors",
 	"06-utilities/text-transform",
+	"06-utilities/text-weight",
 	"06-utilities/utilities";
 /*
  * 07 Shame
  */
-// @import "07-shame/root";
+//	@import
+//		"07-shame/testing";

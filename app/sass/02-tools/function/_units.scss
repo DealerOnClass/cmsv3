@@ -9,8 +9,9 @@
     @return $number;
 }
 
-@function remtopix($input) {
+@function remtopx($input) {
 	$output: strip-unit($input);
+	$output: $output * $t-fs;
 	@return $output;
 }
 

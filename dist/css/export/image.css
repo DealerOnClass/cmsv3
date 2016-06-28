@@ -1,0 +1,17 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: 0.3rem;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-thumbnail {
+    padding: 0.375rem;
+    border: 1px solid transparent;
+}

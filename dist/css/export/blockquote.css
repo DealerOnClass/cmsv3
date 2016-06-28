@@ -1,0 +1,22 @@
+.blockquote {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+}
+.blockquote:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4px;
+    height: 100%;
+    content: "";
+    background-color: #e4e4e4;
+}
+
+.blockquote-reversed {
+    text-align: right;
+}
+.blockquote-reversed:after {
+    right: 0;
+    left: auto;
+}

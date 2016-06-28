@@ -1,0 +1,22 @@
+/*
+ * Units
+ */
+$list-c: $g-c;
+$list-r: $g-r;
+$list-x: $g-x;
+$list-y: $g-y;
+/*
+ * Colors
+ */
+$list-border: transparent;
+$list-bg: $default__color;
+/*
+ * Base
+ */
+.list-unstyled {
+    list-style: none;
+}
+.list-inline > li {
+    display: inline-flex;
+}
+

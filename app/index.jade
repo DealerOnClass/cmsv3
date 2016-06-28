@@ -1,576 +1,950 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width,initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="IE=7")
-		link(rel="stylesheet" href="css/main.css")
-		title Fv3
-	body.m-y-5.p-y-5
-		main.container.m-y-5.p-y-5
-			//
-			//	Heading
-			section.m-b-5.section-heading
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Heading
-				h3.text-danger Heading
-				h1 Heading 1
-				h2 Heading 2
-				h3 Heading 3
-				h4 Heading 4
-				h5 Heading 5
-				h6 Heading 6
-			//
-			//	List
-			section.m-b-5.section-list
-				header.m-b-1.m-t-2.text-small-caps
-					h3 List
-				h3.text-danger Ordered List
-				ul
-					li Dolor quidem quod laboriosam.
-					li Dolor corporis at placeat?
-					li Elit eius doloribus sunt!
-					li Amet magnam corporis officiis.
-					ul
-						li Dolor quidem quod laboriosam.
-						li Dolor corporis at placeat?
-						li Elit eius doloribus sunt!
-						li Amet magnam corporis officiis.
-				h3.text-danger Unordered List
-				ol
-					li Dolor quidem quod laboriosam.
-					li Dolor corporis at placeat?
-					li Elit eius doloribus sunt!
-					li Amet magnam corporis officiis.
-					ol
-						li Dolor quidem quod laboriosam.
-						li Dolor corporis at placeat?
-						li Elit eius doloribus sunt!
-						li Amet magnam corporis officiis.
-				h3.text-danger Definition List
-				dl
-					dt Description lists
-					dd A description list is perfect for defining terms.
-					dt Euismod
-					dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.
-					dd Donec id elit non mi porta gravida at eget metus.
-					dt Malesuada porta
-					dd Etiam porta sem malesuada magna mollis euismod.
-			//
-			//	Code
-			section.m-b-5.section-code
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Code
-				h3.text-danger Preformatted text
-				pre
-					|.something-element {
-					|	margin-bottom: 1rem;
-					|}
-			//
-			//	Tables
-			section.m-b-5.section-tables
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Tables
-				h3.text-danger Tables
-				table
-					caption This is an example table, and this is its caption to describe the contents.
-					thead
-						tr
-							th Table heading
-							th Table heading
-							th Table heading
-							th Table heading
-					tbody
-						tr
-							td Table cell
-							td Table cell
-							td Table cell
-							td Table cell
-			//
-			//	Forms
-			section.m-b-5.section-forms
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Forms
-				h3.text-danger Forms
-				form
-					fieldset
-						legend Example Legend
-					p
-						label(for="input") Example Input
-						input#input(type="text" placeholder="Example Input")
-					p
-						label(for="select") Example Select
-						select#select
-							option
-							optgroup(label="Option group 1")
-								option Option 1
-								option Option 2
-								option Option 3
-							optgroup(label="Option group 2")
-								option Option 4
-								option Option 5
-								option Option 6
-					p
-						label
-							input(type="checkbox")
-							| Check this checkbox
-					p
-						label
-							input#option1(type="radio" name="Radios" value="option1" checked)
-							| Option one
-						label
-							input#option2(type="radio" name="Radios" value="option2")
-							| Option two
-						label
-							input#option3(type="radio" name="Radios" value="option3" disabled)
-							| Option three
-					p
-						label(for="textarea") Example Textarea
-						textarea#textarea(rows="3")
-					p
-						label(for="time") Example temporal
-						input#time(type="datetime")
-					p
-						label(for="output") Example output
-						output#output(name="result")
-					p
-						button(type="submit") Button Submit
-						input(type="submit" value="Input submit button")
-						input(type="button" value="Input button")
-					p
-						button(type="submit" disabled) Button Submit
-						input(type="submit" value="Input submit button" disabled)
-						input(type="button" value="Input button" disabled)
-			//
-			//	Address
-			section.m-b-5.section-address
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Address
-				h3.text-danger Address
-				address
-					strong Twitter, Inc.
-					br
-					| 1355 Market St, Suite 900
-					br
-					| San Francisco, CA 94103
-				address
-					strong Full Name
-					br
-					a(href="mailto:#") first.last@example.com
-			//
-			//	Blockquote
-			section.m-b-5.section-blockquote
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Blockquote
-				h3.text-danger Blockquote
-				blockquote
-					p Some important quote here yup yup Lorem saepe amet asperiores esse.
-					footer
-						cite(title="Blockquote Source") Blockquote Source
-			//
-			//	Headings
-			section.m-b-5.section-headings
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Headings
-				h3.text-danger Headings
-				h1.h1 Heading 1
-				h2.h2 Heading 2
-				h3.h3 Heading 3
-				h4.h4 Heading 4
-				h5.h5 Heading 5
-				h6.h6 Heading 6
-				h3.text-danger Display Headings
-				h3.display-1 Display 1
-				h3.display-2 Display 2
-				h3.display-3 Display 3
-				h3.display-4 Display 4
-			//
-			//	Lead
-			section.m-b-5.section-leads
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Lead
-				h3.text-danger Lead
-				p.lead Consectetur nesciunt tempora architecto animi corporis. Laborum suscipit beatae veniam ipsum impedit fugiat. Rem saepe fuga culpa dolores dolorem? Recusandae consequuntur in blanditiis harum deleniti perferendis vel aliquid libero facilis ea nesciunt praesentium, harum facere adipisci enim libero qui! Amet facere ut repudiandae unde delectus tenetur distinctio praesentium obcaecati? Placeat!
-				p Lorem commodi ullam similique itaque dolorem, placeat odit soluta non! Pariatur saepe nisi iste mollitia adipisci ipsum. Reiciendis voluptatibus doloremque quia rem dolore quo illum accusamus libero natus! Voluptatibus reprehenderit quia et quos animi laboriosam et. Aperiam dolores quod temporibus!
-			//
-			//	Inline Text Elements
-			section.m-b-5.section-inline
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Inline Text Elements
-				h3.text-danger Highlight
-				p You can use the mark tag to <mark>highlight</mark> text.
-				h3.text-danger Deleted
-				p <del>This line of text is meant to be treated as deleted text.</del>
-				h3.text-danger Strike-Through
-				p <s>This line of text is meant to be treated as no longer accurate.</s>
-				h3.text-danger Insert
-				p <ins>This line of text is meant to be treated as an addition to the document.</ins>
-				h3.text-danger Underlined
-				p <u>This line of text will render as underlined</u>
-				h3.text-danger Fine Print
-				p <small>This line of text is meant to be treated as fine print.</small>
-				h3.text-danger Bold
-				p <strong>This line rendered as bold text.</strong>
-				h3.text-danger Italic
-				p <em>This line rendered as italicized text.</em>
-				h3.text-danger Abbreviations
-				p
-					abbr(title="attribute") attr
-				p
-					abbr.initialism(title="HyperText Markup Language") HTML
-			//
-			//
-			////////
-			//
-			hr.m-y-5
-			//
-			////////
-			//
-			//
-			//	Grid
-			section.m-b-5.section-grid
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Grid
-				h3.text-danger Grid
+extends ./templates/default.jade
+block title
+	title Fv3
+block content
+	//
+	//	Heading
+	section.m-b-5.section-heading
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Heading
+		h3.text-danger Heading
+		h1 Heading 1
+		h2 Heading 2
+		h3 Heading 3
+		h4 Heading 4
+		h5 Heading 5
+		h6 Heading 6
+	//
+	//	List
+	section.m-b-5.section-list
+		header.m-b-1.m-t-2.text-small-caps
+			h3 List
+		h3.text-danger Ordered List
+		ul
+			li Dolor quidem quod laboriosam.
+			li Dolor corporis at placeat?
+			li Elit eius doloribus sunt!
+			li Amet magnam corporis officiis.
+			ul
+				li Dolor quidem quod laboriosam.
+				li Dolor corporis at placeat?
+				li Elit eius doloribus sunt!
+				li Amet magnam corporis officiis.
+		h3.text-danger Unordered List
+		ol
+			li Dolor quidem quod laboriosam.
+			li Dolor corporis at placeat?
+			li Elit eius doloribus sunt!
+			li Amet magnam corporis officiis.
+			ol
+				li Dolor quidem quod laboriosam.
+				li Dolor corporis at placeat?
+				li Elit eius doloribus sunt!
+				li Amet magnam corporis officiis.
+		h3.text-danger Definition List
+		dl
+			dt Description lists
+			dd A description list is perfect for defining terms.
+			dt Euismod
+			dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.
+			dd Donec id elit non mi porta gravida at eget metus.
+			dt Malesuada porta
+			dd Etiam porta sem malesuada magna mollis euismod.
+	//
+	//	Code
+	section.m-b-5.section-code
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Code
+		h3.text-danger Preformatted text
+		pre
+			|.something-element {
+			|	margin-bottom: 1rem;
+			|}
+	//
+	//	Tables
+	section.m-b-5.section-tables
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Tables
+		h3.text-danger Tables
+		table
+			caption This is an example table, and this is its caption to describe the contents.
+			thead
+				tr
+					th Table heading
+					th Table heading
+					th Table heading
+					th Table heading
+			tbody
+				tr
+					td Table cell
+					td Table cell
+					td Table cell
+					td Table cell
+	//
+	//	Forms
+	section.m-b-5.section-forms
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Forms
+		h3.text-danger Forms
+		form
+			fieldset
+				legend Example Legend
+			p
+				label(for="input") Example Input
+				input#input(type="text" placeholder="Example Input")
+			p
+				label(for="select") Example Select
+				select#select
+					option
+					optgroup(label="Option group 1")
+						option Option 1
+						option Option 2
+						option Option 3
+					optgroup(label="Option group 2")
+						option Option 4
+						option Option 5
+						option Option 6
+			p
+				label
+					input(type="checkbox")
+					| Check this checkbox
+			p
+				label
+					input#option1(type="radio" name="Radios" value="option1" checked)
+					| Option one
+				label
+					input#option2(type="radio" name="Radios" value="option2")
+					| Option two
+				label
+					input#option3(type="radio" name="Radios" value="option3" disabled)
+					| Option three
+			p
+				label(for="textarea") Example Textarea
+				textarea#textarea(rows="3")
+			p
+				label(for="time") Example temporal
+				input#time(type="datetime")
+			p
+				label(for="output") Example output
+				output#output(name="result")
+			p
+				button(type="submit") Button Submit
+				input(type="submit" value="Input submit button")
+				input(type="button" value="Input button")
+			p
+				button(type="submit" disabled) Button Submit
+				input(type="submit" value="Input submit button" disabled)
+				input(type="button" value="Input button" disabled)
+	//
+	//	Address
+	section.m-b-5.section-address
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Address
+		h3.text-danger Address
+		address
+			strong Twitter, Inc.
+			br
+			| 1355 Market St, Suite 900
+			br
+			| San Francisco, CA 94103
+		address
+			strong Full Name
+			br
+			a(href="mailto:#") first.last@example.com
+	//
+	//	Blockquote
+	section.m-b-5.section-blockquote
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Blockquote
+		h3.text-danger Blockquote
+		blockquote
+			p Some important quote here yup yup Lorem saepe amet asperiores esse.
+			footer
+				cite(title="Blockquote Source") Blockquote Source
+	//
+	//	Headings
+	section.m-b-5.section-headings
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Headings
+		h3.text-danger Headings
+		h1.h1 Heading 1
+		h2.h2 Heading 2
+		h3.h3 Heading 3
+		h4.h4 Heading 4
+		h5.h5 Heading 5
+		h6.h6 Heading 6
+		h3.text-danger Display Headings
+		h3.display-1 Display 1
+		h3.display-2 Display 2
+		h3.display-3 Display 3
+		h3.display-4 Display 4
+	//
+	//	Lead
+	section.m-b-5.section-leads
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Lead
+		h3.text-danger Lead
+		p.lead Consectetur nesciunt tempora architecto animi corporis. Laborum suscipit beatae veniam ipsum impedit fugiat. Rem saepe fuga culpa dolores dolorem? Recusandae consequuntur in blanditiis harum deleniti perferendis vel aliquid libero facilis ea nesciunt praesentium, harum facere adipisci enim libero qui! Amet facere ut repudiandae unde delectus tenetur distinctio praesentium obcaecati? Placeat!
+		p Lorem commodi ullam similique itaque dolorem, placeat odit soluta non! Pariatur saepe nisi iste mollitia adipisci ipsum. Reiciendis voluptatibus doloremque quia rem dolore quo illum accusamus libero natus! Voluptatibus reprehenderit quia et quos animi laboriosam et. Aperiam dolores quod temporibus!
+	//
+	//	Inline Text Elements
+	section.m-b-5.section-inline
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Inline Text Elements
+		h3.text-danger Highlight
+		p You can use the mark tag to <mark>highlight</mark> text.
+		h3.text-danger Deleted
+		p <del>This line of text is meant to be treated as deleted text.</del>
+		h3.text-danger Strike-Through
+		p <s>This line of text is meant to be treated as no longer accurate.</s>
+		h3.text-danger Insert
+		p <ins>This line of text is meant to be treated as an addition to the document.</ins>
+		h3.text-danger Underlined
+		p <u>This line of text will render as underlined</u>
+		h3.text-danger Fine Print
+		p <small>This line of text is meant to be treated as fine print.</small>
+		h3.text-danger Bold
+		p <strong>This line rendered as bold text.</strong>
+		h3.text-danger Italic
+		p <em>This line rendered as italicized text.</em>
+		h3.text-danger Abbreviations
+		p
+			abbr(title="attribute") attr
+		p
+			abbr.initialism(title="HyperText Markup Language") HTML
+	//
+	//	Blockquote
+	section.m-b-5.section-blockquote
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Blockquote
+		h3.text-danger Blockquote
+		blockquote.blockquote
+			Some important quote yup yup Lorem sed harum magni minima.
+			footer.blockquote-footer
+				cite.blockquote-cite(title="Sit adipisicing") Sit adipisicing
+		h3.text-danger Blockquote Reversed
+		blockquote.blockquote.blockquote-reversed
+			Some important quote yup yup Lorem sed harum magni minima.
+			footer.blockquote-footer
+				cite.blockquote-cite(title="Sit adipisicing") Sit adipisicing
+	//
+	//	List Unstyled
+	section.m-b-5.section-list
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Lists
+		h3.text-danger List Unstyled
+		ul.list-unstyled
+			li Dolor.
+			li Corporis?
+			li Elit!
+			li Amet.
+		h3.text-danger List Inline
+		ul.list-inline
+			li Dolor.
+			li Corporis?
+			li Elit!
+			li Amet.
+	//
+	//	Horizontal Description List
+	section.m-b-5.section-definition-list
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Definition Lists
+		h3.text-danger Horizontal Definition List
+		dl.dl-horizontal
+			dt.col-sm-3 Description lists
+			dd.col-sm-9 A description list is perfect for defining terms.
+			dt.col-sm-3 Euismod
+			dd.col-sm-9 Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.
+			dt.col-sm-3 Malesuada porta
+			dd.col-sm-9 Etiam porta sem malesuada magna mollis euismod.
+	//
+	//	Code
+	section.m-b-5.section-code
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Code
+		h3.text-danger Inline Code
+		p For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+		h3.text-danger Preformatted Code
+		pre
+			<span>Sample text here...</span>
+		h3.text-danger Variables
+		<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+		h3.text-danger User Input
+		p
+			| To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+			| To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+		h3.text-danger Sample Output
+		samp
+			| This text is meant to be treated as sample output from a computer program.
+	//
+	//	Images
+	section.m-b-5.section-images
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Images
+		h3.text-danger Responsive Images
+		img(src="img/bug.jpg", alt="First slide")
+		.row
+			.col-sm-4
+				h3.text-danger Image Rounded
+				img.img-rounded(src="img/bug.jpg", alt="First slide")
+			.col-sm-4
+				h3.text-danger Image Circle
+				img.img-circle(src="http://placehold.it/200x200", alt="First slide")
+			.col-sm-4
+				h3.text-danger Image Thumbnail
+				img.img-thumbnail(src="img/bug.jpg", alt="First slide")
+		h3.text-danger Aligning Images
+		.clearfix
+			img.img-rounded.pull-left(src="http://placehold.it/200x200", alt="First slide")
+			img.img-rounded.pull-right(src="http://placehold.it/200x200", alt="First slide")
+		.clearfix
+			img.img-rounded.center-block(src="http://placehold.it/200x200", alt="First slide")
+		.clearfix.text-center
+			img.img-rounded(src="http://placehold.it/200x200", alt="First slide")
+	//
+	//	Tables
+	section.m-b-5.section-tables
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Tables
+		h3.text-danger Table
+		table.table
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Striped X
+		table.table.table-striped-x
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Striped Y
+		table.table.table-striped-y
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Striped Combined
+		table.table.table-striped-x.table-striped-y
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Bordered
+		table.table.table-bordered
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Borderless
+		table.table.table-borderless
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Hover
+		table.table.table-hover
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+		h3.text-danger Table Responsive
+		.table-responsive
+			table.table.table-hover
+				thead
+					tr
+						th #
+						th First Name
+						th Last Name
+						th Username
+				tbody
+					tr
+						th(scope="row") 1
+						td Mark
+						td Otto
+						td @mdo
+					tr
+						th(scope="row") 2
+						td Jacob
+						td Thornton
+						td @fat
+					tr
+						th(scope="row") 3
+						td Larry
+						td the Bird
+						td @twitter
+		h3.text-danger Table Reflow
+		table.table.table-reflow
+			thead
+				tr
+					th #
+					th First Name
+					th Last Name
+					th Username
+			tbody
+				tr
+					th(scope="row") 1
+					td Mark
+					td Otto
+					td @mdo
+				tr
+					th(scope="row") 2
+					td Jacob
+					td Thornton
+					td @fat
+				tr
+					th(scope="row") 3
+					td Larry
+					td the Bird
+					td @twitter
+	//
+	//
+	////////
+	//
+	hr.m-y-5
+	//
+	////////
+	//
+	//
+	//	Grid
+	section.m-b-5.section-grid
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Grid
+		h3.text-danger Grid
+		.row
+			.col-xs-8.box .col-xs-8
+			.col-xs-4.box .col-xs-4
+		h3.text-danger Grid Nesting
+		.row
+			.col-xs-9.box .col-xs-9
 				.row
 					.col-xs-8.box .col-xs-8
 					.col-xs-4.box .col-xs-4
-				h3.text-danger Grid Nesting
-				.row
-					.col-xs-9.box .col-xs-9
-						.row
-							.col-xs-8.box .col-xs-8
-							.col-xs-4.box .col-xs-4
-				h3.text-danger Grid Reordering
-				.row
-					.col-xs-4.col-xs-push-4.box .col-xs-4.col-xs-push-4
-					.col-xs-8.col-xs-pull-8.box .col-xs-8.col-xs-push-8
-			//
-			//	Alert
-			section.m-b-5.section-alert
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Alert
-				h3.text-danger Alert
-				.alert I'm an alert.
-				h3.text-danger Alert Dismissible
-				.alert I'm an alert.
-					button.btn.close(data-dismiss="alert")
-						span(aria-hidden="true") &times;
-			//
-			//	Breadcrumb
-			section.m-b-5.section-breadcrumb
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Breadcrumb
-				h3.text-danger Breadcrumb
-				nav.m-b-2.breadcrumb
-					a.breadcrumb-item.breadcrumb-link(href="") Home
-					a.breadcrumb-item.breadcrumb-link(href="") Library
-					span.breadcrumb-item.active Books
-			//
-			//	Button
-			section.m-b-5.section-button
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Button
-				h3.text-danger Button
-				button.m-b-2.btn Button
-				h3.text-danger Button Block
-				button.m-b-2.btn.btn-block Button
-				h3.text-danger Button Toggle
-				button.m-b-2.btn(data-toggle="button") Button
-			//
-			//	Button Group
-			section.m-b-5.section-button-group
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Button Group
-				h3.text-danger Button Group
-				.btn-group
+		h3.text-danger Grid Reordering
+		.row
+			.col-xs-4.col-xs-push-4.box .col-xs-4.col-xs-push-4
+			.col-xs-8.col-xs-pull-8.box .col-xs-8.col-xs-push-8
+	//
+	//	Alert
+	section.m-b-5.section-alert
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Alert
+		h3.text-danger Alert
+		.alert I'm an alert.
+		h3.text-danger Alert Dismissible
+		.alert I'm an alert.
+			button.close(data-dismiss="alert")
+				span(aria-hidden="true") &times;
+	//
+	//	Breadcrumb
+	section.m-b-5.section-breadcrumb
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Breadcrumb
+		h3.text-danger Breadcrumb
+		nav.m-b-2.breadcrumb
+			a.breadcrumb-item.breadcrumb-link(href="") Home
+			a.breadcrumb-item.breadcrumb-link(href="") Library
+			span.breadcrumb-item.active Books
+	//
+	//	Button
+	section.m-b-5.section-button
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Button
+		h3.text-danger Button
+		button.m-b-2.btn Button
+		h3.text-danger Button Block
+		button.m-b-2.btn.btn-block Button
+		h3.text-danger Button Toggle
+		button.m-b-2.btn(data-toggle="button") Button
+	//
+	//	Button Group
+	section.m-b-5.section-button-group
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Button Group
+		h3.text-danger Button Group
+		.btn-group
+			button.btn Button
+			button.btn Button
+			.dropdown
+				button.dropdown-toggle(data-toggle="dropdown") Dropdown
+				.dropdown-menu
+					a.dropdown-item.dropdown-link(href="#") Item 1
+					a.dropdown-item.dropdown-link(href="#") Item 2
+					a.dropdown-item.dropdown-link(href="#") Item 3
+		h3.text-danger Button Group Justified
+		.btn-group-justified
+			button.btn Button
+			button.btn Button
+			button.btn Button
+		h3.text-danger Button Group Stacked
+		.btn-group-stacked
+			button.btn Button
+			button.btn Button
+			button.btn Button
+		h3.text-danger Button Group Radio
+		.btn-group(data-toggle="buttons")
+			label.btn.active
+				input#option1(type="radio" name="options" autocomplete="off" checked)
+				| Radio 1 (pre-selected)
+			label.btn
+				input#option2(type="radio" name="options" autocomplete="off")
+				| Radio 2
+			label.btn
+				input#option3(type="radio" name="options" autocomplete="off")
+				| Radio 3
+		h3.text-danger Button Group Checkbox
+		.btn-group(data-toggle="buttons")
+			label.btn.active
+				input(type="checkbox" autocomplete="off" checked)
+				| Checkbox 1 (pre-checked)
+			label.btn
+				input(type="checkbox" autocomplete="off")
+				| Checkbox 2
+			label.btn
+				input(type="checkbox" autocomplete="off")
+				| Checkbox 3
+	//
+	//	Card
+	section.m-b-5.section-card
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Card
+		h3.text-danger Card
+		.m-b-2.card(style="max-width: 14em;")
+			.card-item.card-header Card Header
+			.card-item.card-block Card Block
+			.card-item.card-footer Card Footer
+		h3.text-danger Card Actions
+		.m-b-2.card(style="max-width: 14em;")
+			.card-item.card-header Card Header
+			.card-item.card-block Card Block
+			.card-item.card-actions
+				button.btn Button
+				button.btn Button
+		h3.text-danger Card Group
+		.card-group
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+				.card-item.card-footer Card Footer
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+				.card-item.card-footer Card Footer
+		h3.text-danger Card Deck
+		.card-deck
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+				.card-item.card-actions
 					button.btn Button
 					button.btn Button
-					.dropdown
-						button.dropdown-toggle(data-toggle="dropdown") Dropdown
-						.dropdown-menu
-							a.dropdown-item.dropdown-link(href="#") Item 1
-							a.dropdown-item.dropdown-link(href="#") Item 2
-							a.dropdown-item.dropdown-link(href="#") Item 3
-				h3.text-danger Button Group Justified
-				.btn-group-justified
-					button.btn Button
-					button.btn Button
-					button.btn Button
-				h3.text-danger Button Group Stacked
-				.btn-group-stacked
-					button.btn Button
-					button.btn Button
-					button.btn Button
-				h3.text-danger Button Group Radio
-				.btn-group(data-toggle="buttons")
-					label.btn.active
-						input#option1(type="radio" name="options" autocomplete="off" checked)
-						| Radio 1 (pre-selected)
-					label.btn
-						input#option2(type="radio" name="options" autocomplete="off")
-						| Radio 2
-					label.btn
-						input#option3(type="radio" name="options" autocomplete="off")
-						| Radio 3
-				h3.text-danger Button Group Checkbox
-				.btn-group(data-toggle="buttons")
-					label.btn.active
-						input(type="checkbox" autocomplete="off" checked)
-						| Checkbox 1 (pre-checked)
-					label.btn
-						input(type="checkbox" autocomplete="off")
-						| Checkbox 2
-					label.btn
-						input(type="checkbox" autocomplete="off")
-						| Checkbox 3
-			//
-			//	Card
-			section.m-b-5.section-card
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Card
-				h3.text-danger Card
-				.m-b-2.card(style="max-width: 14em;")
-					.card-item.card-header Card Header
-					.card-item.card-block Card Block
-					.card-item.card-footer Card Footer
-				h3.text-danger Card Actions
-				.m-b-2.card(style="max-width: 14em;")
-					.card-item.card-header Card Header
-					.card-item.card-block Card Block
-					.card-item.card-actions
-						button.btn Button
-						button.btn Button
-				h3.text-danger Card Group
-				.card-group
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-						.card-item.card-footer Card Footer
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-						.card-item.card-footer Card Footer
-				h3.text-danger Card Deck
-				.card-deck
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-						.card-item.card-actions
-							button.btn Button
-							button.btn Button
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-					.m-b-2.card
-						.card-item.card-header Card Header
-						.card-item.card-block Card Block
-						.card-item.card-footer Card Footer
-			//
-			//	Carousel
-			section.m-b-5.section-carousel
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Carousel
-				h3.text-danger Carousel
-				#carousel-example-generic-1.carousel.slide(data-ride="carousel" data-interval="0")
-					ol.carousel-indicators
-						li.active(data-target="#carousel-example-generic-1", data-slide-to="0")
-						li(data-target="#carousel-example-generic-1", data-slide-to="1")
-						li(data-target="#carousel-example-generic-1", data-slide-to="2")
-					.carousel-inner(role="listbox")
-						.carousel-item.active
-							img(src="img/bug.jpg", alt="First slide")
-						.carousel-item
-							img(src="img/bug2.jpg", alt="Second slide")
-						.carousel-item
-							img(src="img/bug3.jpg", alt="Third slide")
-					a.left.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="prev")
-						span.icon-prev(aria-hidden="true")
-						span.sr-only Previous
-					a.right.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="next")
-						span.icon-next(aria-hidden="true")
-						span.sr-only Next
-			//
-			//	Collapse
-			section.m-b-5.section-collapse
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Collapse
-				h3.text-danger Collapse
-				.btn-group
-					a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
-						| Link with href
-					button.btn.collapsed(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
-						| Button with data-targe
-				.collapse#collapseExample(aria-expanded="false")
-					.collapse-inner
-						| Amet dolore facilis esse sapiente error nisi modi corrupti sint magni, excepturi, ad dolorem! Accusantium dolor quibusdam corrupti et quisquam! Pariatur rerum rem ducimus dolorum enim animi alias! Quod dolore.
-				h3.text-danger Collapse Accordion
-				.list-group.list-group-accordion#accordion(role="tablist" aria-multiselectable="true")
-					a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
-						| Collapsible Group Item #1
-					.collapse.in#collapseOne(role="tabpanel" aria-labelledby="" aria-expanded="true")
-						.collapse-inner
-							| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
-					.list-group-item.list-group-divider
-					a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
-						| Collapsible Group Item #2
-					.collapse#collapseTwo(role="tabpanel" aria-labelledby="" aria-expanded="false")
-						.collapse-inner
-							| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
-					.list-group-item.list-group-divider
-					a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
-						| Collapsible Group Item #3
-					.collapse#collapseThree(role="tabpanel" aria-labelledby="" aria-expanded="false")
-						.collapse-inner
-							| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
-			//
-			//	Dropdown
-			section.m-b-5.section-dropdown
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Dropdown
-				h3.text-danger Dropdown
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+			.m-b-2.card
+				.card-item.card-header Card Header
+				.card-item.card-block Card Block
+				.card-item.card-footer Card Footer
+	//
+	//	Carousel
+	section.m-b-5.section-carousel
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Carousel
+		h3.text-danger Carousel
+		#carousel-example-generic-1.carousel.slide(data-ride="carousel" data-interval="0")
+			ol.carousel-indicators
+				li.active(data-target="#carousel-example-generic-1", data-slide-to="0")
+				li(data-target="#carousel-example-generic-1", data-slide-to="1")
+				li(data-target="#carousel-example-generic-1", data-slide-to="2")
+			.carousel-inner(role="listbox")
+				.carousel-item.active
+					img(src="img/bug.jpg", alt="First slide")
+				.carousel-item
+					img(src="img/bug2.jpg", alt="Second slide")
+				.carousel-item
+					img(src="img/bug3.jpg", alt="Third slide")
+			a.left.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="prev")
+				span.icon-prev(aria-hidden="true")
+				span.sr-only Previous
+			a.right.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="next")
+				span.icon-next(aria-hidden="true")
+				span.sr-only Next
+	//
+	//	Collapse
+	section.m-b-5.section-collapse
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Collapse
+		h3.text-danger Collapse
+		.btn-group
+			a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
+				| Link with href
+			button.btn.collapsed(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
+				| Button with data-targe
+		.collapse#collapseExample(aria-expanded="false")
+			.collapse-inner
+				| Amet dolore facilis esse sapiente error nisi modi corrupti sint magni, excepturi, ad dolorem! Accusantium dolor quibusdam corrupti et quisquam! Pariatur rerum rem ducimus dolorum enim animi alias! Quod dolore.
+		h3.text-danger Collapse Accordion
+		.list-group.list-group-accordion#accordion(role="tablist" aria-multiselectable="true")
+			a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+				| Collapsible Group Item #1
+			.collapse.in#collapseOne(role="tabpanel" aria-labelledby="" aria-expanded="true")
+				.collapse-inner
+					| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
+			a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+				| Collapsible Group Item #2
+			.collapse#collapseTwo(role="tabpanel" aria-labelledby="" aria-expanded="false")
+				.collapse-inner
+					| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
+			a.list-group-item.list-group-link(data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+				| Collapsible Group Item #3
+			.collapse#collapseThree(role="tabpanel" aria-labelledby="" aria-expanded="false")
+				.collapse-inner
+					| Sit earum dignissimos aut in qui temporibus ratione. Quos ipsam unde harum magnam esse eum ducimus assumenda, error eos doloremque.
+	//
+	//	Dropdown
+	section.m-b-5.section-dropdown
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Dropdown
+		h3.text-danger Dropdown
+		.dropdown
+			button.dropdown-toggle(data-toggle="dropdown") Dropdown
+			.dropdown-menu
+				a.dropdown-item.dropdown-link(href="#") Item 1
+				a.dropdown-item.dropdown-link(href="#") Item 2
+				a.dropdown-item.dropdown-link(href="#") Item 3
+		.dropup
+			button.dropdown-toggle(data-toggle="dropdown") Dropup
+			.dropdown-menu
+				a.dropdown-item.dropdown-link(href="#") Item 1
+				a.dropdown-item.dropdown-link(href="#") Item 2
+				a.dropdown-item.dropdown-link(href="#") Item 3
+		h3.text-danger Dropdown Menu
+		.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
+			a.dropdown-item.dropdown-link(href="#") Item 1
+			a.dropdown-item.dropdown-link(href="#") Item 2
+			.dropdown-item.dropdown-divider
+			a.dropdown-item.dropdown-link(href="#") Item 3
+	//
+	//	Labels
+	section.m-b-5.section-labels
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Labels
+		h3.text-danger Labels
+		h1.h1.label Heading
+				span.label-item Label
+		h2.h2.label Heading
+			span.label-item Label
+		h3.h3.label Heading
+			span.label-item Label
+		h4.h4.label Heading
+			span.label-item Label
+		h5.h5.label Heading
+			span.label-item Label
+		h6.h6.label Heading
+			span.label-item Label
+		h3.text-danger Label Link
+		h1.h1.label Heading
+			a.label-item.label-link(href="#") Label
+		h2.h2.label Heading
+			a.label-item.label-link(href="#") Label
+		h3.h3.label Heading
+			a.label-item.label-link(href="#") Label
+		h4.h4.label Heading
+			a.label-item.label-link(href="#") Label
+		h5.h5.label Heading
+			a.label-item.label-link(href="#") Label
+		h6.h6.label Heading
+			a.label-item.label-link(href="#") Label
+	//
+	//	List Groups
+	section.m-b-5.section-list-group
+		header.m-b-1.m-t-2.text-small-caps
+			h3 List Group
+		h3.text-danger List Group
+		.list-group
+			.list-group-item I"m a list group item.
+			.list-group-item I"m a list group item too.
+			.list-group-item I"m a list group item also.
+		h3.text-danger List Group Divider
+		.list-group
+			.list-group-item I"m a list group item.
+			.list-group-item I"m a list group item too.
+			.list-group-item.list-group-divider
+			.list-group-item I"m a list group item also.
+		h3.text-danger List Group Links
+		.list-group
+			a.list-group-item.list-group-link(href="#") I"m a list group item.
+			a.list-group-item.list-group-link(href="#") I"m a list group item too.
+			a.list-group-item.list-group-link(href="#") I"m a list group item also.
+		h3.text-danger List Group Inline
+		.list-group-inline
+			.list-group-item I"m a list group item.
+			.list-group-item I"m a list group item too.
+			.list-group-item.list-group-divider
+			.list-group-item I"m a list group item also.
+	//
+	//	Modals
+	section.m-b-5.section-modal
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Modal
+		h3.text-danger Modal Toggle
+		button.btn(type="button" data-toggle="modal" data-target="#myModal")
+			| Launch Demo Modal
+		.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-item.modal-header
+						h4.modal-title#myModalLabel Modal Title Lorem molestiae consequuntur id a nihil itaque laudantium vitae, sequi numquam dignissimos praesentium impedit, illo suscipit suscipit voluptate asperiores? Quas distinctio aliquid mollitia vitae quae. Quas inventore odio vitae doloribus!
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+					.modal-item.modal-body
+						| ...
+					.modal-item.modal-footer
+						button.btn(type="button" data-dismiss="modal") close
+						button.btn(type="button") save changes
+		h3.text-danger Modal
+		.modal-content(style="max-width: 30em; position: relative")
+			.modal-item.modal-header
+				h4.modal-title#myModalLabel Modal Title Lorem molestiae consequuntur id a nihil itaque laudantium vitae, sequi numquam dignissimos praesentium impedit, illo suscipit suscipit voluptate asperiores? Quas distinctio aliquid mollitia vitae quae. Quas inventore odio vitae doloribus!
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") &times;
+			.modal-item.modal-body
+				| ...
+			.modal-item.modal-footer
+				button.btn(type="button" data-dismiss="modal") close
+				button.btn(type="button") save changes
+	//
+	//	Navbar
+	section.m-b-5.section-navbar
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Navbar
+		h3.text-danger Navbar
+		nav.navbar
+			a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
+			span.navbar-item I'm text
+			a.navbar-item.navbar-link(href="#") I'm a link
+			button.navbar-item.navbar-link I'm a button
+			.dropdown
+				button.dropdown-toggle(data-toggle="dropdown") Dropdown
+				.dropdown-menu
+					a.dropdown-item.dropdown-link(href="#") Item 1
+					a.dropdown-item.dropdown-link(href="#") Item 2
+					a.dropdown-item.dropdown-link(href="#") Item 3
+		h3.text-danger Navbar Dropdown
+		nav.navbar
+			a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
+			span.navbar-item I'm text
+			a.navbar-item.navbar-link(href="#") I'm a link
+			button.navbar-item.navbar-link I'm a button
+			.dropdown
+				button.dropdown-toggle(data-toggle="dropdown") Dropdown
+				.dropdown-menu
+					a.dropdown-item.dropdown-link(href="#") Item 1
+					a.dropdown-item.dropdown-link(href="#") Item 2
+					a.dropdown-item.dropdown-link(href="#") Item 3
+		h3.text-danger Navbar Responsive(WIP)
+		nav.navbar.navbar-responsive
+			.navbar-header
+				button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
+					i.fa.fa-navicon
+				a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
+			.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
+				span.navbar-item I'm text
+				a.navbar-item.navbar-link(href="#") I'm a link
+				button.navbar-item.navbar-link I'm a button
 				.dropdown
 					button.dropdown-toggle(data-toggle="dropdown") Dropdown
 					.dropdown-menu
 						a.dropdown-item.dropdown-link(href="#") Item 1
 						a.dropdown-item.dropdown-link(href="#") Item 2
 						a.dropdown-item.dropdown-link(href="#") Item 3
-				.dropup
-					button.dropdown-toggle(data-toggle="dropdown") Dropup
-					.dropdown-menu
-						a.dropdown-item.dropdown-link(href="#") Item 1
-						a.dropdown-item.dropdown-link(href="#") Item 2
-						a.dropdown-item.dropdown-link(href="#") Item 3
-				h3.text-danger Dropdown Menu
-				.m-b-1.dropdown-menu(style="position: static; display: flex; max-width: 200px;")
-					a.dropdown-item.dropdown-link(href="#") Item 1
-					a.dropdown-item.dropdown-link(href="#") Item 2
-					.dropdown-item.dropdown-divider
-					a.dropdown-item.dropdown-link(href="#") Item 3
-			//
-			//	Labels
-			section.m-b-5.section-labels
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Labels
-				h3.text-danger Labels
-				h1.h1.label Heading
-						span.label-item Label
-				h2.h2.label Heading
-					span.label-item Label
-				h3.h3.label Heading
-					span.label-item Label
-				h4.h4.label Heading
-					span.label-item Label
-				h5.h5.label Heading
-					span.label-item Label
-				h6.h6.label Heading
-					span.label-item Label
-				h3.text-danger Label Link
-				h1.h1.label Heading
-					a.label-item.label-link(href="#") Label
-				h2.h2.label Heading
-					a.label-item.label-link(href="#") Label
-				h3.h3.label Heading
-					a.label-item.label-link(href="#") Label
-				h4.h4.label Heading
-					a.label-item.label-link(href="#") Label
-				h5.h5.label Heading
-					a.label-item.label-link(href="#") Label
-				h6.h6.label Heading
-					a.label-item.label-link(href="#") Label
-			//
-			//	List Groups
-			section.m-b-5.section-labels
-				header.m-b-1.m-t-2.text-small-caps
-					h3 List Group
-				h3.text-danger List Group
-				.list-group
-					.list-group-item I"m a list group item.
-					.list-group-item I"m a list group item too.
-					.list-group-item I"m a list group item also.
-				h3.text-danger List Group Divider
-				.list-group
-					.list-group-item I"m a list group item.
-					.list-group-item I"m a list group item too.
-					.list-group-item.list-group-divider
-					.list-group-item I"m a list group item also.
-				h3.text-danger List Group Links
-				.list-group
-					a.list-group-item.list-group-link(href="#") I"m a list group item.
-					a.list-group-item.list-group-link(href="#") I"m a list group item too.
-					a.list-group-item.list-group-link(href="#") I"m a list group item also.
-				h3.text-danger List Group Inline
-				.list-group-inline
-					.list-group-item I"m a list group item.
-					.list-group-item I"m a list group item too.
-					.list-group-item.list-group-divider
-					.list-group-item I"m a list group item also.
-			//
-			//	Navbar
-			section.m-b-5.section-navbar
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Navbar
-				h3.text-danger Navbar
-				nav.navbar
-					a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-					span.navbar-item I'm text
-					a.navbar-item.navbar-link(href="#") I'm a link
-					button.navbar-item.navbar-link I'm a button
-					.dropdown
-						button.dropdown-toggle(data-toggle="dropdown") Dropdown
-						.dropdown-menu
-							a.dropdown-item.dropdown-link(href="#") Item 1
-							a.dropdown-item.dropdown-link(href="#") Item 2
-							a.dropdown-item.dropdown-link(href="#") Item 3
-				h3.text-danger Navbar Dropdown
-				nav.navbar
-					a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-					span.navbar-item I'm text
-					a.navbar-item.navbar-link(href="#") I'm a link
-					button.navbar-item.navbar-link I'm a button
-					.dropdown
-						button.dropdown-toggle(data-toggle="dropdown") Dropdown
-						.dropdown-menu
-							a.dropdown-item.dropdown-link(href="#") Item 1
-							a.dropdown-item.dropdown-link(href="#") Item 2
-							a.dropdown-item.dropdown-link(href="#") Item 3
-				h3.text-danger Navbar Responsive(WIP)
-				nav.navbar.navbar-responsive
-					.navbar-header
-						button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
-							| Toggle
-						a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-					.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
-						span.navbar-item I'm text
-						a.navbar-item.navbar-link(href="#") I'm a link
-						button.navbar-item.navbar-link I'm a button
-						.dropdown
-							button.dropdown-toggle(data-toggle="dropdown") Dropdown
-							.dropdown-menu
-								a.dropdown-item.dropdown-link(href="#") Item 1
-								a.dropdown-item.dropdown-link(href="#") Item 2
-								a.dropdown-item.dropdown-link(href="#") Item 3
-			//
-			//	Tags
-			section.m-b-5.section-tags
-				header.m-b-1.m-t-2.text-small-caps
-					h3 Tags
-				h3.text-danger Tag
-				span.tag Hello,
-					button.btn.close(data-dismiss="tag")
-						span(aria-hidden="true") &times;
-				span.tag I'm
-					button.btn.close(data-dismiss="tag")
-						span(aria-hidden="true") &times;
-				span.tag a
-					button.btn.close(data-dismiss="tag")
-						span(aria-hidden="true") &times;
-				span.tag tag.
-					button.btn.close(data-dismiss="tag")
-						span(aria-hidden="true") &times;
-		script(defer src="js/jquery.min.js")
-		script(defer src="js/tether.min.js")
-		script(defer src="js/bootstrap.js")
+	//
+	//	Tags
+	section.m-b-5.section-tags
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Tags
+		h3.text-danger Tag
+		span.tag Hello,
+			button.close(data-dismiss="tag")
+				span(aria-hidden="true") &times;
+		span.tag I'm
+			button.close(data-dismiss="tag")
+				span(aria-hidden="true") &times;
+		span.tag a
+			button.close(data-dismiss="tag")
+				span(aria-hidden="true") &times;
+		span.tag tag.
+			button.close(data-dismiss="tag")
+				span(aria-hidden="true") &times;
+	//
+	//	Tooltips
+	section.m-b-5.section-tooltip
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Tooltip
+		h3.text-danger Tooltip
+		.row
+			.m-b-4.col-sm-6.col-md-3
+				.m-a-0.tooltip.top
+					.tooltip-arrow
+					.tooltip-inner Tooltip on the top
+			.m-b-4.col-sm-6.col-md-3
+				.m-a-0.tooltip.right
+					.tooltip-arrow
+					.tooltip-inner Tooltip on the right
+			.m-b-4.col-sm-6.col-md-3
+				.m-a-0.tooltip.bottom
+					.tooltip-arrow
+					.tooltip-inner Tooltip on the bottom
+			.m-b-4.col-sm-6.col-md-3
+				.m-a-0.tooltip.left
+					.tooltip-arrow
+					.tooltip-inner Tooltip on the left
+		h3.text-danger Tooltip Toggle
+		.row
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-placement="top" title="Tooltip on Top") Toggle Top
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-placement="right" title="Tooltip on Right") Toggle Right
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-placement="bottom" title="Tooltip on Bottom") Toggle Bottom
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-placement="left" title="Tooltip on Left") Toggle Left
+		h3.text-danger Tooltip Toggle Style
+		.row
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-style="cta" data-placement="top" title="Tooltip on Top") Toggle Top
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-style="main" data-placement="right" title="Tooltip on Right") Toggle Right
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-style="alt1" data-placement="bottom" title="Tooltip on Bottom") Toggle Bottom
+			.m-b-4.col-sm-6.col-md-3
+				button.btn(type="submit" data-toggle="tooltip" data-style="alt2" data-placement="left" title="Tooltip on Left") Toggle Left

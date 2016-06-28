@@ -35,6 +35,11 @@
     margin-right: auto;
 }
 
+.navbar-header {
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .navbar .dropdown {
     padding: 0;
     border: 0;
@@ -79,6 +84,7 @@
 @media (min-width:768px) {
     .navbar-responsive .navbar-collapse {
             flex-direction: row; 
+        height: auto !important;
 
         -ms-flex-direction: row;
     }

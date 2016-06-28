@@ -22,11 +22,7 @@ $alert-bg: $default__color;
 	background-color: $alert-bg;
 
 	.close {
-		font-weight: 700;
-		line-height: 1;
-		flex: 0 0 auto;
-		align-self: flex-start;
-		margin-bottom: negative($alert-y);
+		//	margin-bottom: negative($alert-y);
 		padding: ($alert-x / 2);
 	}
 }

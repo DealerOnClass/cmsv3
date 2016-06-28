@@ -19,15 +19,6 @@ h6 {
     margin-bottom: 0.809rem;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-weight: 700;
-}
-
 .h1 {
     font-size: 2.44141em;
 }
@@ -117,4 +108,21 @@ hr {
     height: 1px;
     border: 0;
     background-color: #343c4b;
+}
+.dl-horizontal {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+code,
+kbd,
+mark,
+pre,
+samp {
+    font-family: monospace;
+}
+
+kbd {
+    padding: 0.2rem;
+    color: #fff;
+    background-color: #000;
 }

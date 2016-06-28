@@ -1,0 +1,29 @@
+/*
+ * Units
+ */
+$image-c: $g-c;
+$image-r: $g-r;
+$image-x: $g-x;
+$image-y: $g-y;
+/*
+ * Colors
+ */
+$image-border: transparent;
+$image-bg: $default__color;
+/*
+ * Base
+ */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.img-rounded {
+    border-radius: $image-r;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-thumbnail {
+    padding: ($image-x / 2);
+    border: 1px solid $image-border;
+}

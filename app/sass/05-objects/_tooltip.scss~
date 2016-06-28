@@ -1,0 +1,64 @@
+/*
+ * Units
+ */
+$tooltip-c: $g-c;
+$tooltip-r: $g-r;
+$tooltip-x: $g-x;
+$tooltip-y: $g-y;
+$tooltip-close-size: ($tooltip-y + 1);
+/*
+ * Colors
+ */
+$tooltip-border: transparent;
+$tooltip-bg: $default__color;
+$tooltip-arrow-size: 10px;
+/*
+ * Base
+ */
+.tooltip {
+    position: relative;
+    padding: $tooltip-y $tooltip-x;
+    border: 1px solid $tooltip-border;
+    border-radius: $tooltip-r;
+    background-color: $tooltip-bg;
+}
+.tooltip:after,
+.tooltip-arrow:after {
+    position: absolute;
+}
+.tooltip:after,
+.tooltip-arrow:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.tooltip:after {
+    border: $tooltip-arrow-size solid transparent;
+}
+.tooltip-arrow:after {
+    border: ($tooltip-arrow-size + 1) solid transparent;
+}
+.tooltip.top {
+	&:after,
+	.tooltip-arrow:after {
+		top: 100%;
+		left: 50%;
+	}
+	&:after {
+		margin-left: negative($tooltip-arrow-size) + 1px;
+		border-top-color: $tooltip-bg;
+	}
+    .tooltip-arrow:after {
+		margin-left: negative(($tooltip-arrow-size + 1));
+        border-top-color: $tooltip-bg; // outer border
+    }
+}
+/*
+ * Theme
+ */
+//	@include tooltip-color-variation($default__palette);
+//	@include tooltip-color-variation($inverse__palette);
+//	@include tooltip-color-variation($primary__palette);
+//	@include tooltip-color-variation($neutral__palette);
+//	@include tooltip-color-variation($state__palette);
+//	@include tooltip-color-variation($classic__palette);

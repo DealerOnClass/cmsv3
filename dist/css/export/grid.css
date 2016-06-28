@@ -48,7 +48,6 @@
 }
 
 [class*=col-] {
-    float: left;
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -103,156 +102,204 @@
 
 @media (min-width:544px) {
     .col-sm-1 {
+        float: left;
         width: 8.33333%;
     }
     .col-sm-2 {
+        float: left;
         width: 16.66667%;
     }
     .col-sm-3 {
+        float: left;
         width: 25%;
     }
     .col-sm-4 {
+        float: left;
         width: 33.33333%;
     }
     .col-sm-5 {
+        float: left;
         width: 41.66667%;
     }
     .col-sm-6 {
+        float: left;
         width: 50%;
     }
     .col-sm-7 {
+        float: left;
         width: 58.33333%;
     }
     .col-sm-8 {
+        float: left;
         width: 66.66667%;
     }
     .col-sm-9 {
+        float: left;
         width: 75%;
     }
     .col-sm-10 {
+        float: left;
         width: 83.33333%;
     }
     .col-sm-11 {
+        float: left;
         width: 91.66667%;
     }
     .col-sm-12 {
+        float: left;
         width: 100%;
     }
 }
 
 @media (min-width:768px) {
     .col-md-1 {
+        float: left;
         width: 8.33333%;
     }
     .col-md-2 {
+        float: left;
         width: 16.66667%;
     }
     .col-md-3 {
+        float: left;
         width: 25%;
     }
     .col-md-4 {
+        float: left;
         width: 33.33333%;
     }
     .col-md-5 {
+        float: left;
         width: 41.66667%;
     }
     .col-md-6 {
+        float: left;
         width: 50%;
     }
     .col-md-7 {
+        float: left;
         width: 58.33333%;
     }
     .col-md-8 {
+        float: left;
         width: 66.66667%;
     }
     .col-md-9 {
+        float: left;
         width: 75%;
     }
     .col-md-10 {
+        float: left;
         width: 83.33333%;
     }
     .col-md-11 {
+        float: left;
         width: 91.66667%;
     }
     .col-md-12 {
+        float: left;
         width: 100%;
     }
 }
 
 @media (min-width:992px) {
     .col-lg-1 {
+        float: left;
         width: 8.33333%;
     }
     .col-lg-2 {
+        float: left;
         width: 16.66667%;
     }
     .col-lg-3 {
+        float: left;
         width: 25%;
     }
     .col-lg-4 {
+        float: left;
         width: 33.33333%;
     }
     .col-lg-5 {
+        float: left;
         width: 41.66667%;
     }
     .col-lg-6 {
+        float: left;
         width: 50%;
     }
     .col-lg-7 {
+        float: left;
         width: 58.33333%;
     }
     .col-lg-8 {
+        float: left;
         width: 66.66667%;
     }
     .col-lg-9 {
+        float: left;
         width: 75%;
     }
     .col-lg-10 {
+        float: left;
         width: 83.33333%;
     }
     .col-lg-11 {
+        float: left;
         width: 91.66667%;
     }
     .col-lg-12 {
+        float: left;
         width: 100%;
     }
 }
 
 @media (min-width:1200px) {
     .col-xl-1 {
+        float: left;
         width: 8.33333%;
     }
     .col-xl-2 {
+        float: left;
         width: 16.66667%;
     }
     .col-xl-3 {
+        float: left;
         width: 25%;
     }
     .col-xl-4 {
+        float: left;
         width: 33.33333%;
     }
     .col-xl-5 {
+        float: left;
         width: 41.66667%;
     }
     .col-xl-6 {
+        float: left;
         width: 50%;
     }
     .col-xl-7 {
+        float: left;
         width: 58.33333%;
     }
     .col-xl-8 {
+        float: left;
         width: 66.66667%;
     }
     .col-xl-9 {
+        float: left;
         width: 75%;
     }
     .col-xl-10 {
+        float: left;
         width: 83.33333%;
     }
     .col-xl-11 {
+        float: left;
         width: 91.66667%;
     }
     .col-xl-12 {
+        float: left;
         width: 100%;
     }
 }

@@ -2985,6 +2985,7 @@ var Tooltip = (function ($) {
     template: '<div class="tooltip" role="tooltip">' + '<div class="tooltip-arrow"></div>' + '<div class="tooltip-inner"></div></div>',
     trigger: 'hover focus',
     title: '',
+    style: '',          //  Added by Dr.Scss
     delay: 0,
     html: false,
     selector: false,
@@ -2997,6 +2998,7 @@ var Tooltip = (function ($) {
     animation: 'boolean',
     template: 'string',
     title: '(string|element|function)',
+    style: 'string',    //  Added by Dr.Scss
     trigger: 'string',
     delay: '(number|object)',
     html: 'boolean',
@@ -3179,6 +3181,7 @@ var Tooltip = (function ($) {
 
           tip.setAttribute('id', tipId);
           this.element.setAttribute('aria-describedby', tipId);
+          this.element.setAttribute('active', true);  //  Added by Dr.Scss
 
           this.setContent();
 
@@ -3242,6 +3245,7 @@ var Tooltip = (function ($) {
           }
 
           _this17.element.removeAttribute('aria-describedby');
+          _this17.element.removeAttribute('active');  //  Added by Dr.Scss
           $(_this17.element).trigger(_this17.constructor.Event.HIDDEN);
           _this17.cleanupTether();
 
@@ -3284,9 +3288,11 @@ var Tooltip = (function ($) {
       key: 'setContent',
       value: function setContent() {
         var $tip = $(this.getTipElement());
+        var style = $(this.getStyle());                 //  Added by Dr.Scss
 
         this.setElementContent($tip.find(Selector.TOOLTIP_INNER), this.getTitle());
 
+        $tip.addClass("tooltip-" + style.selector);     //  Added by Dr.Scss
         $tip.removeClass(ClassName.FADE).removeClass(ClassName.IN);
 
         this.cleanupTether();
@@ -3319,6 +3325,17 @@ var Tooltip = (function ($) {
 
         return title;
       }
+    }, {    //  Added by Dr.Scss Start
+      key: 'getStyle',
+      value: function getStyle() {
+        var style = this.element.getAttribute('data-style');
+
+        //  if (!style) {
+        //    style = typeof this.config.style === 'function' ? this.config.style.call(this.element) : this.config.style;
+        //  }
+
+        return style;
+      }     //  Added by Dr.Scss End
     }, {
       key: 'cleanupTether',
       value: function cleanupTether() {

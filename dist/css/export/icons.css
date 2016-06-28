@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
     font-family: FontAwesome;
 
@@ -6,7 +7,8 @@
 }
 .fa {
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+    font-size: 14px;
+    line-height: inherit;
     display: inline-block;
 
     text-rendering: auto;
@@ -42,4 +44,9 @@
 .fa-fw {
     width: 1.28571em;
     text-align: center;
+}
+.fa-bars:before,
+.fa-navicon:before,
+.fa-reorder:before {
+    content: "";
 }

@@ -28,6 +28,30 @@
     padding-bottom: 3.42676rem !important;
 }
 
+.m-a-0 {
+    margin: 0 !important;
+}
+
+.m-a-1 {
+    margin: 0.5rem 0.75rem !important;
+}
+
+.m-a-2 {
+    margin: 0.809rem 1.2135rem !important;
+}
+
+.m-a-3 {
+    margin: 1.30896rem 1.96344rem !important;
+}
+
+.m-a-4 {
+    margin: 2.1179rem 3.17685rem !important;
+}
+
+.m-a-5 {
+    margin: 3.42676rem 5.14014rem !important;
+}
+
 .m-y-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;

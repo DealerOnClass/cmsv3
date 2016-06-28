@@ -37,6 +37,9 @@ $navbar-bg: $default__color;
 .navbar-logo {
     margin-right: auto;
 }
+.navbar-header {
+	display: flex;
+}
 .navbar .dropdown {
     padding: 0;
     border: 0;
@@ -69,6 +72,7 @@ $navbar-bg: $default__color;
 		display: flex;
 		flex-direction: column;
 		@media (min-width: $m-tablet) {
+			height: initial !important;
 			flex-direction: row;
 		}
 		&.collapse {

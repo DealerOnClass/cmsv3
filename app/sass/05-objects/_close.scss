@@ -1,0 +1,31 @@
+/*
+ * Units
+ */
+$close-c: $g-c;
+$close-r: $g-r;
+$close-x: $g-x;
+$close-y: $g-y;
+/*
+ * Colors
+ */
+$close-border: transparent;
+$close-bg: $default__color;
+/*
+ * Base
+ */
+.close {
+    line-height: 1;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    justify-content: center;
+    padding: $close-y $close-x;
+    border: 1px solid $close-border;
+    border-radius: $close-r;
+    background-color: $close-bg;
+
+    @include state--hover("inherit", $close-bg, $close-c);
+    @include state--focus("inherit", $close-bg, $close-c);
+    @include state--active("inherit", $close-bg, ($close-c * 2));
+    @include state--class("active", "inherit", $close-bg, ($close-c * 2));
+}

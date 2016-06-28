@@ -1,0 +1,30 @@
+/*
+ *
+ * <div class="transform">
+ *     <div class="transform-inner">
+ *         <div class="transform-text">
+ *             Hello World
+ *         </div>
+ *     </div>
+ * </div>
+ *
+ */
+.transform {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    border: 1px solid blue;
+}
+.transform-inner {
+    position: relative;
+    width: 3em; // ideally (line-height + (padding-y * 2))
+    border: 1px solid red;
+}
+.transform-text {
+    position: absolute;
+    padding: $g-y $g-x;
+	transform: rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    border: 1px solid lime;
+}
