@@ -1,0 +1,49 @@
+/*
+ * Units
+ */
+$media-c: $g-c;
+$media-g: $g-g;
+$media-r: $g-r;
+$media-x: $g-x;
+$media-y: $g-y;
+/*
+ * Colors
+ */
+$media-border: transparent;
+$media-bg: $default__color;
+$media-fc-active: $white;
+$media-bg-active: $primary__color;
+/*
+ * Base
+ */
+.media {
+    display: flex;
+}
+.media-object + .media-body,
+.media-body + .media-object {
+    margin-left: $media-g;
+}
+.media-object {
+    flex-shrink: 0;
+}
+.media-body {
+    flex-grow: 1;
+}
+.media-bottom {
+    align-items: flex-end;
+}
+.media-middle {
+    align-items: center;
+}
+/*
+ * Variations
+ */
+/*
+ * Theme
+ */
+//	@include media-color-variation($default__palette);
+//	@include media-color-variation($inverse__palette);
+//	@include media-color-variation($primary__palette);
+//	@include media-color-variation($neutral__palette);
+//	@include media-color-variation($state__palette);
+//	@include media-color-variation($classic__palette);

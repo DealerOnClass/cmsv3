@@ -96,8 +96,8 @@ block content
 				label(for="select") Example Select
 				select#select
 					option
-					optgroup(label="Option group 1")
-						option Option 1
+						optgroup(label="Option group 1")
+							option Option 1
 						option Option 2
 						option Option 3
 					optgroup(label="Option group 2")
@@ -121,14 +121,14 @@ block content
 			p
 				label(for="textarea") Example Textarea
 				textarea#textarea(rows="3")
-			p
-				label(for="time") Example temporal
+					p
+						label(for="time") Example temporal
 				input#time(type="datetime")
 			p
 				label(for="output") Example output
 				output#output(name="result")
-			p
-				button(type="submit") Button Submit
+					p
+						button(type="submit") Button Submit
 				input(type="submit" value="Input submit button")
 				input(type="button" value="Input button")
 			p
@@ -253,10 +253,13 @@ block content
 		dl.dl-horizontal
 			dt.col-sm-3 Description lists
 			dd.col-sm-9 A description list is perfect for defining terms.
+			.clearfix
 			dt.col-sm-3 Euismod
 			dd.col-sm-9 Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.
+			.clearfix
 			dt.col-sm-3 Malesuada porta
 			dd.col-sm-9 Etiam porta sem malesuada magna mollis euismod.
+			.clearfix
 	//
 	//	Code
 	section.m-b-5.section-code
@@ -295,12 +298,12 @@ block content
 				img.img-thumbnail(src="img/bug.jpg", alt="First slide")
 		h3.text-danger Aligning Images
 		.clearfix
-			img.img-rounded.pull-left(src="http://placehold.it/200x200", alt="First slide")
-			img.img-rounded.pull-right(src="http://placehold.it/200x200", alt="First slide")
+		img.img-rounded.pull-left(src="http://placehold.it/200x200", alt="First slide")
+		img.img-rounded.pull-right(src="http://placehold.it/200x200", alt="First slide")
 		.clearfix
-			img.img-rounded.center-block(src="http://placehold.it/200x200", alt="First slide")
+		img.img-rounded.center-block(src="http://placehold.it/200x200", alt="First slide")
 		.clearfix.text-center
-			img.img-rounded(src="http://placehold.it/200x200", alt="First slide")
+		img.img-rounded(src="http://placehold.it/200x200", alt="First slide")
 	//
 	//	Tables
 	section.m-b-5.section-tables
@@ -538,27 +541,27 @@ block content
 			h3 Grid
 		h3.text-danger Grid
 		.row
-			.col-xs-8.box .col-xs-8
-			.col-xs-4.box .col-xs-4
+			.col-sm-8.col-xs-8.box .col-sm-8.col-xs-8
+			.col-sm-4.col-xs-4.box .col-sm-4.col-xs-4
 		h3.text-danger Grid Nesting
 		.row
-			.col-xs-9.box .col-xs-9
+			.col-sm-9.col-xs-9.box .col-sm-9.col-xs-9
 				.row
-					.col-xs-8.box .col-xs-8
-					.col-xs-4.box .col-xs-4
+					.col-sm-8.col-xs-8.box .col-sm-8.col-xs-8
+					.col-sm-4.col-xs-4.box .col-sm-4.col-xs-4
 		h3.text-danger Grid Reordering
 		.row
-			.col-xs-4.col-xs-push-4.box .col-xs-4.col-xs-push-4
-			.col-xs-8.col-xs-pull-8.box .col-xs-8.col-xs-push-8
+			.col-sm-4.col-sm-push-4.col-xs-4.col-xs-push-4.box .col-sm-4.col-sm-push-4.col-xs-4.col-xs-push-4
+			.col-sm-8.col-sm-push-8.col-xs-8.col-xs-pull-8.box .col-sm-8.col-sm-push-8.col-xs-8.col-xs-push-8
 	//
 	//	Alert
 	section.m-b-5.section-alert
 		header.m-b-1.m-t-2.text-small-caps
 			h3 Alert
 		h3.text-danger Alert
-		.alert I'm an alert.
+		.alert I"m an alert.
 		h3.text-danger Alert Dismissible
-		.alert I'm an alert.
+		.alert I"m an alert.
 			button.close(data-dismiss="alert")
 				span(aria-hidden="true") &times;
 	//
@@ -694,10 +697,10 @@ block content
 					img(src="img/bug3.jpg", alt="Third slide")
 			a.left.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="prev")
 				span.icon-prev(aria-hidden="true")
-				span.sr-only Previous
+					span.sr-only Previous
 			a.right.carousel-control(href="#carousel-example-generic-1", role="button", data-slide="next")
 				span.icon-next(aria-hidden="true")
-				span.sr-only Next
+					span.sr-only Next
 	//
 	//	Collapse
 	section.m-b-5.section-collapse
@@ -705,8 +708,8 @@ block content
 			h3 Collapse
 		h3.text-danger Collapse
 		.btn-group
-			a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
-				| Link with href
+			//a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
+			//	| Link with href
 			button.btn.collapsed(data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
 				| Button with data-targe
 		.collapse#collapseExample(aria-expanded="false")
@@ -741,6 +744,14 @@ block content
 				a.dropdown-item.dropdown-link(href="#") Item 1
 				a.dropdown-item.dropdown-link(href="#") Item 2
 				a.dropdown-item.dropdown-link(href="#") Item 3
+		h3.text-danger Segmented Dropdown
+		.dropdown
+			button.dropdown-toggle(data-toggle="dropdown")
+				button.btn(type="button") Action
+			.dropdown-menu
+				a.dropdown-item.dropdown-link(href="#") Item 1
+				a.dropdown-item.dropdown-link(href="#") Item 2
+				a.dropdown-item.dropdown-link(href="#") Item 3
 		.dropup
 			button.dropdown-toggle(data-toggle="dropdown") Dropup
 			.dropdown-menu
@@ -754,13 +765,331 @@ block content
 			.dropdown-item.dropdown-divider
 			a.dropdown-item.dropdown-link(href="#") Item 3
 	//
+	//	Form
+	section.m-b-5.section-form
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Form
+		h3.text-danger Form
+		form
+			fieldset.form-group
+				label(for="exampleInputEmail1") Email address
+				input#exampleInputEmail1.form-control(type="email", placeholder="Enter email")
+				small.text-muted We"ll never share your email with anyone else.
+			fieldset.form-group
+				label(for="exampleInputPassword1") Password
+				input#exampleInputPassword1.form-control(type="password", placeholder="Password")
+			fieldset.form-group
+				label(for="exampleSelect1") Example select
+				select#exampleSelect1.form-control
+					option 1
+					option 2
+					option 3
+					option 4
+					option 5
+			fieldset.form-group
+				label(for="exampleSelect2") Example multiple select
+				select#exampleSelect2.form-control(multiple="")
+					option 1
+					option 2
+					option 3
+					option 4
+					option 5
+			fieldset.form-group
+				label(for="exampleTextarea") Example textarea
+				textarea#exampleTextarea.form-control(rows="3")
+					fieldset.form-group
+						label(for="exampleInputFile") File input
+				input#exampleInputFile.form-control-file(type="file")
+				small.text-muted
+					| This is some placeholder block-level help text for the above input. It"s a bit lighter and easily wraps to a new line.
+			.radio
+				label
+					input#optionsRadios1(type="radio", name="optionsRadios", value="option1", checked="")
+					| Option one is this and that&mdash;be sure to include why it"s great
+			.radio
+				label
+					input#optionsRadios2(type="radio", name="optionsRadios", value="option2")
+					| Option two can be something else and selecting it will deselect option one
+			.radio.disabled
+				label
+					input#optionsRadios3(type="radio", name="optionsRadios", value="option3", disabled="")
+					| Option three is disabled
+			.checkbox
+				label
+					input(type="checkbox")
+					| Check me out
+			button.btn.btn-main(type="submit") Submit
+		h3.text-danger Form Group
+		form
+			fieldset.form-group
+				label(for="exampleLabel") Example Label
+				input#exampleLabel.form-control(type="text", placeholder="Example Input")
+			fieldset.form-group
+				label(for="anotherLabel") Another Label
+				input#anotherLabel.form-control(type="text", placeholder="Another Input")
+		h3.text-danger Inline Form (visible labels)
+		form.form-inline
+			.form-group
+				label(for="exampleInputName2") Name
+				input#exampleInputName2.form-control(type="text", placeholder="Jane Doe")
+			.form-group
+				label(for="exampleInputEmail2") Email
+				input#exampleInputEmail2.form-control(type="email", placeholder="jane.doe@example.com")
+				button.btn.btn-main(type="submit") Send invitation
+		h3.text-danger Inline Form (hidden labels)
+		form.form-inline
+			.form-group
+				label.sr-only(for="exampleInputEmail3") Email address
+				input#exampleInputEmail3.form-control(type="email", placeholder="Enter email")
+			.form-group
+				label.sr-only(for="exampleInputPassword3") Password
+				input#exampleInputPassword3.form-control(type="password", placeholder="Password")
+			.checkbox
+				label
+					input(type="checkbox")
+					| Remember me
+			button.btn.btn-main(type="submit") Sign in
+		h3.text-danger Inline Form (with Input Group)
+		form.form-inline
+			.form-group
+				label.sr-only(for="exampleInputAmount") Amount (in dollars)
+			.input-group
+				.input-group-addon $
+				input#exampleInputAmount.form-control(type="text", placeholder="Amount")
+				.input-group-addon .00
+			button.btn.btn-main(type="submit") Transfer cash
+		h3.text-danger Using the Grid
+		form
+			.form-group.row
+				label.col-sm-2.form-control-label(for="inputEmail3") Email
+				.col-sm-10
+					input#inputEmail3.form-control(type="email", placeholder="Email")
+			.form-group.row
+				label.col-sm-2.form-control-label(for="inputPassword3") Password
+				.col-sm-10
+					input#inputPassword3.form-control(type="password", placeholder="Password")
+			.form-group.row
+				label.col-sm-2 Radios
+				.col-sm-10
+					.radio
+						label
+							input#gridRadios1(type="radio", name="gridRadios", value="option1", checked="")
+							| Option one is this and that&mdash;be sure to include why it"s great
+					.radio
+						label
+							input#gridRadios2(type="radio", name="gridRadios", value="option2")
+							| Option two can be something else and selecting it will deselect option one
+					.radio.disabled
+						label
+							input#gridRadios3(type="radio", name="gridRadios", value="option3", disabled="")
+							| Option three is disabled
+			.form-group.row
+				label.col-sm-2 Checkbox
+				.col-sm-10
+					.checkbox
+						label
+							input(type="checkbox")
+							| Check me out
+			.form-group.row
+				.col-sm-offset-2.col-sm-10
+					button.btn.btn-main(type="submit") Sign in
+		h3.text-danger Checkboxes and Radios
+		.checkbox
+			label
+				input(type="checkbox", value="")
+				| Option one is this and that&mdash;be sure to include why it"s great
+		.checkbox.disabled
+			label
+				input(type="checkbox", value="", disabled="")
+				| Option two is disabled
+		.radio
+			label
+				input#exampleRadios1(type="radio", name="exampleRadios", value="option1", checked="")
+				| Option one is this and that&mdash;be sure to include why it"s great
+		.radio
+			label
+				input#exampleRadios2(type="radio", name="exampleRadios", value="option2")
+				| Option two can be something else and selecting it will deselect option one
+		.radio.disabled
+			label
+				input#exampleRadios3(type="radio", name="exampleRadios", value="option3", disabled="")
+				| Option three is disabled
+		h3.text-danger Checkbox Inline
+		label.checkbox-inline
+			input#inlineCheckbox1(type="checkbox", value="option1")
+			| 1
+		label.checkbox-inline
+			input#inlineCheckbox2(type="checkbox", value="option2")
+			| 2
+		label.checkbox-inline
+			input#inlineCheckbox3(type="checkbox", value="option3")
+			| 3
+		h3.text-danger Radio Inline
+		label.radio-inline
+			input#inlineRadio1(type="radio", name="inlineRadioOptions", value="option1")
+			| 1
+		label.radio-inline
+			input#inlineRadio2(type="radio", name="inlineRadioOptions", value="option2")
+			| 2
+		label.radio-inline
+			input#inlineRadio3(type="radio", name="inlineRadioOptions", value="option3")
+			| 3
+		h3.text-danger Without Labels
+		.checkbox
+			label
+				input#blankCheckbox(type="checkbox", value="option1")
+		.radio
+			label
+				input#blankRadio1(type="radio", name="blankRadio", value="option1")
+		h3.text-danger Static Controls
+		form
+			.form-group.row
+				label.col-sm-2.form-control-label Email
+				.col-sm-10
+					p.form-control-static email@example.com
+			.form-group.row
+				label.col-sm-2.form-control-label(for="inputPassword") Password
+				.col-sm-10
+					input#inputPassword.form-control(type="password", placeholder="Password")
+		form.form-inline
+			.form-group
+				label.sr-only Email
+				p.form-control-static email@example.com
+			.form-group
+				label.sr-only(for="inputPassword2") Password
+				input#inputPassword2.form-control(type="password", placeholder="Password")
+			button.btn.btn-main(type="submit") Confirm identity
+		h3.text-danger Disabled States
+		form
+			fieldset(disabled="").form-group
+				label(for="disabledTextInput") Disabled input
+				input#disabledTextInput.form-control(type="text", placeholder="Disabled input")
+			fieldset(disabled="").form-group
+				label(for="disabledSelect") Disabled select menu
+				select#disabledSelect.form-control
+					option Disabled select
+			fieldset(disabled="").checkbox
+				label
+					input(type="checkbox")
+					|  Can"t check this
+			fieldset(disabled="").form-group
+				button.btn.btn-main(type="submit") Submit
+		h3.text-danger Readonly Inputs
+		input.form-control(type="text", placeholder="Readonly input here…", readonly="")
+	//
+	//	Input Group
+	section.m-b-5.section-input-group
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Input Group
+		h3.text-danger Input Group
+		.input-group
+			span#basic-addon1.input-group-addon @
+			input.form-control(type="text", placeholder="Username", aria-describedby="basic-addon1")
+		br
+		.input-group
+			input.form-control(type="text", placeholder="Recipient's username", aria-describedby="basic-addon2")
+			span#basic-addon2.input-group-addon @example.com
+		br
+		label(for="basic-url") Your vanity URL
+		.input-group
+			span#basic-addon3.input-group-addon https://example.com/users/
+			input#basic-url.form-control(type="text", aria-describedby="basic-addon3")
+		br
+		.input-group
+			span.input-group-addon $
+			input.form-control(type="text", aria-label="Amount (to the nearest dollar)")
+			span.input-group-addon .00
+		h3.text-danger Checkboxes and Radio Addons
+		.row
+			.col-lg-6
+				.input-group
+					span.input-group-addon
+						input(type="checkbox", aria-label="Checkbox for following text input")
+					input.form-control(type="text", aria-label="Text input with checkbox")
+			.col-lg-6
+				.input-group
+					span.input-group-addon
+						input(type="radio", aria-label="Radio button for following text input")
+					input.form-control(type="text", aria-label="Text input with radio button")
+		h3.text-danger Button Addons
+		.row
+			.col-lg-6
+				.input-group
+					button.btn.btn-secondary(type="button") Go!
+					input.form-control(type="text", placeholder="Search for...")
+			.col-lg-6
+				.input-group
+					input.form-control(type="text", placeholder="Search for...")
+					button.btn.btn-secondary(type="button") Go!
+		br
+		.row
+			.col-lg-offset-3.col-lg-6
+				.input-group
+					button.btn(type="button") Hate it
+					input.form-control(type="text", placeholder="Product name")
+					button.btn(type="button") Love it
+		h3.text-danger Buttons with Dropdowns
+		.row
+			.col-lg-6
+				.input-group
+					.dropdown
+						button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+							| Action
+						.dropdown-menu
+							a.dropdown-item(href="#") Action
+							a.dropdown-item(href="#") Another action
+							a.dropdown-item(href="#") Something else here
+							.dropdown-divider(role="separator")
+								a.dropdown-item(href="#") Separated link
+					input.form-control(type="text", aria-label="Text input with dropdown button")
+			.col-lg-6
+				.input-group
+					input.form-control(type="text", aria-label="Text input with dropdown button")
+					.dropdown
+						button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+							| Action
+						.dropdown-menu.dropdown-menu-right
+							a.dropdown-item(href="#") Action
+							a.dropdown-item(href="#") Another action
+							a.dropdown-item(href="#") Something else here
+							.dropdown-divider(role="separator")
+								a.dropdown-item(href="#") Separated link
+		h3.text-danger Segmented Buttons
+		.row
+			.col-lg-6
+				.input-group
+					.dropdown
+						button.btn(type="button") Action
+						button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+							span.sr-only Toggle Dropdown
+						.dropdown-menu
+							a.dropdown-item.dropdown-link(href="#") Action
+							a.dropdown-item.dropdown-link(href="#") Another action
+							a.dropdown-item.dropdown-link(href="#") Something else here
+							.dropdown-divider(role="separator")
+								a.dropdown-item.dropdown-link(href="#") Separated link
+					input.form-control(type="text", aria-label="Text input with segmented button dropdown")
+			.col-lg-6
+				.input-group
+					input.form-control(type="text", aria-label="Text input with segmented button dropdown")
+					.dropdown
+						button.btn(type="button") Action
+						button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+							span.sr-only Toggle Dropdown
+						.dropdown-menu.dropdown-menu-right
+							a.dropdown-item.dropdown-link(href="#") Action
+							a.dropdown-item.dropdown-link(href="#") Another action
+							a.dropdown-item.dropdown-link(href="#") Something else here
+							.dropdown-divider(role="separator")
+								a.dropdown-item.dropdown-link(href="#") Separated link
+	//
 	//	Labels
 	section.m-b-5.section-labels
 		header.m-b-1.m-t-2.text-small-caps
 			h3 Labels
 		h3.text-danger Labels
 		h1.h1.label Heading
-				span.label-item Label
+			span.label-item Label
 		h2.h2.label Heading
 			span.label-item Label
 		h3.h3.label Heading
@@ -812,6 +1141,45 @@ block content
 			.list-group-item.list-group-divider
 			.list-group-item I"m a list group item also.
 	//
+	//	Media
+	section.m-b-5.section-media
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Media
+		h3.text-danger Media
+		.media
+			.media-object
+				img(src="http://placehold.it/64x64" alt="Media left image placeholder")
+			.media-body
+				p I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.
+				p Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.
+		h3.text-danger Media Bottom
+		.media.media-bottom
+			.media-object
+				img(src="http://placehold.it/64x64" alt="Media left image placeholder")
+			.media-body
+				p I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.
+				p Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.
+		h3.text-danger Media Middle
+		.media.media-middle
+			.media-object
+				img(src="http://placehold.it/64x64" alt="Media left image placeholder")
+			.media-body
+				p I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.
+				p Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.
+		h3.text-danger Media Nested
+		.media
+			.media-object
+				img(src="http://placehold.it/64x64" alt="Media left image placeholder")
+			.media-body
+				p I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.
+				p Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.
+				.media
+					.media-object
+						img(src="http://placehold.it/64x64" alt="Media left image placeholder")
+					.media-body
+						p I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.
+						p Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.
+	//
 	//	Modals
 	section.m-b-5.section-modal
 		header.m-b-1.m-t-2.text-small-caps
@@ -849,10 +1217,10 @@ block content
 			h3 Navbar
 		h3.text-danger Navbar
 		nav.navbar
-			a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-			span.navbar-item I'm text
-			a.navbar-item.navbar-link(href="#") I'm a link
-			button.navbar-item.navbar-link I'm a button
+			a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
+			span.navbar-item I"m text
+			a.navbar-item.navbar-link(href="#") I"m a link
+			button.navbar-item.navbar-link I"m a button
 			.dropdown
 				button.dropdown-toggle(data-toggle="dropdown") Dropdown
 				.dropdown-menu
@@ -861,10 +1229,10 @@ block content
 					a.dropdown-item.dropdown-link(href="#") Item 3
 		h3.text-danger Navbar Dropdown
 		nav.navbar
-			a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
-			span.navbar-item I'm text
-			a.navbar-item.navbar-link(href="#") I'm a link
-			button.navbar-item.navbar-link I'm a button
+			a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
+			span.navbar-item I"m text
+			a.navbar-item.navbar-link(href="#") I"m a link
+			button.navbar-item.navbar-link I"m a button
 			.dropdown
 				button.dropdown-toggle(data-toggle="dropdown") Dropdown
 				.dropdown-menu
@@ -876,17 +1244,137 @@ block content
 			.navbar-header
 				button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
 					i.fa.fa-navicon
-				a.navbar-item.navbar-link.navbar-logo(href="#") I'm a Logo
+						a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
 			.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
-				span.navbar-item I'm text
-				a.navbar-item.navbar-link(href="#") I'm a link
-				button.navbar-item.navbar-link I'm a button
+				span.navbar-item I"m text
+				a.navbar-item.navbar-link(href="#") I"m a link
+				button.navbar-item.navbar-link I"m a button
 				.dropdown
 					button.dropdown-toggle(data-toggle="dropdown") Dropdown
 					.dropdown-menu
 						a.dropdown-item.dropdown-link(href="#") Item 1
 						a.dropdown-item.dropdown-link(href="#") Item 2
 						a.dropdown-item.dropdown-link(href="#") Item 3
+	//
+	//	Pagination
+	section.m-b-5.section-pagination
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Pagination
+		h3.text-danger Pagination
+		.pagination
+			a.pagination-item.pagination-link.active(href="#") 1
+			a.pagination-item.pagination-link(href="#") 2
+			a.pagination-item.pagination-link(href="#") 3
+			a.pagination-item.pagination-link(href="#") 4
+			a.pagination-item.pagination-link(href="#") 5
+			a.pagination-item.pagination-link(href="#") 6
+			a.pagination-item.pagination-link(href="#") 7
+			a.pagination-item.pagination-link(href="#") 8
+		h3.text-danger Pagination Centered
+		.pagination.pagination-centered
+			a.pagination-item.pagination-link.active(href="#") 1
+			a.pagination-item.pagination-link(href="#") 2
+			a.pagination-item.pagination-link(href="#") 3
+			a.pagination-item.pagination-link(href="#") 4
+			a.pagination-item.pagination-link(href="#") 5
+			a.pagination-item.pagination-link(href="#") 6
+			a.pagination-item.pagination-link(href="#") 7
+			a.pagination-item.pagination-link(href="#") 8
+		h3.text-danger Pagination Justified
+		.pagination.pagination-justified
+			a.pagination-item.pagination-link.active(href="#") 1
+			a.pagination-item.pagination-link(href="#") 2
+			a.pagination-item.pagination-link(href="#") 3
+			a.pagination-item.pagination-link(href="#") 4
+			a.pagination-item.pagination-link(href="#") 5
+			a.pagination-item.pagination-link(href="#") 6
+			a.pagination-item.pagination-link(href="#") 7
+			a.pagination-item.pagination-link(href="#") 8
+	//
+	//	Panel
+	section.m-b-5.section-panel
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Panels
+		h3.text-danger Panel
+		.panel
+			.panel-heading Panel Heading
+			.panel-body Panel Body
+			.panel-footer Panel Footer
+	//
+	//	Popover
+	section.m-b-5.section-popover
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Popover
+		h3.text-danger Popover
+		.row
+			.m-b-4.col-sm-6.col-md-3
+				h3.text-danger Popover Top
+				.m-a-0.popover.top
+					.popover-arrow
+						.popover-title
+							h5.m-y-1 Popover Title
+					.popover-content
+						| Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.
+			.m-b-4.col-sm-6.col-md-3
+				h3.text-danger Popover Right
+				.m-a-0.popover.right
+					.popover-arrow
+						.popover-title
+							h5.m-y-1 Popover Title
+					.popover-content
+						| Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.
+			.m-b-4.col-sm-6.col-md-3
+				h3.text-danger Popover Bottom
+				.m-a-0.popover.bottom
+					.popover-arrow
+						.popover-title
+							h5.m-y-1 Popover Title
+					.popover-content
+						| Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.
+			.m-b-4.col-sm-6.col-md-3
+				h3.text-danger Popover Left
+				.m-a-0.popover.left
+					.popover-arrow
+						.popover-title
+							h5.m-y-1 Popover Title
+					.popover-content
+						| Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.
+	//
+	//	Progress
+	section.m-b-5.section-progress-bar
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Progress Bar
+		h3.text-danger Progress Faux
+		.progress
+			.progress-bar(aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;")
+				span 60% Complete
+		h3.text-danger Progress Native
+		progress.progress(value="50" max="100")
+		h3.text-danger Progress Striped
+		.progress.progress-striped
+			.progress-bar(aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;")
+				span 60% Complete
+		h3.text-danger Progress Animated
+		.progress.progress-striped.progress-animated
+			.progress-bar(aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;")
+				span 60% Complete
+	//
+	//	Responsive Embed
+	section.m-b-5.section-embed
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Responsive Embed
+		h3.text-danger Responsive Embed 1 by 1
+		.embed-responsive.embed-responsive-1by1
+			iframe(src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen)
+		h3.text-danger Responsive Embed 4 by 3
+		.embed-responsive.embed-responsive-4by3
+			iframe(src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen)
+		h3.text-danger Responsive Embed 16 by 9
+		.embed-responsive.embed-responsive-16by9
+			iframe(src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen)
+		h3.text-danger Responsive Embed 21 by 9
+		.embed-responsive.embed-responsive-21by9
+			iframe(src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen)
 	//
 	//	Tags
 	section.m-b-5.section-tags
@@ -896,7 +1384,7 @@ block content
 		span.tag Hello,
 			button.close(data-dismiss="tag")
 				span(aria-hidden="true") &times;
-		span.tag I'm
+		span.tag I"m
 			button.close(data-dismiss="tag")
 				span(aria-hidden="true") &times;
 		span.tag a
@@ -915,19 +1403,19 @@ block content
 			.m-b-4.col-sm-6.col-md-3
 				.m-a-0.tooltip.top
 					.tooltip-arrow
-					.tooltip-inner Tooltip on the top
+						.tooltip-inner Tooltip on the top
 			.m-b-4.col-sm-6.col-md-3
 				.m-a-0.tooltip.right
 					.tooltip-arrow
-					.tooltip-inner Tooltip on the right
+						.tooltip-inner Tooltip on the right
 			.m-b-4.col-sm-6.col-md-3
 				.m-a-0.tooltip.bottom
 					.tooltip-arrow
-					.tooltip-inner Tooltip on the bottom
+						.tooltip-inner Tooltip on the bottom
 			.m-b-4.col-sm-6.col-md-3
 				.m-a-0.tooltip.left
 					.tooltip-arrow
-					.tooltip-inner Tooltip on the left
+						.tooltip-inner Tooltip on the left
 		h3.text-danger Tooltip Toggle
 		.row
 			.m-b-4.col-sm-6.col-md-3
@@ -948,3 +1436,87 @@ block content
 				button.btn(type="submit" data-toggle="tooltip" data-style="alt1" data-placement="bottom" title="Tooltip on Bottom") Toggle Bottom
 			.m-b-4.col-sm-6.col-md-3
 				button.btn(type="submit" data-toggle="tooltip" data-style="alt2" data-placement="left" title="Tooltip on Left") Toggle Left
+	//
+	//	Well
+	section.m-b-5.section-well
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Well
+		h3.text-danger Well
+		.well I"m a well.
+	//
+	//
+	////////
+	//
+	hr.m-y-5
+	//
+	////////
+	//
+	//
+	//	Colors
+	section.m-b-5.section-colors
+		header.m-b-1.m-t-2.text-small-caps
+			h3 Colors
+		h3.text-danger Text Colors
+		.row
+			.m-b-1.col-sm-3
+				.box.text-default .text-default
+			.m-b-1.col-sm-3
+				.box.text-inverse .text-inverse
+		.row
+			.m-b-1.col-sm-3
+				.box.text-cta .text-cta
+			.m-b-1.col-sm-3
+				.box.text-main .text-main
+		.row
+			.m-b-1.col-sm-3
+				.box.text-alt1 .text-alt1
+			.m-b-1.col-sm-3
+				.box.text-alt2 .text-alt2
+			.m-b-1.col-sm-3
+				.box.text-alt3 .text-alt3
+		.row
+			.m-b-1.col-sm-3
+				.box.text-success .text-success
+			.m-b-1.col-sm-3
+				.box.text-info .text-info
+			.m-b-1.col-sm-3
+				.box.text-warning .text-warning
+			.m-b-1.col-sm-3
+				.box.text-danger .text-danger
+		.row
+			.m-b-1.col-sm-3
+				.box.text-white .text-white
+			.m-b-1.col-sm-3
+				.box.text-black .text-black
+		h3.text-danger Bg Colors
+		.row
+			.m-b-1.col-sm-3
+				.box.bg-default .bg-default
+			.m-b-1.col-sm-3
+				.box.bg-inverse .bg-inverse
+		.row
+			.m-b-1.col-sm-3
+				.box.bg-cta .bg-cta
+			.m-b-1.col-sm-3
+				.box.bg-main .bg-main
+		.row
+			.m-b-1.col-sm-3
+				.box.bg-alt1 .bg-alt1
+			.m-b-1.col-sm-3
+				.box.bg-alt2 .bg-alt2
+			.m-b-1.col-sm-3
+				.box.bg-alt3 .bg-alt3
+		.row
+			.m-b-1.col-sm-3
+				.box.bg-success .bg-success
+			.m-b-1.col-sm-3
+				.box.bg-info .bg-info
+			.m-b-1.col-sm-3
+				.box.bg-warning .bg-warning
+			.m-b-1.col-sm-3
+				.box.bg-danger .bg-danger
+		.row
+			.m-b-1.col-sm-3
+				.box.bg-white .bg-white
+			.m-b-1.col-sm-3
+				.box.bg-black .bg-black

@@ -122,12 +122,13 @@
           <p>
             <label for="select">Example Select</label>
             <select id="select">
-              <option></option>
-              <optgroup label="Option group 1">
-                <option>Option 1</option>
+              <option>
+                <optgroup label="Option group 1">
+                  <option>Option 1</option>
+                </optgroup>
                 <option>Option 2</option>
                 <option>Option 3</option>
-              </optgroup>
+              </option>
               <optgroup label="Option group 2">
                 <option>Option 4</option>
                 <option>Option 5</option>
@@ -153,18 +154,20 @@
           </p>
           <p>
             <label for="textarea">Example Textarea</label>
-            <textarea id="textarea" rows="3"></textarea>
-          </p>
-          <p>
-            <label for="time">Example temporal</label>
+            <textarea id="textarea" rows="3">
+              <p>
+                <label for="time">Example temporal</label>
+              </p>
+            </textarea>
             <input id="time" type="datetime">
           </p>
           <p>
             <label for="output">Example output</label>
-            <output id="output" name="result"></output>
-          </p>
-          <p>
-            <button type="submit">Button Submit</button>
+            <output id="output" name="result">
+              <p>
+                <button type="submit">Button Submit</button>
+              </p>
+            </output>
             <input type="submit" value="Input submit button">
             <input type="button" value="Input button">
           </p>
@@ -306,10 +309,13 @@
         <dl class="dl-horizontal">
           <dt class="col-sm-3">Description lists</dt>
           <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+          <div class="clearfix"></div>
           <dt class="col-sm-3">Euismod</dt>
           <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+          <div class="clearfix"></div>
           <dt class="col-sm-3">Malesuada porta</dt>
           <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+          <div class="clearfix"></div>
         </dl>
       </section>
       <!---->
@@ -349,9 +355,9 @@
           </div>
         </div>
         <h3 class="text-danger">Aligning Images</h3>
-        <div class="clearfix"><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded pull-left"><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded pull-right"></div>
-        <div class="clearfix"><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded center-block"></div>
-        <div class="clearfix text-center"><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded"></div>
+        <div class="clearfix"></div><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded pull-left"><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded pull-right">
+        <div class="clearfix"></div><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded center-block">
+        <div class="clearfix text-center"></div><img src="http://placehold.it/200x200" alt="First slide" class="img-rounded">
       </section>
       <!---->
       <!--	Tables-->
@@ -657,22 +663,22 @@
         </header>
         <h3 class="text-danger">Grid</h3>
         <div class="row">
-          <div class="col-xs-8 box">.col-xs-8</div>
-          <div class="col-xs-4 box">.col-xs-4</div>
+          <div class="col-sm-8 col-xs-8 box">.col-sm-8.col-xs-8</div>
+          <div class="col-sm-4 col-xs-4 box">.col-sm-4.col-xs-4</div>
         </div>
         <h3 class="text-danger">Grid Nesting</h3>
         <div class="row">
-          <div class="col-xs-9 box">.col-xs-9
+          <div class="col-sm-9 col-xs-9 box">.col-sm-9.col-xs-9
             <div class="row">
-              <div class="col-xs-8 box">.col-xs-8</div>
-              <div class="col-xs-4 box">.col-xs-4</div>
+              <div class="col-sm-8 col-xs-8 box">.col-sm-8.col-xs-8</div>
+              <div class="col-sm-4 col-xs-4 box">.col-sm-4.col-xs-4</div>
             </div>
           </div>
         </div>
         <h3 class="text-danger">Grid Reordering</h3>
         <div class="row">
-          <div class="col-xs-4 col-xs-push-4 box">.col-xs-4.col-xs-push-4</div>
-          <div class="col-xs-8 col-xs-pull-8 box">.col-xs-8.col-xs-push-8</div>
+          <div class="col-sm-4 col-sm-push-4 col-xs-4 col-xs-push-4 box">.col-sm-4.col-sm-push-4.col-xs-4.col-xs-push-4</div>
+          <div class="col-sm-8 col-sm-push-8 col-xs-8 col-xs-pull-8 box">.col-sm-8.col-sm-push-8.col-xs-8.col-xs-push-8</div>
         </div>
       </section>
       <!---->
@@ -682,9 +688,9 @@
           <h3>Alert</h3>
         </header>
         <h3 class="text-danger">Alert</h3>
-        <div class="alert">I'm an alert.</div>
+        <div class="alert">I"m an alert.</div>
         <h3 class="text-danger">Alert Dismissible</h3>
-        <div class="alert">I'm an alert.
+        <div class="alert">I"m an alert.
           <button data-dismiss="alert" class="close"><span aria-hidden="true">&times;</span></button>
         </div>
       </section>
@@ -838,7 +844,7 @@
             <div class="carousel-item active"><img src="img/bug.jpg" alt="First slide"></div>
             <div class="carousel-item"><img src="img/bug2.jpg" alt="Second slide"></div>
             <div class="carousel-item"><img src="img/bug3.jpg" alt="Third slide"></div>
-          </div><a href="#carousel-example-generic-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="icon-prev"></span><span class="sr-only">Previous</span></a><a href="#carousel-example-generic-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="icon-next"></span><span class="sr-only">Next</span></a>
+          </div><a href="#carousel-example-generic-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="icon-prev"><span class="sr-only">Previous</span></span></a><a href="#carousel-example-generic-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="icon-next"><span class="sr-only">Next</span></span></a>
         </div>
       </section>
       <!---->
@@ -848,7 +854,9 @@
           <h3>Collapse</h3>
         </header>
         <h3 class="text-danger">Collapse</h3>
-        <div class="btn-group"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn collapsed">Link with href</a>
+        <div class="btn-group">
+          <!--a.btn.collapsed(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")-->
+          <!--	| Link with href-->
           <button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn collapsed">Button with data-targe</button>
         </div>
         <div id="collapseExample" aria-expanded="false" class="collapse">
@@ -878,6 +886,13 @@
           <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
           <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
         </div>
+        <h3 class="text-danger">Segmented Dropdown</h3>
+        <div class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle">
+            <button type="button" class="btn">Action</button>
+          </button>
+          <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
+        </div>
         <div class="dropup">
           <button data-toggle="dropdown" class="dropdown-toggle">Dropup</button>
           <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
@@ -885,6 +900,394 @@
         <h3 class="text-danger">Dropdown Menu</h3>
         <div style="position: static; display: flex; max-width: 200px;" class="m-b-1 dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a>
           <div class="dropdown-item dropdown-divider"></div><a href="#" class="dropdown-item dropdown-link">Item 3</a>
+        </div>
+      </section>
+      <!---->
+      <!--	Form-->
+      <section class="m-b-5 section-form">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Form</h3>
+        </header>
+        <h3 class="text-danger">Form</h3>
+        <form>
+          <fieldset class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input id="exampleInputEmail1" type="email" placeholder="Enter email" class="form-control"><small class="text-muted">We"ll never share your email with anyone else.</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleSelect1">Example select</label>
+            <select id="exampleSelect1" class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleSelect2">Example multiple select</label>
+            <select id="exampleSelect2" multiple="" class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleTextarea">Example textarea</label>
+            <textarea id="exampleTextarea" rows="3" class="form-control">
+              <fieldset class="form-group">
+                <label for="exampleInputFile">File input</label>
+              </fieldset>
+            </textarea>
+            <input id="exampleInputFile" type="file" class="form-control-file"><small class="text-muted">This is some placeholder block-level help text for the above input. It"s a bit lighter and easily wraps to a new line.</small>
+          </fieldset>
+          <div class="radio">
+            <label>
+              <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">Option one is this and that&mdash;be sure to include why it"s great
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="optionsRadios2" type="radio" name="optionsRadios" value="option2">Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input id="optionsRadios3" type="radio" name="optionsRadios" value="option3" disabled="">Option three is disabled
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-main">Submit</button>
+        </form>
+        <h3 class="text-danger">Form Group</h3>
+        <form>
+          <fieldset class="form-group">
+            <label for="exampleLabel">Example Label</label>
+            <input id="exampleLabel" type="text" placeholder="Example Input" class="form-control">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="anotherLabel">Another Label</label>
+            <input id="anotherLabel" type="text" placeholder="Another Input" class="form-control">
+          </fieldset>
+        </form>
+        <h3 class="text-danger">Inline Form (visible labels)</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input id="exampleInputName2" type="text" placeholder="Jane Doe" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input id="exampleInputEmail2" type="email" placeholder="jane.doe@example.com" class="form-control">
+            <button type="submit" class="btn btn-main">Send invitation</button>
+          </div>
+        </form>
+        <h3 class="text-danger">Inline Form (hidden labels)</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputEmail3" class="sr-only">Email address</label>
+            <input id="exampleInputEmail3" type="email" placeholder="Enter email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword3" class="sr-only">Password</label>
+            <input id="exampleInputPassword3" type="password" placeholder="Password" class="form-control">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-main">Sign in</button>
+        </form>
+        <h3 class="text-danger">Inline Form (with Input Group)</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputAmount" class="sr-only">Amount (in dollars)</label>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input id="exampleInputAmount" type="text" placeholder="Amount" class="form-control">
+            <div class="input-group-addon">.00</div>
+          </div>
+          <button type="submit" class="btn btn-main">Transfer cash</button>
+        </form>
+        <h3 class="text-danger">Using the Grid</h3>
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+            <div class="col-sm-10">
+              <input id="inputEmail3" type="email" placeholder="Email" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
+            <div class="col-sm-10">
+              <input id="inputPassword3" type="password" placeholder="Password" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2">Radios</label>
+            <div class="col-sm-10">
+              <div class="radio">
+                <label>
+                  <input id="gridRadios1" type="radio" name="gridRadios" value="option1" checked="">Option one is this and that&mdash;be sure to include why it"s great
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input id="gridRadios2" type="radio" name="gridRadios" value="option2">Option two can be something else and selecting it will deselect option one
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled="">Option three is disabled
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2">Checkbox</label>
+            <div class="col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Check me out
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-main">Sign in</button>
+            </div>
+          </div>
+        </form>
+        <h3 class="text-danger">Checkboxes and Radios</h3>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Option one is this and that&mdash;be sure to include why it"s great
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="" disabled="">Option two is disabled
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="">Option one is this and that&mdash;be sure to include why it"s great
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="exampleRadios2" type="radio" name="exampleRadios" value="option2">Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <div class="radio disabled">
+          <label>
+            <input id="exampleRadios3" type="radio" name="exampleRadios" value="option3" disabled="">Option three is disabled
+          </label>
+        </div>
+        <h3 class="text-danger">Checkbox Inline</h3>
+        <label class="checkbox-inline">
+          <input id="inlineCheckbox1" type="checkbox" value="option1">1
+        </label>
+        <label class="checkbox-inline">
+          <input id="inlineCheckbox2" type="checkbox" value="option2">2
+        </label>
+        <label class="checkbox-inline">
+          <input id="inlineCheckbox3" type="checkbox" value="option3">3
+        </label>
+        <h3 class="text-danger">Radio Inline</h3>
+        <label class="radio-inline">
+          <input id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">1
+        </label>
+        <label class="radio-inline">
+          <input id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">2
+        </label>
+        <label class="radio-inline">
+          <input id="inlineRadio3" type="radio" name="inlineRadioOptions" value="option3">3
+        </label>
+        <h3 class="text-danger">Without Labels</h3>
+        <div class="checkbox">
+          <label>
+            <input id="blankCheckbox" type="checkbox" value="option1">
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="blankRadio1" type="radio" name="blankRadio" value="option1">
+          </label>
+        </div>
+        <h3 class="text-danger">Static Controls</h3>
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-2 form-control-label">Email</label>
+            <div class="col-sm-10">
+              <p class="form-control-static">email@example.com</p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 form-control-label">Password</label>
+            <div class="col-sm-10">
+              <input id="inputPassword" type="password" placeholder="Password" class="form-control">
+            </div>
+          </div>
+        </form>
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only">Email</label>
+            <p class="form-control-static">email@example.com</p>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input id="inputPassword2" type="password" placeholder="Password" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-main">Confirm identity</button>
+        </form>
+        <h3 class="text-danger">Disabled States</h3>
+        <form>
+          <fieldset disabled="" class="form-group">
+            <label for="disabledTextInput">Disabled input</label>
+            <input id="disabledTextInput" type="text" placeholder="Disabled input" class="form-control">
+          </fieldset>
+          <fieldset disabled="" class="form-group">
+            <label for="disabledSelect">Disabled select menu</label>
+            <select id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+            </select>
+          </fieldset>
+          <fieldset disabled="" class="checkbox">
+            <label>
+              <input type="checkbox"> Can"t check this
+            </label>
+          </fieldset>
+          <fieldset disabled="" class="form-group">
+            <button type="submit" class="btn btn-main">Submit</button>
+          </fieldset>
+        </form>
+        <h3 class="text-danger">Readonly Inputs</h3>
+        <input type="text" placeholder="Readonly input here�" readonly="" class="form-control">
+      </section>
+      <!---->
+      <!--	Input Group-->
+      <section class="m-b-5 section-input-group">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Input Group</h3>
+        </header>
+        <h3 class="text-danger">Input Group</h3>
+        <div class="input-group"><span id="basic-addon1" class="input-group-addon">@</span>
+          <input type="text" placeholder="Username" aria-describedby="basic-addon1" class="form-control">
+        </div><br>
+        <div class="input-group">
+          <input type="text" placeholder="Recipient's username" aria-describedby="basic-addon2" class="form-control"><span id="basic-addon2" class="input-group-addon">@example.com</span>
+        </div><br>
+        <label for="basic-url">Your vanity URL</label>
+        <div class="input-group"><span id="basic-addon3" class="input-group-addon">https://example.com/users/</span>
+          <input id="basic-url" type="text" aria-describedby="basic-addon3" class="form-control">
+        </div><br>
+        <div class="input-group"><span class="input-group-addon">$</span>
+          <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control"><span class="input-group-addon">.00</span>
+        </div>
+        <h3 class="text-danger">Checkboxes and Radio Addons</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group"><span class="input-group-addon">
+                <input type="checkbox" aria-label="Checkbox for following text input"></span>
+              <input type="text" aria-label="Text input with checkbox" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group"><span class="input-group-addon">
+                <input type="radio" aria-label="Radio button for following text input"></span>
+              <input type="text" aria-label="Text input with radio button" class="form-control">
+            </div>
+          </div>
+        </div>
+        <h3 class="text-danger">Button Addons</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <button type="button" class="btn btn-secondary">Go!</button>
+              <input type="text" placeholder="Search for..." class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" placeholder="Search for..." class="form-control">
+              <button type="button" class="btn btn-secondary">Go!</button>
+            </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-lg-offset-3 col-lg-6">
+            <div class="input-group">
+              <button type="button" class="btn">Hate it</button>
+              <input type="text" placeholder="Product name" class="form-control">
+              <button type="button" class="btn">Love it</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-danger">Buttons with Dropdowns</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <div class="dropdown">
+                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Action</button>
+                <div class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a>
+                  <div role="separator" class="dropdown-divider"><a href="#" class="dropdown-item">Separated link</a></div>
+                </div>
+              </div>
+              <input type="text" aria-label="Text input with dropdown button" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" aria-label="Text input with dropdown button" class="form-control">
+              <div class="dropdown">
+                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Action</button>
+                <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a>
+                  <div role="separator" class="dropdown-divider"><a href="#" class="dropdown-item">Separated link</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-danger">Segmented Buttons</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <div class="dropdown">
+                <button type="button" class="btn">Action</button>
+                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><span class="sr-only">Toggle Dropdown</span></button>
+                <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Action</a><a href="#" class="dropdown-item dropdown-link">Another action</a><a href="#" class="dropdown-item dropdown-link">Something else here</a>
+                  <div role="separator" class="dropdown-divider"><a href="#" class="dropdown-item dropdown-link">Separated link</a></div>
+                </div>
+              </div>
+              <input type="text" aria-label="Text input with segmented button dropdown" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" aria-label="Text input with segmented button dropdown" class="form-control">
+              <div class="dropdown">
+                <button type="button" class="btn">Action</button>
+                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><span class="sr-only">Toggle Dropdown</span></button>
+                <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item dropdown-link">Action</a><a href="#" class="dropdown-item dropdown-link">Another action</a><a href="#" class="dropdown-item dropdown-link">Something else here</a>
+                  <div role="separator" class="dropdown-divider"><a href="#" class="dropdown-item dropdown-link">Separated link</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!---->
@@ -938,6 +1341,52 @@
         </div>
       </section>
       <!---->
+      <!--	Media-->
+      <section class="m-b-5 section-media">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Media</h3>
+        </header>
+        <h3 class="text-danger">Media</h3>
+        <div class="media">
+          <div class="media-object"><img src="http://placehold.it/64x64" alt="Media left image placeholder"></div>
+          <div class="media-body">
+            <p>I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.</p>
+            <p>Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.</p>
+          </div>
+        </div>
+        <h3 class="text-danger">Media Bottom</h3>
+        <div class="media media-bottom">
+          <div class="media-object"><img src="http://placehold.it/64x64" alt="Media left image placeholder"></div>
+          <div class="media-body">
+            <p>I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.</p>
+            <p>Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.</p>
+          </div>
+        </div>
+        <h3 class="text-danger">Media Middle</h3>
+        <div class="media media-middle">
+          <div class="media-object"><img src="http://placehold.it/64x64" alt="Media left image placeholder"></div>
+          <div class="media-body">
+            <p>I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.</p>
+            <p>Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.</p>
+          </div>
+        </div>
+        <h3 class="text-danger">Media Nested</h3>
+        <div class="media">
+          <div class="media-object"><img src="http://placehold.it/64x64" alt="Media left image placeholder"></div>
+          <div class="media-body">
+            <p>I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.</p>
+            <p>Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.</p>
+            <div class="media">
+              <div class="media-object"><img src="http://placehold.it/64x64" alt="Media left image placeholder"></div>
+              <div class="media-body">
+                <p>I"m a media body. Elit error illum eum eos ipsa repellat? Quas dolores cum quam est vel optio perspiciatis fuga eveniet. Sapiente assumenda vitae eveniet maxime nulla, quasi? Totam odit consequatur sint quasi iste.</p>
+                <p>Dolor alias vitae minus molestias laboriosam placeat doloribus commodi repudiandae, debitis! Unde mollitia pariatur nemo error ad laboriosam similique enim quasi assumenda! Ducimus numquam repellendus numquam voluptatibus amet dignissimos? Fugiat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---->
       <!--	Modals-->
       <section class="m-b-5 section-modal">
         <header class="m-b-1 m-t-2 text-small-caps">
@@ -980,16 +1429,16 @@
           <h3>Navbar</h3>
         </header>
         <h3 class="text-danger">Navbar</h3>
-        <nav class="navbar"><a href="#" class="navbar-item navbar-link navbar-logo">I'm a Logo</a><span class="navbar-item">I'm text</span><a href="#" class="navbar-item navbar-link">I'm a link</a>
-          <button class="navbar-item navbar-link">I'm a button</button>
+        <nav class="navbar"><a href="#" class="navbar-item navbar-link navbar-logo">I"m a Logo</a><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
+          <button class="navbar-item navbar-link">I"m a button</button>
           <div class="dropdown">
             <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
             <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
           </div>
         </nav>
         <h3 class="text-danger">Navbar Dropdown</h3>
-        <nav class="navbar"><a href="#" class="navbar-item navbar-link navbar-logo">I'm a Logo</a><span class="navbar-item">I'm text</span><a href="#" class="navbar-item navbar-link">I'm a link</a>
-          <button class="navbar-item navbar-link">I'm a button</button>
+        <nav class="navbar"><a href="#" class="navbar-item navbar-link navbar-logo">I"m a Logo</a><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
+          <button class="navbar-item navbar-link">I"m a button</button>
           <div class="dropdown">
             <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
             <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
@@ -998,10 +1447,10 @@
         <h3 class="text-danger">Navbar Responsive(WIP)</h3>
         <nav class="navbar navbar-responsive">
           <div class="navbar-header">
-            <button data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" class="navbar-item navbar-link navbar-toggle"><i class="fa fa-navicon"></i></button><a href="#" class="navbar-item navbar-link navbar-logo">I'm a Logo</a>
+            <button data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" class="navbar-item navbar-link navbar-toggle"><i class="fa fa-navicon"><a href="#" class="navbar-item navbar-link navbar-logo">I"m a Logo</a></i></button>
           </div>
-          <div id="navbar-collapse" aria-expanded="true" class="navbar-collapse collapse"><span class="navbar-item">I'm text</span><a href="#" class="navbar-item navbar-link">I'm a link</a>
-            <button class="navbar-item navbar-link">I'm a button</button>
+          <div id="navbar-collapse" aria-expanded="true" class="navbar-collapse collapse"><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
+            <button class="navbar-item navbar-link">I"m a button</button>
             <div class="dropdown">
               <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
               <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
@@ -1010,13 +1459,137 @@
         </nav>
       </section>
       <!---->
+      <!--	Pagination-->
+      <section class="m-b-5 section-pagination">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Pagination</h3>
+        </header>
+        <h3 class="text-danger">Pagination</h3>
+        <div class="pagination"><a href="#" class="pagination-item pagination-link active">1</a><a href="#" class="pagination-item pagination-link">2</a><a href="#" class="pagination-item pagination-link">3</a><a href="#" class="pagination-item pagination-link">4</a><a href="#" class="pagination-item pagination-link">5</a><a href="#" class="pagination-item pagination-link">6</a><a href="#" class="pagination-item pagination-link">7</a><a href="#" class="pagination-item pagination-link">8</a></div>
+        <h3 class="text-danger">Pagination Centered</h3>
+        <div class="pagination pagination-centered"><a href="#" class="pagination-item pagination-link active">1</a><a href="#" class="pagination-item pagination-link">2</a><a href="#" class="pagination-item pagination-link">3</a><a href="#" class="pagination-item pagination-link">4</a><a href="#" class="pagination-item pagination-link">5</a><a href="#" class="pagination-item pagination-link">6</a><a href="#" class="pagination-item pagination-link">7</a><a href="#" class="pagination-item pagination-link">8</a></div>
+        <h3 class="text-danger">Pagination Justified</h3>
+        <div class="pagination pagination-justified"><a href="#" class="pagination-item pagination-link active">1</a><a href="#" class="pagination-item pagination-link">2</a><a href="#" class="pagination-item pagination-link">3</a><a href="#" class="pagination-item pagination-link">4</a><a href="#" class="pagination-item pagination-link">5</a><a href="#" class="pagination-item pagination-link">6</a><a href="#" class="pagination-item pagination-link">7</a><a href="#" class="pagination-item pagination-link">8</a></div>
+      </section>
+      <!---->
+      <!--	Panel-->
+      <section class="m-b-5 section-panel">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Panels</h3>
+        </header>
+        <h3 class="text-danger">Panel</h3>
+        <div class="panel">
+          <div class="panel-heading">Panel Heading</div>
+          <div class="panel-body">Panel Body</div>
+          <div class="panel-footer">Panel Footer</div>
+        </div>
+      </section>
+      <!---->
+      <!--	Popover-->
+      <section class="m-b-5 section-popover">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Popover</h3>
+        </header>
+        <h3 class="text-danger">Popover</h3>
+        <div class="row">
+          <div class="m-b-4 col-sm-6 col-md-3">
+            <h3 class="text-danger">Popover Top</h3>
+            <div class="m-a-0 popover top">
+              <div class="popover-arrow">
+                <div class="popover-title">
+                  <h5 class="m-y-1">Popover Title</h5>
+                </div>
+              </div>
+              <div class="popover-content">Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.</div>
+            </div>
+          </div>
+          <div class="m-b-4 col-sm-6 col-md-3">
+            <h3 class="text-danger">Popover Right</h3>
+            <div class="m-a-0 popover right">
+              <div class="popover-arrow">
+                <div class="popover-title">
+                  <h5 class="m-y-1">Popover Title</h5>
+                </div>
+              </div>
+              <div class="popover-content">Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.</div>
+            </div>
+          </div>
+          <div class="m-b-4 col-sm-6 col-md-3">
+            <h3 class="text-danger">Popover Bottom</h3>
+            <div class="m-a-0 popover bottom">
+              <div class="popover-arrow">
+                <div class="popover-title">
+                  <h5 class="m-y-1">Popover Title</h5>
+                </div>
+              </div>
+              <div class="popover-content">Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.</div>
+            </div>
+          </div>
+          <div class="m-b-4 col-sm-6 col-md-3">
+            <h3 class="text-danger">Popover Left</h3>
+            <div class="m-a-0 popover left">
+              <div class="popover-arrow">
+                <div class="popover-title">
+                  <h5 class="m-y-1">Popover Title</h5>
+                </div>
+              </div>
+              <div class="popover-content">Ipsum beatae dolor aut cum consectetur! Minus tempora ea doloremque.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <!--	Progress-->
+      <section class="m-b-5 section-progress-bar">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Progress Bar</h3>
+        </header>
+        <h3 class="text-danger">Progress Faux</h3>
+        <div class="progress">
+          <div aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar"><span>60% Complete</span></div>
+        </div>
+        <h3 class="text-danger">Progress Native</h3>
+        <progress value="50" max="100" class="progress"></progress>
+        <h3 class="text-danger">Progress Striped</h3>
+        <div class="progress progress-striped">
+          <div aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar"><span>60% Complete</span></div>
+        </div>
+        <h3 class="text-danger">Progress Animated</h3>
+        <div class="progress progress-striped progress-animated">
+          <div aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar"><span>60% Complete</span></div>
+        </div>
+      </section>
+      <!---->
+      <!--	Responsive Embed-->
+      <section class="m-b-5 section-embed">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Responsive Embed</h3>
+        </header>
+        <h3 class="text-danger">Responsive Embed 1 by 1</h3>
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h3 class="text-danger">Responsive Embed 4 by 3</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h3 class="text-danger">Responsive Embed 16 by 9</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h3 class="text-danger">Responsive Embed 21 by 9</h3>
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe src="https://www.youtube.com/embed/Phl82D57P58" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+      <!---->
       <!--	Tags-->
       <section class="m-b-5 section-tags">
         <header class="m-b-1 m-t-2 text-small-caps">
           <h3>Tags</h3>
         </header>
         <h3 class="text-danger">Tag</h3><span class="tag">Hello,
-          <button data-dismiss="tag" class="close"><span aria-hidden="true">&times;</span></button></span><span class="tag">I'm
+          <button data-dismiss="tag" class="close"><span aria-hidden="true">&times;</span></button></span><span class="tag">I"m
           <button data-dismiss="tag" class="close"><span aria-hidden="true">&times;</span></button></span><span class="tag">a
           <button data-dismiss="tag" class="close"><span aria-hidden="true">&times;</span></button></span><span class="tag">tag.
           <button data-dismiss="tag" class="close"><span aria-hidden="true">&times;</span></button></span>
@@ -1031,26 +1604,30 @@
         <div class="row">
           <div class="m-b-4 col-sm-6 col-md-3">
             <div class="m-a-0 tooltip top">
-              <div class="tooltip-arrow"></div>
-              <div class="tooltip-inner">Tooltip on the top</div>
+              <div class="tooltip-arrow">
+                <div class="tooltip-inner">Tooltip on the top</div>
+              </div>
             </div>
           </div>
           <div class="m-b-4 col-sm-6 col-md-3">
             <div class="m-a-0 tooltip right">
-              <div class="tooltip-arrow"></div>
-              <div class="tooltip-inner">Tooltip on the right</div>
+              <div class="tooltip-arrow">
+                <div class="tooltip-inner">Tooltip on the right</div>
+              </div>
             </div>
           </div>
           <div class="m-b-4 col-sm-6 col-md-3">
             <div class="m-a-0 tooltip bottom">
-              <div class="tooltip-arrow"></div>
-              <div class="tooltip-inner">Tooltip on the bottom</div>
+              <div class="tooltip-arrow">
+                <div class="tooltip-inner">Tooltip on the bottom</div>
+              </div>
             </div>
           </div>
           <div class="m-b-4 col-sm-6 col-md-3">
             <div class="m-a-0 tooltip left">
-              <div class="tooltip-arrow"></div>
-              <div class="tooltip-inner">Tooltip on the left</div>
+              <div class="tooltip-arrow">
+                <div class="tooltip-inner">Tooltip on the left</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1082,6 +1659,130 @@
           </div>
           <div class="m-b-4 col-sm-6 col-md-3">
             <button type="submit" data-toggle="tooltip" data-style="alt2" data-placement="left" title="Tooltip on Left" class="btn">Toggle Left</button>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <!--	Well-->
+      <section class="m-b-5 section-well">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Well</h3>
+        </header>
+        <h3 class="text-danger">Well</h3>
+        <div class="well">I"m a well.</div>
+      </section>
+      <!---->
+      <!---->
+      <!--//////-->
+      <!---->
+      <hr class="m-y-5">
+      <!---->
+      <!--//////-->
+      <!---->
+      <!---->
+      <!--	Colors-->
+      <section class="m-b-5 section-colors">
+        <header class="m-b-1 m-t-2 text-small-caps">
+          <h3>Colors</h3>
+        </header>
+        <h3 class="text-danger">Text Colors</h3>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-default">.text-default</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-inverse">.text-inverse</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-cta">.text-cta</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-main">.text-main</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-alt1">.text-alt1</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-alt2">.text-alt2</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-alt3">.text-alt3</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-success">.text-success</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-info">.text-info</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-warning">.text-warning</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-danger">.text-danger</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-white">.text-white</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box text-black">.text-black</div>
+          </div>
+        </div>
+        <h3 class="text-danger">Bg Colors</h3>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-default">.bg-default</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-inverse">.bg-inverse</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-cta">.bg-cta</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-main">.bg-main</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-alt1">.bg-alt1</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-alt2">.bg-alt2</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-alt3">.bg-alt3</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-success">.bg-success</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-info">.bg-info</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-warning">.bg-warning</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-danger">.bg-danger</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-white">.bg-white</div>
+          </div>
+          <div class="m-b-1 col-sm-3">
+            <div class="box bg-black">.bg-black</div>
           </div>
         </div>
       </section>

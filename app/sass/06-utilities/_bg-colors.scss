@@ -1,0 +1,9 @@
+/*
+ * Theme
+ */
+@include bg-color-variation($default__palette);
+@include bg-color-variation($inverse__palette);
+@include bg-color-variation($primary__palette);
+@include bg-color-variation($neutral__palette);
+@include bg-color-variation($state__palette);
+@include bg-color-variation($classic__palette);

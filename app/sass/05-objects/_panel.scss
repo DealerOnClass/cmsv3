@@ -1,0 +1,54 @@
+/*
+ * Units
+ */
+$panel-c: $g-c;
+$panel-r: $g-r;
+$panel-x: $g-x;
+$panel-y: $g-y;
+/*
+ * Colors
+ */
+$panel-border: transparent;
+$panel-bg: $default__color;
+$panel-fc-active: $white;
+$panel-bg-active: $primary__color;
+/*
+ * Base
+ */
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+.panel-heading,
+.panel-body,
+.panel-footer {
+    padding: $panel-y $panel-x;
+    border: 1px solid $panel-border;
+    &:first-child {
+        border-radius: $panel-r $panel-r 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 $panel-r $panel-r;
+    }
+    &:only-child {
+        border-radius: $panel-r;
+    }
+}
+.panel-heading {
+	background-color: $panel-bg;
+}
+.panel-body {
+	border-color: $panel-bg;
+}
+.panel-footer {
+	background-color: $panel-bg;
+}
+/*
+ * Theme
+ */
+//	@include panel-color-variation($default__palette);
+//	@include panel-color-variation($inverse__palette);
+//	@include panel-color-variation($primary__palette);
+//	@include panel-color-variation($neutral__palette);
+//	@include panel-color-variation($state__palette);
+//	@include panel-color-variation($classic__palette);

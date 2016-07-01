@@ -1,0 +1,64 @@
+/*
+ * Units
+ */
+$pagination-c: $g-c;
+$pagination-r: $g-r;
+$pagination-x: $g-x;
+$pagination-y: $g-y;
+/*
+ * Colors
+ */
+$pagination-border: transparent;
+$pagination-bg: $default__color;
+$pagination-fc-active: $white;
+$pagination-bg-active: $primary__color;
+/*
+ * Base
+ */
+.pagination {
+    display: flex;
+}
+.pagination-item {
+    display: inline-flex;
+	padding: $pagination-y $pagination-x;
+    border: 1px solid $pagination-border;
+    background-color: $pagination-bg;
+	&:first-child {
+		border-radius: $pagination-r 0 0 $pagination-r;
+	}
+	&:last-child {
+		border-radius: 0 $pagination-r $pagination-r 0;
+	}
+	&:only-child {
+		border-radius: $pagination-r;
+	}
+}
+.pagination-link {
+    color: inherit;
+
+    @include state--hover("inherit", $pagination-bg, $pagination-c);
+    @include state--focus("inherit", $pagination-bg, $pagination-c);
+    @include state--active("inherit", $pagination-bg, ($pagination-c * 2));
+    @include state--class("active", $pagination-fc-active, $pagination-bg-active);
+}
+/*
+ * Variations
+ */
+.pagination-centered {
+	justify-content: center;
+}
+.pagination-justified {
+	.pagination-item {
+		justify-content: center;
+		flex: 1 1 0;
+	}
+}
+/*
+ * Theme
+ */
+//	@include pagination-color-variation($default__palette);
+//	@include pagination-color-variation($inverse__palette);
+//	@include pagination-color-variation($primary__palette);
+//	@include pagination-color-variation($neutral__palette);
+//	@include pagination-color-variation($state__palette);
+//	@include pagination-color-variation($classic__palette);

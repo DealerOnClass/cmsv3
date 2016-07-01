@@ -10,6 +10,8 @@ $navbar-y: $g-y;
  */
 $navbar-border: transparent;
 $navbar-bg: $default__color;
+$navbar-fc-active: $white;
+$navbar-bg-active: $primary__color;
 /*
  * Base
  */
@@ -33,6 +35,10 @@ $navbar-bg: $default__color;
     @include state--active("inherit", $navbar-bg, ($navbar-c * 2));
 	@include state--attr("aria-expanded=true", "inherit", $navbar-bg, ($navbar-c * 2));
 }
+.navbar .open .dropdown-toggle {
+	color: $navbar-fc-active;
+	background-color: $navbar-bg-active;
+}
 .navbar-header,
 .navbar-logo {
     margin-right: auto;
@@ -45,7 +51,7 @@ $navbar-bg: $default__color;
     border: 0;
     .dropdown-toggle {
         border: 1px solid $navbar-border;
-        border-radius: 0;
+        border-radius: 0 !important;
     }
     &:last-child .dropdown-menu {
         right: 0;

@@ -8,6 +8,7 @@ $box-y: $g-y;
 /*
  * Colors
  */
+$box-border: shade($default__color, $box-c);
 $box-bg: $default__color;
 /*
  * Base
@@ -17,6 +18,18 @@ $box-bg: $default__color;
 }
 .box .box {
 	background-color: shade($box-bg, $box-c);
+}
+.box[class*="bg-"],
+.box[class*="text-"] {
+	padding: $box-y $box-r;
+	border: 1px solid $box-border;
+	border-radius: $box-r;
+}
+.box[class*="bg-"] {
+	border-color: transparent;
+}
+.box[class*="text-"] {
+	background-color: $white;
 }
 .box[class*="col-"] {
 	background-clip: content-box;

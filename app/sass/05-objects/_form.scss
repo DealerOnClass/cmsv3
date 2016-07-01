@@ -1,0 +1,78 @@
+/*
+ * Units
+ */
+$form-c: $g-c;
+$form-r: $g-r;
+$form-x: $g-x;
+$form-y: $g-y;
+/*
+ * Colors
+ */
+$form-border: shade($default__color, $form-c);
+$form-bg: $white;
+/*
+ * Base
+ */
+.form-group {
+    display: flex;
+    margin-bottom: ($rhythm/2);
+}
+.form-control,
+.form-control-label,
+.form-control-static {
+    width: 100%;
+    padding: $form-y $form-x;
+    border: 1px solid $form-border;
+    border-radius: $form-r;
+    background-color: $form-bg;
+}
+.form-control-label,
+.form-control-static {
+	border-color: transparent;
+}
+.radio,
+.checkbox {
+    display: flex;
+	align-items: center;
+    margin-bottom: ($rhythm/2);
+    label {
+        padding-left: $form-x;
+        cursor: pointer;
+    }
+    input {
+        width: ($form-x * 2);
+        margin-left: negative($form-x);
+    }
+}
+/*
+ * Variations
+ */
+.form-inline {
+    display: flex;
+	.form-group,
+	.form-control,
+	.form-control-label,
+	.form-control-static,
+    .radio,
+    .checkbox {
+		margin-bottom: 0;
+	}
+    .form-group {
+        align-items: baseline;
+    }
+}
+.radio-inline,
+.checkbox-inline {
+	display: inline-flex;
+	align-items: center;
+    margin-bottom: ($rhythm/2);
+	padding-left: $form-x;
+	cursor: pointer;
+	input {
+        width: ($form-x * 2);
+        margin-left: negative($form-x);
+	}
+}
+/*
+ * Theme
+ */

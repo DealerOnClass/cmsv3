@@ -1,0 +1,143 @@
+/*
+ * Units
+ */
+$popover-c: $g-c;
+$popover-r: $g-r;
+$popover-x: $g-x;
+$popover-y: $g-y;
+$popover-close-size: ($popover-y + 1);
+$popover-offset: 4px;
+/*
+ * Colors
+ */
+$popover-border: $default__color;
+$popover-bg: $default__color;
+$popover-arrow-bg: $popover-bg;
+$popover-arrow-border: $popover-border;
+$popover-arrow-border-size: 1px;
+$popover-arrow-inner-size: 10px;
+$popover-arrow-outer-size: $popover-arrow-inner-size + $popover-arrow-border-size;
+/*
+ * Base
+ */
+.popover {
+    position: relative;
+    z-index: $g-z-popover;
+    border-radius: $popover-r;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.popover-title,
+.popover-content {
+    padding: $popover-y $popover-x;
+    border: 1px solid $popover-border;
+}
+.popover-title {
+    border-radius: $popover-r $popover-r 0 0;
+    background-color: $popover-bg;
+	margin-bottom: -1px;
+}
+.popover-content {
+    border-radius: 0 0 $popover-r $popover-r;
+    background-color: $popover-bg;
+}
+.popover:after,
+.popover-arrow:after {
+    position: absolute;
+    z-index: $g-z-popover;
+    display: block;
+    clear: both;
+    content: "";
+}
+.popover:after {
+    border: $popover-arrow-inner-size solid transparent;
+}
+.popover-arrow:after {
+    border: $popover-arrow-outer-size solid transparent;
+}
+.popover {
+    &.top,
+    &.bs-tether-element-attached-bottom {
+        margin-top: negative($popover-arrow-inner-size + $popover-offset);
+        &:after,
+        .popover-arrow:after {
+            top: calc(100% - 1px);
+            left: 50%;
+        }
+        &:after {
+            margin-left: negative($popover-arrow-outer-size) + ($popover-arrow-border-size * 2);
+            border-top-color: $popover-arrow-bg;
+        }
+        .popover-arrow:after {
+            margin-left: negative($popover-arrow-inner-size);
+            border-top-color: $popover-arrow-border;
+        }
+    }
+}
+.popover {
+    &.right,
+    &.bs-tether-element-attached-left {
+        margin-left: $popover-arrow-inner-size + $popover-offset;
+        &:after,
+        .popover-arrow:after {
+            top: 50%;
+            right: calc(100% - 1px);
+            left: auto;
+        }
+        &:after {
+            margin-top: negative($popover-arrow-outer-size) + ($popover-arrow-border-size * 2);
+            border-right-color: $popover-arrow-bg;
+        }
+        .popover-arrow:after {
+            margin-top: negative($popover-arrow-inner-size);
+            border-right-color: $popover-arrow-border;
+        }
+    }
+}
+.popover {
+    &.bottom,
+    &.bs-tether-element-attached-top {
+        margin-top: $popover-arrow-inner-size + $popover-offset;
+        &:after,
+        .popover-arrow:after {
+            top: auto;
+            bottom: calc(100% - 1px);
+            left: 50%;
+        }
+        &:after {
+            margin-left: negative($popover-arrow-outer-size) + ($popover-arrow-border-size * 2);
+            border-bottom-color: $popover-arrow-bg;
+        }
+        .popover-arrow:after {
+            margin-left: negative($popover-arrow-inner-size);
+            border-bottom-color: $popover-arrow-border;
+        }
+    }
+}
+.popover {
+    &.left,
+    &.bs-tether-element-attached-right {
+        margin-left: negative($popover-arrow-inner-size + $popover-offset);
+        &:after,
+        .popover-arrow:after {
+            top: 50%;
+            left: calc(100% - 1px);
+        }
+        &:after {
+            margin-top: negative($popover-arrow-outer-size) + ($popover-arrow-border-size * 2);
+            border-left-color: $popover-arrow-bg;
+        }
+        .popover-arrow:after {
+            margin-top: negative($popover-arrow-inner-size);
+            border-left-color: $popover-arrow-border;
+        }
+    }
+}
+/*
+ * Theme
+ */
+//	@include popover-color-variation($default__palette);
+//	@include popover-color-variation($inverse__palette);
+//	@include popover-color-variation($primary__palette);
+//	@include popover-color-variation($neutral__palette);
+//	@include popover-color-variation($state__palette);
+//	@include popover-color-variation($classic__palette);

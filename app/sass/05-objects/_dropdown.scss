@@ -11,6 +11,8 @@ $dropdown-caret-size: ($dropdown-y / 2);
  */
 $dropdown-border: transparent;
 $dropdown-bg: $default__color;
+$dropdown-fc-active: $white;
+$dropdown-bg-active: $primary__color;
 /*
  * Base
  */
@@ -40,18 +42,21 @@ $dropdown-bg: $default__color;
     @include state--hover("inherit", $dropdown-bg, $dropdown-c);
     @include state--focus("inherit", $dropdown-bg, $dropdown-c);
     @include state--active("inherit", $dropdown-bg, ($dropdown-c * 2));
-    @include state--class("active", "inherit", $dropdown-bg, ($dropdown-c * 2));
-    @include state--class("open", "inherit", $dropdown-bg, ($dropdown-c * 2));
+    @include state--class("active", $dropdown-fc-active, $dropdown-bg-active);
 }
 .dropdown-toggle {
     align-items: baseline;
     &:after {
         position: relative;
-        margin-left: $dropdown-x;
+        //	margin-left: $dropdown-x;
         content: "";
         border: $dropdown-caret-size solid transparent;
         border-top-color: currentColor;
     }
+	.open & {
+		color: $dropdown-fc-active;
+		background-color: $dropdown-bg-active;
+	}
 }
 .dropdown-menu {
     position: absolute;
@@ -94,6 +99,23 @@ $dropdown-bg: $default__color;
             border-bottom-color: currentColor;
         }
     }
+}
+/*
+ * Nested Button
+ */
+.dropdown,
+.dropup {
+	> .btn:first-child,
+	> .dropdown-toggle:first-child {
+		border-radius: $dropdown-r 0 0 $dropdown-r;
+	}
+	> .btn:first-child + .dropdown-toggle,
+	> .dropdown-toggle:first-child + .btn {
+		border-radius: 0 $dropdown-r $dropdown-r 0;
+	}
+	> .dropdown-toggle:nth-last-child(2):first-child {
+		border-radius: $dropdown-r;
+	}
 }
 /*
  * Theme

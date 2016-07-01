@@ -1,0 +1,97 @@
+/*
+ * Units
+ */
+$input-group-c: $g-c;
+$input-group-r: $g-r;
+$input-group-x: $g-x;
+$input-group-y: $g-y;
+/*
+ * Colors
+ */
+$input-group-border: shade($default__color, $input-group-c);
+$input-group-bg: $default__color;
+$input-group-fc-active: $white;
+$input-group-bg-active: $primary__color;
+/*
+ * Base
+ */
+.input-group {
+	display: flex;
+	align-items: center;
+	.form-control {
+		flex: 1 1 0;
+	}
+}
+.input-group-addon {
+	display: inline-flex;
+	padding: $input-group-y $input-group-x;
+	border: 1px solid $input-group-border;
+	background-color: $input-group-bg;
+	> input {
+		padding: 0;
+		&[type="checkbox"],
+		&[type="radio"] {
+			height: calc((#{$t-lh * $g-u}) - 1px);
+		}
+	}
+}
+.input-group > .btn,
+.input-group > .form-control,
+.input-group-addon {
+	border-radius: 0;
+	&:first-child {
+		border-radius: $input-group-r 0 0 $input-group-r;
+	}
+	&:last-child {
+		border-radius: 0 $input-group-r $input-group-r 0;
+	}
+	&:only-child {
+		border-radius: $input-group-r;
+	}
+}
+.input-group .dropdown {
+	&:first-child {
+		.btn:first-child,
+		.dropdown-toggle:first-child {
+			border-radius: $input-group-r 0 0 $input-group-r;
+		}
+		.btn:last-child,
+		.dropdown-toggle:last-child {
+			border-radius: 0;
+		}
+	}
+	&:last-child {
+		.btn:first-child,
+		.dropdown-toggle:first-child {
+			border-radius: 0;
+		}
+		.btn:last-child,
+		.dropdown-toggle:last-child,
+		.dropdown-toggle:nth-last-child(2):first-child {
+			border-radius: 0 $input-group-r $input-group-r 0;
+		}
+	}
+	&:only-child {
+		.btn:first-child,
+		.dropdown-toggle:first-child {
+			border-radius: $input-group-r 0 0 $input-group-r;
+		}
+		.btn:last-child,
+		.dropdown-toggle:last-child {
+			border-radius: 0 $input-group-r $input-group-r 0;
+		}
+	}
+}
+/*
+ * Variations
+ */
+/*
+ * Theme
+ */
+//	@include input-group-color-variation($default__palette);
+//	@include input-group-color-variation($inverse__palette);
+//	@include input-group-color-variation($primary__palette);
+//	@include input-group-color-variation($neutral__palette);
+//	@include input-group-color-variation($state__palette);
+//	@include input-group-color-variation($classic__palette);
+

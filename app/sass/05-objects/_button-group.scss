@@ -17,19 +17,19 @@ $btn-group-bg: $default__color;
 	display: inline-flex;
 	.btn,
     .dropdown-toggle {
-		border-radius: 0;
+		border-radius: 0 !important;
 	}
 	.btn:first-child,
     .dropdown:first-child .dropdown-toggle {
-		border-radius: $btn-group-r 0 0 $btn-group-r;
+		border-radius: $btn-group-r 0 0 $btn-group-r !important;
 	}
 	.btn:last-child,
     .dropdown:last-child .dropdown-toggle {
-		border-radius: 0 $btn-group-r $btn-group-r 0;
+		border-radius: 0 $btn-group-r $btn-group-r 0 !important;
 	}
 	.btn:only-child,
     .dropdown:only-child .dropdown-toggle {
-		border-radius: $btn-group-r;
+		border-radius: $btn-group-r !important;
 	}
 }
 /*

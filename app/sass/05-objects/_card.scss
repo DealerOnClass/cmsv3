@@ -2,6 +2,7 @@
  * Units
  */
 $card-c: $g-c;
+$card-g: $g-g;
 $card-r: $g-r;
 $card-x: $g-x;
 $card-y: $g-y;
@@ -141,12 +142,12 @@ $card-bg: $default__color;
 }
 .card-deck {
 	display: flex;
-	margin-right: negative($card-x);
-	margin-left: negative($card-x);
+	margin-right: negative($card-g);
+	margin-left: negative($card-g);
 	.card {
 		flex: 1 1 0;
-		padding-right: $card-x;
-		padding-left: $card-x;
+		padding-right: $card-g;
+		padding-left: $card-g;
 	}
 }
 /*

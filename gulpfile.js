@@ -1,11 +1,12 @@
 var gulp         = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var browserSync  = require('browser-sync');
+var browsersync  = require('browser-sync');
 var csscomb      = require('gulp-csscomb');
 var cssnano      = require('gulp-cssnano');
 var jade         = require('gulp-jade');
 var plumber      = require('gulp-plumber');
 var sass         = require('gulp-sass');
+var sourcemaps   = require('gulp-sourcemaps');
 
 var paths = {
     font: {
@@ -51,7 +52,7 @@ gulp.task('default',
 function font() {
 	return gulp.src(paths.font.src)
 		.pipe(gulp.dest(paths.font.dist))
-        .pipe(browserSync.stream());
+        .pipe(browsersync.stream());
 }
 
 function html() {
@@ -61,24 +62,24 @@ function html() {
             pretty: true
         }))
         .pipe(gulp.dest(paths.html.dist))
-        .pipe(browserSync.stream());
+        .pipe(browsersync.stream());
 }
 
 function img() {
 	return gulp.src(paths.img.src)
         .pipe(plumber())
         .pipe(gulp.dest(paths.img.dist))
-        .pipe(browserSync.stream());
+        .pipe(browsersync.stream());
 }
 
 function scripts() {
 	return gulp.src(paths.scripts.src)
 		.pipe(gulp.dest(paths.scripts.dist))
-        .pipe(browserSync.stream());
+        .pipe(browsersync.stream());
 }
 
 function serve() {
-    browserSync.init({
+    browsersync.init({
         server: './dist',
         notify: true
     });
@@ -87,19 +88,21 @@ function serve() {
 function styles() {
     return gulp.src(paths.styles.src)
         .pipe(plumber())
+		.pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false
         }))
         .pipe(cssnano({
-            core: false,
+            core: true,
             discardComments: { removeAll: true },
 			discardUnused: false
         }))
-        .pipe(csscomb())
+        //	.pipe(csscomb())
+		.pipe(sourcemaps.write('map'))
         .pipe(gulp.dest(paths.styles.dist))
-        .pipe(browserSync.stream());
+        .pipe(browsersync.stream());
 }
 
 function watch() {

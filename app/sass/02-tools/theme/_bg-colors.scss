@@ -1,0 +1,8 @@
+@mixin bg-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+		.bg-#{$class__name} {
+			background-color: $color;
+		}
+	}
+}
+

@@ -1,15 +1,2 @@
-.text-success {
-    color: #5cb85c;
-}
-
-.text-info {
-    color: #5bc0de;
-}
-
-.text-warning {
-    color: #f0ad4e;
-}
-
-.text-danger {
-    color: #d9534f;
-}
+.text-muted{color:#999}.text-default{color:#e4e4e4}.text-inverse{color:#343c4b}.text-cta{color:#f36c0a}.text-main{color:#3662ad}.text-alt1{color:#42587d}.text-alt2{color:#5f7394}.text-alt3{color:#8193b1}.text-success{color:#5cb85c}.text-info{color:#5bc0de}.text-warning{color:#f0ad4e}.text-danger{color:#d9534f}.text-white{color:#fff}.text-black{color:#000}
+/*# sourceMappingURL=../map/export/text-colors.css.map */

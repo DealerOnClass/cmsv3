@@ -55,6 +55,9 @@ textarea {
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
+label {
+	white-space: nowrap;
+}
 [disabled] {
     opacity: 0.5;
     cursor: not-allowed;
@@ -67,6 +70,12 @@ textarea {
 }
 [hidden] {
     display: none !important;
+}
+progress[value] {
+	width: 100%;
+	color: black;
+	border: 0;
+	appearance: none;
 }
 html {
     box-sizing: border-box;

@@ -1,0 +1,32 @@
+/*
+ * Units
+ */
+$well-c: $g-c;
+$well-r: $g-r;
+$well-x: $g-x;
+$well-y: $g-y;
+/*
+ * Colors
+ */
+$well-border: transparent;
+$well-bg: $default__color;
+$well-fc-active: $white;
+$well-bg-active: $primary__color;
+/*
+ * Base
+ */
+.well {
+    padding: $well-y $well-x;
+    border: 1px solid $well-border;
+    border-radius: $well-r;
+    background-color: $well-bg;
+}
+/*
+ * Theme
+ */
+//	@include well-color-variation($default__palette);
+//	@include well-color-variation($inverse__palette);
+//	@include well-color-variation($primary__palette);
+//	@include well-color-variation($neutral__palette);
+//	@include well-color-variation($state__palette);
+//	@include well-color-variation($classic__palette);

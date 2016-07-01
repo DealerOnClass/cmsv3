@@ -56,7 +56,9 @@ h6 {
 .h5 {
     font-size: $h5;
 }
-.h6 {
+.h6,
+.small,
+small {
     font-size: $h6;
 }
 /*
@@ -193,6 +195,11 @@ hr {
 .dl-horizontal {
     margin-right: negative($g-g);
     margin-left: negative($g-g);
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
 }
 /*
  * Code
