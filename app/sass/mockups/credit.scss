@@ -7,79 +7,96 @@
  * Export
  */
 .credit-app {
-	.progress {
-		position: absolute;
-		z-index: 20;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border-radius: 0;
-	}
-	.nav-pills {
-		position: relative;
-		z-index: 40;
-		display: flex;
-		align-items: center;
-	}
-	.nav-pills > li + li {
-		margin: 0;
-	}
-	.nav-pills > li,
-	.nav-pills > li > a {
-		display: inline-flex;
-		flex: 1 1 0;
-		width: initial;
-		border-radius: 0;
-	}
-	.nav-pills > li.active > a,
-	.nav-pills > li > a {
-		transition-property: color;
-		color: white;
-		background-color: transparent;
-	}
-	.nav-pills > li.is-next > a {
-		color: #333;
-	}
-	.nav-pills > li > a:hover {
-		background-color: rgba(0,0,0,0.1);
-	}
-	.nav-pills > li > a:active {
-		background-color: rgba(0,0,0,0.15);
-		box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-	}
-	.nav-pills > li > a,
-	.progress .progress-bar {
-		//	transition-timing-function: ease-in-out;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 0.4s;
-	}
-	.nav-justified > li a {
-		margin-bottom: 0;
-	}
-}
-.credit-app-navbar {
-	position: relative;
-	overflow: hidden;
-	padding: 0;
+    .nav-pills {
+        position: relative;
+        z-index: 40;
+        display: flex;
+        align-items: center;
+    }
+    .nav-pills > li + li {
+        margin: 0;
+    }
+    .nav-pills > li,
+    .nav-pills > li > a {
+        display: inline-flex;
+        flex: 1 1 0;
+        width: initial;
+        border-radius: 0;
+    }
+    .nav-pills > li.active > a,
+    .nav-pills > li > a {
+        transition-property: color;
+        color: white;
+        background-color: transparent;
+    }
+    .nav-pills > li.is-next > a {
+        color: #333;
+    }
+    .nav-pills > li > a:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+    .nav-pills > li > a:active {
+        background-color: rgba(0,0,0,0.15);
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    }
+    .nav-pills > li > a,
+    .progress .progress-bar {
+        //	transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.4s;
+    }
+    .nav-justified > li a {
+        margin-bottom: 0;
+    }
 }
 .credit-app-titlebar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 15px;
-	padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.credit-app-navbar {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.credit-app-progress {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    .progress-bar {
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 0;
+            right: -30px;
+            display: block;
+            height: 100%;
+			width: 10px;
+            content: "";
+            border: 20px solid transparent;
+			border-top-width: 40px;
+			border-bottom-width: 0;
+			border-left-width: 10px;
+            border-left-color: #5cb85c;
+        }
+    }
 }
 .credit-app-infobox {
-	min-width: 20em;
-	padding-left: 30px;
-	.panel {
-		margin-bottom: 0;
-	}
+    min-width: 20em;
+    padding-left: 30px;
+    .panel {
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 767px) {
-	.credit-app-infobox {
-		display: block;
-		padding-left: 0;
-	}
+    .credit-app-infobox {
+        display: block;
+        padding-left: 0;
+    }
 }

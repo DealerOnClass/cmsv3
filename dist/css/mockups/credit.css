@@ -1,13 +1,3 @@
-.credit-app .progress {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-
 .credit-app .nav-pills {
     position: relative;
     z-index: 2;
@@ -63,12 +53,6 @@
     margin-bottom: 0;
 }
 
-.credit-app-navbar {
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-}
-
 .credit-app-titlebar {
     display: -ms-flexbox;
     display: flex;
@@ -79,6 +63,39 @@
 
     -ms-flex-align: center;
     -ms-flex-pack: justify;
+}
+
+.credit-app-navbar {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.credit-app-progress {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.credit-app-progress .progress-bar {
+    position: relative;
+}
+.credit-app-progress .progress-bar:after {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    display: block;
+    width: 10px;
+    height: 100%;
+    content: "";
+    border: 20px solid transparent;
+    border-top-width: 40px;
+    border-bottom-width: 0;
+    border-left-width: 10px;
+    border-left-color: #5cb85c;
 }
 
 .credit-app-infobox {
