@@ -1,2 +1,26 @@
-.box{background-color:#e4e4e4}.box .box{background-color:#cdcdcd}.box[class*=bg-],.box[class*=text-]{padding:.5rem .3rem;border:1px solid #cdcdcd;border-radius:.3rem}.box[class*=bg-]{border-color:transparent}.box[class*=text-]{background-color:#fff}.box[class*=col-]{background-clip:content-box}
-/*# sourceMappingURL=../map/export/box.css.map */
+.box {
+    background-color: #e4e4e4;
+}
+
+.box .box {
+    background-color: #cdcdcd;
+}
+
+.box[class*=bg-],
+.box[class*=text-] {
+    padding: 0.5rem 0.3rem;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.3rem;
+}
+
+.box[class*=bg-] {
+    border-color: transparent;
+}
+
+.box[class*=text-] {
+    background-color: #fff;
+}
+
+.box[class*=col-] {
+    background-clip: content-box;
+}

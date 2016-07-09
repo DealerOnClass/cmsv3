@@ -1,0 +1,99 @@
+extends ../templates/default.jade
+block title
+	title Credit App
+block content
+	main.container.m-y-5.p-y-5
+		h1.h3 Get Pre-Approved
+		section
+			h3.h4 Step 1
+			form
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text1") First Name
+					.col-sm-9
+						input#text1.form-control(type="text", placeholder="John")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text2") Last Name
+					.col-sm-9
+						input#text2.form-control(type="text", placeholder="Doe")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text3") Email
+					.col-sm-9
+						input#text3.form-control(type="email", placeholder="JohnDoe@email.com")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text4") Phone
+					.col-sm-9
+						input#text4.form-control(type="text", placeholder="(123)-123-1234")
+		section
+			h3.h4 Step 2
+			form
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text5") Street Address
+					.col-sm-9
+						input#text5.form-control(type="text", placeholder="1234 John Doe St")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text6") City, State, Zip
+					.col-sm-9
+						input#text6.form-control(type="text", placeholder="Germantown, MD, 20874")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text7") Driver's License Number
+					.col-sm-9
+						input#text7.form-control(type="text", placeholder="1234-5678-9012-3456")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text8") State Issued
+					.col-sm-9
+						input#text8.form-control(type="text", placeholder="Maryland")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text9") Expiration Date
+					.col-sm-9
+						input#text9.form-control(type="date", placeholder="MD")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text10") Social Security Number
+					.col-sm-9
+						input#text10.form-control(type="text", placeholder="XXX-XXX-XXXX")
+				.form-group.row
+					label.col-sm-3.form-control-label(for="text11") Date of Birth
+					.col-sm-9
+						input#text11.form-control(type="date", placeholder="MD")
+			br
+			| Housing Status
+			br
+			| Rent/Mortgage Amount per month
+			br
+			| Move In Date
+			br
+		section
+			h3.h4 Step 3
+			| Employer
+			br
+			| Occupation
+			br
+			| Work Phone
+			br
+			| Start Date
+			br
+			| Monthly Gross Salary
+			br
+			| Other Income
+			br
+			| Almony, Child Support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.
+			br
+			| Other Income Source
+			br
+			| Sales Consultant
+			br
+			| This site is secure. To protect your personal information, we have taken steps to ensure your information is transmitted to us over a secure, 128-bit encrypted connection. &copy; 2016 Privacy Policy
+			br
+		section
+			h3.h4 Step 4
+			| Site Usage Disclaimer & Privacy Policy
+			br
+			| If Selected, Dealer reserves the right to share non-public personal information with outside companies and relatioed organizations, such as market research firms, financial providers, and other companies that may provide you with materials about other products or services.
+			br
+			| If Selected, Dealer may not share my non-public personal information with outside companies and related organizations, except as provided in the Privacy Policy
+			br
+			| I certify that all information containe dherin is true to the best of my knowledge. By affixing my name below, I certify that I am the person submitting this application and I authorize Rothbard Chevrolet to process this information by running credit inquiry This inquiry will be for the purpose of qualifying for auto finance.
+			br
+			| E-Signature (Type Your Name Here):
+			br
+			| Friday, July 08, 2016
+			br

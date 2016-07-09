@@ -1,2 +1,75 @@
-.form-group{display:-ms-flexbox;display:flex;margin-bottom:.809em}.form-control,.form-control-label,.form-control-static{width:100%;padding:.5rem .75rem;border:1px solid #cdcdcd;border-radius:.3rem;background-color:#fff}.form-control-label,.form-control-static{border-color:transparent}.checkbox,.radio{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-bottom:.809em}.checkbox label,.radio label{padding-left:.75rem;cursor:pointer}.checkbox input,.radio input{width:1.5rem;margin-left:-.75rem}.form-inline{display:-ms-flexbox;display:flex}.form-inline .checkbox,.form-inline .form-control,.form-inline .form-control-label,.form-inline .form-control-static,.form-inline .form-group,.form-inline .radio{margin-bottom:0}.form-inline .form-group{-ms-flex-align:baseline;-ms-grid-row-align:baseline;align-items:baseline}.checkbox-inline,.radio-inline{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;margin-bottom:.809em;padding-left:.75rem;cursor:pointer}.checkbox-inline input,.radio-inline input{width:1.5rem;margin-left:-.75rem}
-/*# sourceMappingURL=../map/export/form.css.map */
+.form-group {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.809em;
+}
+
+.form-control,
+.form-control-label,
+.form-control-static {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.3rem;
+    background-color: #fff;
+}
+
+.form-control-label,
+.form-control-static {
+    border-color: transparent;
+}
+
+.checkbox,
+.radio {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.809em; 
+
+    -ms-flex-align: center;
+}
+.checkbox label,
+.radio label {
+    padding-left: 0.75rem;
+    cursor: pointer;
+}
+.checkbox input,
+.radio input {
+    width: 1.5rem;
+    margin-left: -0.75rem;
+}
+.form-inline {
+    display: -ms-flexbox;
+    display: flex;
+}
+.form-inline .checkbox,
+.form-inline .form-control,
+.form-inline .form-control-label,
+.form-inline .form-control-static,
+.form-inline .form-group,
+.form-inline .radio {
+    margin-bottom: 0;
+}
+.form-inline .form-group {
+    align-items: baseline; 
+
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+}
+
+.checkbox-inline,
+.radio-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.809em;
+    padding-left: 0.75rem;
+    cursor: pointer; 
+
+    -ms-flex-align: center;
+}
+.checkbox-inline input,
+.radio-inline input {
+    width: 1.5rem;
+    margin-left: -0.75rem;
+}

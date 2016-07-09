@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/mockups/credit.css">
+    <title>Credit App</title>
+  </head>
+  <body>
+    <main class="credit-app container m-y-5 p-y-5">
+      <div class="credit-app-titlebar">
+        <h2 style="margin: 0" class="h3">Get Pre-Approved</h2>
+        <div class="btn-group"><a href="#" data-credit-prev class="btn btn-primary"><i class="fa fa-chevron-left"></i>&nbsp;
+            Back</a><a href="#" data-credit-next class="btn btn-primary">
+            Next
+            &nbsp;<i class="fa fa-chevron-right"></i></a></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="credit-app-navbar panel-heading">
+          <div class="progress">
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;" data-credit-progress-bar class="progress-bar progress-bar-success"><span class="sr-only">60% Complete</span></div>
+          </div>
+          <ul role="tablist" data-credit-progress class="nav nav-pills nav-justified">
+            <li role="presentation" class="active"><a href="#step1" aria-controls="step1" role="tab" data-toggle="tab">Step 1</a></li>
+            <li role="presentation"><a href="#step2" aria-controls="step2" role="tab" data-toggle="tab">Step 2</a></li>
+            <li role="presentation"><a href="#step3" aria-controls="step3" role="tab" data-toggle="tab">Step 3</a></li>
+            <li role="presentation"><a href="#step4" aria-controls="step4" role="tab" data-toggle="tab">Step 4</a></li>
+            <li role="presentation"><a href="#step5" aria-controls="step5" role="tab" data-toggle="tab">Step 5</a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <div class="tab-content">
+            <section id="step1" class="tab-pane active">
+              <h3 class="h4">Step 1</h3>
+              <div class="media">
+                <div class="media-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="text1" class="col-sm-3 form-control-label">First Name</label>
+                      <div class="col-sm-9">
+                        <input id="text1" type="text" placeholder="John" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text2" class="col-sm-3 form-control-label">Last Name</label>
+                      <div class="col-sm-9">
+                        <input id="text2" type="text" placeholder="Doe" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text3" class="col-sm-3 form-control-label">Email</label>
+                      <div class="col-sm-9">
+                        <input id="text3" type="email" placeholder="JohnDoe@email.com" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text4" class="col-sm-3 form-control-label">Phone</label>
+                      <div class="col-sm-9">
+                        <input id="text4" type="tel" placeholder="(123)-123-1234" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="media-right credit-app-infobox">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Some title</h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="step2" class="tab-pane">
+              <h3 class="h4">Step 2</h3>
+              <div class="media">
+                <div class="media-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="text5" class="col-sm-3 form-control-label">Street Address</label>
+                      <div class="col-sm-9">
+                        <input id="text5" type="text" placeholder="1234 John Doe St" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text6" class="col-sm-3 form-control-label">City, State, Zip</label>
+                      <div class="col-sm-9">
+                        <input id="text6" type="text" placeholder="Germantown, MD, 20874" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text7" class="col-sm-3 form-control-label">Driver's License Number</label>
+                      <div class="col-sm-9">
+                        <input id="text7" type="text" placeholder="1234-5678-9012-3456" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text8" class="col-sm-3 form-control-label">State Issued</label>
+                      <div class="col-sm-9">
+                        <select id="text8" class="form-control">
+                          <option>Alaska</option>
+                          <option>Maryland</option>
+                          <option>Ohio</option>
+                          <option>Zelda</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text9" class="col-sm-3 form-control-label">Expiration Date</label>
+                      <div class="col-sm-9">
+                        <input id="text9" type="date" placeholder="MD" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text10" class="col-sm-3 form-control-label">Social Security Number</label>
+                      <div class="col-sm-9">
+                        <input id="text10" type="text" placeholder="XXX-XXX-XXXX" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text11" class="col-sm-3 form-control-label">Date of Birth</label>
+                      <div class="col-sm-9">
+                        <input id="text11" type="date" placeholder="MD" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text12" class="col-sm-3 form-control-label">Housing Status</label>
+                      <div class="col-sm-9">
+                        <select id="text12" class="form-control">
+                          <option>Rent</option>
+                          <option>Own</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text12" class="col-sm-3 form-control-label">Rent/Mortgage Amount</label>
+                      <div class="col-sm-9">
+                        <input id="text12" type="text" placeholder="1200" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text13" class="col-sm-3 form-control-label">Move In Date</label>
+                      <div class="col-sm-9">
+                        <input id="text13" type="date" placeholder="" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="media-right credit-app-infobox">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Some title</h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="step3" class="tab-pane">
+              <h3 class="h4">Step 3</h3>
+              <div class="media">
+                <div class="media-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="text14" class="col-sm-3 form-control-label">Employer</label>
+                      <div class="col-sm-9">
+                        <input id="text14" type="text" placeholder="DealerOn" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text15" class="col-sm-3 form-control-label">Occupation</label>
+                      <div class="col-sm-9">
+                        <input id="text15" type="text" placeholder="Coffee Guy" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text16" class="col-sm-3 form-control-label">Work Phone</label>
+                      <div class="col-sm-9">
+                        <input id="text16" type="tel" placeholder="(123)-123-1234" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text17" class="col-sm-3 form-control-label">Start Date</label>
+                      <div class="col-sm-9">
+                        <input id="text17" type="date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text18" class="col-sm-3 form-control-label">Monthly Gross Salary</label>
+                      <div class="col-sm-9">
+                        <input id="text18" type="text" placeholder="2222.22" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text19" class="col-sm-3 form-control-label">Other Income</label>
+                      <div class="col-sm-9">
+                        <input id="text19" type="text" placeholder="2222.22" class="form-control"><small class="text-muted">Almony, Child Support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.</small>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text20" class="col-sm-3 form-control-label">Sales Consultant</label>
+                      <div class="col-sm-9">
+                        <input id="text20" type="text" placeholder="George Lopez" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="col-sm-offset-3 col-sm-9">
+                      <p>This site is secure. To protect your personal information, we have taken steps to ensure your information is transmitted to us over a secure, 128-bit encrypted connection. &copy; 2016 Privacy Policy</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-right credit-app-infobox">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Some title</h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="step4" class="tab-pane">
+              <h3 class="h4">Step 4</h3>
+              <!--	h2.h1 Site Usage Disclaimer & Privacy Policy-->
+              <div class="media">
+                <div class="media-body">
+                  <form>
+                    <div class="form-group row">
+                      <div class="col-sm-6">
+                        <div class="checkbox">
+                          <label style="white-space: initial">
+                            <input type="checkbox">If Selected, Dealer reserves the right to share non-public personal information with outside companies and relatioed organizations, such as market research firms, financial providers, and other companies that may provide you with materials about other products or services.
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="checkbox">
+                          <label style="white-space: initial">
+                            <input type="checkbox">I certify that all information containe dherin is true to the best of my knowledge. By affixing my name below, I certify that I am the person submitting this application and I authorize Rothbard Chevrolet to process this information by running credit inquiry This inquiry will be for the purpose of qualifying for auto finance.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text18" class="col-sm-3 form-control-label">E-Signature</label>
+                      <div class="col-sm-9">
+                        <input id="text18" type="text" placeholder="John Doe" class="form-control"><small class="text-muted">(Type Your Name Here)</small>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text18" class="col-sm-3 form-control-label">Date</label>
+                      <div class="col-sm-9">
+                        <input id="text18" type="text" placeholder="Friday, July 08, 2016" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="media-right credit-app-infobox">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Some title</h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="step5" class="tab-pane">
+              <h3 class="h4">Step 5</h3>
+              <div class="media">
+                <div class="media-body">
+                  <Tab>Content In Here</Tab>
+                </div>
+                <div class="media-right credit-app-infobox">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Notification Title</h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>Notification Body</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script defer src="../js/mockups/credit.js"></script>
+  </body>
+</html>

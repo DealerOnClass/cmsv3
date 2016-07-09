@@ -1067,7 +1067,7 @@ block content
 							a.dropdown-item.dropdown-link(href="#") Another action
 							a.dropdown-item.dropdown-link(href="#") Something else here
 							.dropdown-divider(role="separator")
-								a.dropdown-item.dropdown-link(href="#") Separated link
+							a.dropdown-item.dropdown-link(href="#") Separated link
 					input.form-control(type="text", aria-label="Text input with segmented button dropdown")
 			.col-lg-6
 				.input-group
@@ -1081,7 +1081,7 @@ block content
 							a.dropdown-item.dropdown-link(href="#") Another action
 							a.dropdown-item.dropdown-link(href="#") Something else here
 							.dropdown-divider(role="separator")
-								a.dropdown-item.dropdown-link(href="#") Separated link
+							a.dropdown-item.dropdown-link(href="#") Separated link
 	//
 	//	Labels
 	section.m-b-5.section-labels
@@ -1244,7 +1244,7 @@ block content
 			.navbar-header
 				button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
 					i.fa.fa-navicon
-						a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
+				a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
 			.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
 				span.navbar-item I"m text
 				a.navbar-item.navbar-link(href="#") I"m a link
@@ -1456,67 +1456,63 @@ block content
 	section.m-b-5.section-colors
 		header.m-b-1.m-t-2.text-small-caps
 			h3 Colors
-		h3.text-danger Text Colors
-		.row
-			.m-b-1.col-sm-3
-				.box.text-default .text-default
-			.m-b-1.col-sm-3
-				.box.text-inverse .text-inverse
-		.row
-			.m-b-1.col-sm-3
-				.box.text-cta .text-cta
-			.m-b-1.col-sm-3
-				.box.text-main .text-main
-		.row
-			.m-b-1.col-sm-3
-				.box.text-alt1 .text-alt1
-			.m-b-1.col-sm-3
-				.box.text-alt2 .text-alt2
-			.m-b-1.col-sm-3
-				.box.text-alt3 .text-alt3
-		.row
-			.m-b-1.col-sm-3
-				.box.text-success .text-success
-			.m-b-1.col-sm-3
-				.box.text-info .text-info
-			.m-b-1.col-sm-3
-				.box.text-warning .text-warning
-			.m-b-1.col-sm-3
-				.box.text-danger .text-danger
-		.row
-			.m-b-1.col-sm-3
-				.box.text-white .text-white
-			.m-b-1.col-sm-3
-				.box.text-black .text-black
-		h3.text-danger Bg Colors
-		.row
-			.m-b-1.col-sm-3
-				.box.bg-default .bg-default
-			.m-b-1.col-sm-3
-				.box.bg-inverse .bg-inverse
-		.row
-			.m-b-1.col-sm-3
-				.box.bg-cta .bg-cta
-			.m-b-1.col-sm-3
-				.box.bg-main .bg-main
-		.row
-			.m-b-1.col-sm-3
-				.box.bg-alt1 .bg-alt1
-			.m-b-1.col-sm-3
-				.box.bg-alt2 .bg-alt2
-			.m-b-1.col-sm-3
-				.box.bg-alt3 .bg-alt3
-		.row
-			.m-b-1.col-sm-3
-				.box.bg-success .bg-success
-			.m-b-1.col-sm-3
-				.box.bg-info .bg-info
-			.m-b-1.col-sm-3
-				.box.bg-warning .bg-warning
-			.m-b-1.col-sm-3
-				.box.bg-danger .bg-danger
-		.row
-			.m-b-1.col-sm-3
-				.box.bg-white .bg-white
-			.m-b-1.col-sm-3
-				.box.bg-black .bg-black
+		h3.text-danger Colors
+		table.table
+			thead
+				tr
+					th (color)
+					th text-(color)
+					th bg-(color)
+			tbody
+				tr
+					td default
+					td.text-default .text-default
+					td.bg-default .bg-default
+				tr
+					td inverse
+					td.text-inverse .text-inverse
+					td.bg-inverse .bg-inverse
+				tr
+					td cta
+					td.text-cta .text-cta
+					td.bg-cta .bg-cta
+				tr
+					td main
+					td.text-main .text-main
+					td.bg-main .bg-main
+				tr
+					td alt1
+					td.text-alt1 .text-alt1
+					td.bg-alt1 .bg-alt1
+				tr
+					td alt2
+					td.text-alt2 .text-alt2
+					td.bg-alt2 .bg-alt2
+				tr
+					td alt3
+					td.text-alt3 .text-alt3
+					td.bg-alt3 .bg-alt3
+				tr
+					td success
+					td.text-success .text-success
+					td.bg-success .bg-success
+				tr
+					td info
+					td.text-info .text-info
+					td.bg-info .bg-info
+				tr
+					td warning
+					td.text-warning .text-warning
+					td.bg-warning .bg-warning
+				tr
+					td danger
+					td.text-danger .text-danger
+					td.bg-danger .bg-danger
+				tr
+					td white
+					td.text-white .text-white
+					td.bg-white .bg-white
+				tr
+					td black
+					td.text-black .text-black
+					td.bg-black .bg-black

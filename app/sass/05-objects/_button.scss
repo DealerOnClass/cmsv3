@@ -23,6 +23,7 @@ $btn-bg-active: $primary__color;
     border: 1px solid $btn-border;
     border-radius: $btn-r;
     background-color: $btn-bg;
+	user-select: none;
 
     @include state--hover("inherit", $btn-bg, $btn-c);
     @include state--focus("inherit", $btn-bg, $btn-c);

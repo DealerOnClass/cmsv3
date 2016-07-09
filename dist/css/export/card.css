@@ -1,2 +1,159 @@
-.card{-ms-flex-direction:column;flex-direction:column}.card,.card-item{display:-ms-flexbox;display:flex}.card-item{-ms-flex:1 1 auto;flex:1 1 auto;padding:.5rem .75rem;border:1px solid transparent}.card-item:first-child{border-radius:.3rem .3rem 0 0}.card-item:last-child{border-radius:0 0 .3rem .3rem}.card-item:only-child{border-radius:.3rem}.card-header{background-color:#e4e4e4;-ms-flex-positive:0;flex-grow:0}.card-block{border-color:#e4e4e4;-ms-flex-positive:1;flex-grow:1}.card-footer{background-color:#e4e4e4}.card-actions,.card-footer{-ms-flex-positive:0;flex-grow:0}.card-actions{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;padding:0;border:0}.card-actions .btn{-ms-flex:1 1 0;flex:1 1 0;border-radius:0}.card-actions:first-child .btn:first-child{border-radius:.3rem 0 0 0}.card-actions:first-child .btn:last-child{border-radius:0 .3rem 0 0}.card-actions:first-child .btn:only-child{border-radius:.3rem .3rem 0 0}.card-actions:last-child .btn:first-child{border-radius:0 0 0 .3rem}.card-actions:last-child .btn:last-child{border-radius:0 0 .3rem 0}.card-actions:last-child .btn:only-child{border-radius:0 0 .3rem .3rem}.card-actions:only-child .btn:first-child{border-radius:.3rem 0 0 .3rem}.card-actions:only-child .btn:last-child{border-radius:0 .3rem .3rem 0}.card-actions:only-child .btn:only-child{border-radius:.3rem}.card-group{display:-ms-flexbox;display:flex}.card-group .card{-ms-flex:1 1 0;flex:1 1 0}.card-group .card .card-item{border-radius:0}.card-group .card:first-child .card-item:first-child{border-radius:.3rem 0 0 0}.card-group .card:first-child .card-item:last-child{border-radius:0 0 0 .3rem}.card-group .card:first-child .card-item:only-child{border-radius:.3rem 0 0 .3rem}.card-group .card:last-child .card-item:first-child{border-radius:0 .3rem 0 0}.card-group .card:last-child .card-item:last-child{border-radius:0 0 .3rem 0}.card-group .card:last-child .card-item:only-child{border-radius:0 .3rem .3rem 0}.card-group .card:only-child .card-item:first-child{border-radius:.3rem .3rem 0 0}.card-group .card:only-child .card-item:last-child{border-radius:0 0 .3rem .3rem}.card-group .card:only-child .card-item:only-child{border-radius:.3rem}.card-deck{display:-ms-flexbox;display:flex;margin-right:-1rem;margin-left:-1rem}.card-deck .card{-ms-flex:1 1 0;flex:1 1 0;padding-right:1rem;padding-left:1rem}
-/*# sourceMappingURL=../map/export/card.css.map */
+.card {
+        flex-direction: column; 
+
+    -ms-flex-direction: column;
+}
+
+.card,
+.card-item {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-item {
+        flex: 1 1 auto;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent; 
+
+    -ms-flex: 1 1 auto;
+}
+.card-item:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-item:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.card-item:only-child {
+    border-radius: 0.3rem;
+}
+
+.card-header {
+    flex-grow: 0; 
+    background-color: #e4e4e4;
+
+    -ms-flex-positive: 0;
+}
+
+.card-block {
+    flex-grow: 1; 
+    border-color: #e4e4e4;
+
+    -ms-flex-positive: 1;
+}
+
+.card-footer {
+    background-color: #e4e4e4;
+}
+
+.card-actions,
+.card-footer {
+    flex-grow: 0; 
+
+    -ms-flex-positive: 0;
+}
+
+.card-actions {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: 0; 
+
+    -ms-flex-pack: justify;
+}
+.card-actions .btn {
+        flex: 1 1 0;
+    border-radius: 0; 
+
+    -ms-flex: 1 1 0;
+}
+.card-actions:first-child .btn:first-child {
+    border-radius: 0.3rem 0 0 0;
+}
+.card-actions:first-child .btn:last-child {
+    border-radius: 0 0.3rem 0 0;
+}
+.card-actions:first-child .btn:only-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-actions:last-child .btn:first-child {
+    border-radius: 0 0 0 0.3rem;
+}
+.card-actions:last-child .btn:last-child {
+    border-radius: 0 0 0.3rem 0;
+}
+.card-actions:last-child .btn:only-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.card-actions:only-child .btn:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.card-actions:only-child .btn:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+.card-actions:only-child .btn:only-child {
+    border-radius: 0.3rem;
+}
+.card-group {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-group .card {
+        flex: 1 1 0; 
+
+    -ms-flex: 1 1 0;
+}
+.card-group .card .card-item {
+    border-radius: 0;
+}
+
+.card-group .card:first-child .card-item:first-child {
+    border-radius: 0.3rem 0 0 0;
+}
+
+.card-group .card:first-child .card-item:last-child {
+    border-radius: 0 0 0 0.3rem;
+}
+
+.card-group .card:first-child .card-item:only-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.card-group .card:last-child .card-item:first-child {
+    border-radius: 0 0.3rem 0 0;
+}
+
+.card-group .card:last-child .card-item:last-child {
+    border-radius: 0 0 0.3rem 0;
+}
+
+.card-group .card:last-child .card-item:only-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.card-group .card:only-child .card-item:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.card-group .card:only-child .card-item:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.card-group .card:only-child .card-item:only-child {
+    border-radius: 0.3rem;
+}
+
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+.card-deck .card {
+        flex: 1 1 0;
+    padding-right: 1rem;
+    padding-left: 1rem; 
+
+    -ms-flex: 1 1 0;
+}

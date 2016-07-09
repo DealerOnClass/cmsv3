@@ -1,0 +1,22 @@
+extends ../templates/default.jade
+block title
+	title CMS Shell
+block content
+	main
+		nav.navbar.navbar-responsive.navbar-main
+			.navbar-header
+				button.navbar-item.navbar-link.navbar-toggle(data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse")
+					i.fa.fa-navicon
+				a.navbar-item.navbar-link.navbar-logo(href="#") I"m a Logo
+			.navbar-collapse.collapse#navbar-collapse(aria-expanded="true")
+				span.navbar-item I"m text
+				a.navbar-item.navbar-link(href="#") I"m a link
+				button.navbar-item.navbar-link I"m a button
+				.dropdown
+					button.dropdown-toggle(data-toggle="dropdown") Dropdown
+					.dropdown-menu
+						a.dropdown-item.dropdown-link(href="#") Item 1
+						a.dropdown-item.dropdown-link(href="#") Item 2
+						a.dropdown-item.dropdown-link(href="#") Item 3
+		.container.m-y-5.p-y-5
+			p Ipsum eum quod nulla soluta numquam aliquam a tenetur, modi facere ratione dolore. Facere deleniti maxime voluptatum maxime quibusdam. Nihil labore iste quod dolore consectetur reprehenderit facilis est quaerat. Similique.

@@ -1,2 +1,35 @@
-.media{display:-ms-flexbox;display:flex}.media-body+.media-object,.media-object+.media-body{margin-left:1rem}.media-object{-ms-flex-negative:0;flex-shrink:0}.media-body{-ms-flex-positive:1;flex-grow:1}.media-bottom{-ms-flex-align:end;-ms-grid-row-align:flex-end;align-items:flex-end}.media-middle{-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}
-/*# sourceMappingURL=../map/export/media.css.map */
+.media {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.media-body + .media-object,
+.media-object + .media-body {
+    margin-left: 1rem;
+}
+
+.media-object {
+    flex-shrink: 0; 
+
+    -ms-flex-negative: 0;
+}
+
+.media-body {
+    flex-grow: 1; 
+
+    -ms-flex-positive: 1;
+}
+
+.media-bottom {
+    align-items: flex-end; 
+
+    -ms-flex-align: end;
+    -ms-grid-row-align: flex-end;
+}
+
+.media-middle {
+    align-items: center; 
+
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+}

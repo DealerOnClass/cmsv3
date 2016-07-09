@@ -59,6 +59,9 @@ $input-group-bg-active: $primary__color;
 		.dropdown-toggle:last-child {
 			border-radius: 0;
 		}
+		.dropdown-toggle:nth-last-child(2):not(:first-child) {
+			border-radius: 0;
+		}
 	}
 	&:last-child {
 		.btn:first-child,

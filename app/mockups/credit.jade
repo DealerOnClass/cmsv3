@@ -1,0 +1,204 @@
+extends ../templates/bootstrap-v36.jade
+block title
+	title Credit App
+block content
+	main.credit-app.container.m-y-5.p-y-5
+		.credit-app-titlebar
+			h2.h3(style="margin: 0") Get Pre-Approved
+			.btn-group
+				a.btn.btn-primary(href="#" data-credit-prev)
+					i.fa.fa-chevron-left
+					| &nbsp;
+					| Back
+				a.btn.btn-primary(href="#" data-credit-next)
+					| Next
+					| &nbsp;
+					i.fa.fa-chevron-right
+		.panel.panel-default
+			.credit-app-navbar.panel-heading
+				.progress
+					.progress-bar.progress-bar-success(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0%;', data-credit-progress-bar)
+						span.sr-only 60% Complete
+				ul.nav.nav-pills.nav-justified(role="tablist" data-credit-progress)
+					li.active(role="presentation")
+						a(href="#step1", aria-controls="step1", role="tab", data-toggle="tab") Step 1
+					li(role="presentation")
+						a(href="#step2", aria-controls="step2", role="tab", data-toggle="tab") Step 2
+					li(role="presentation")
+						a(href="#step3", aria-controls="step3", role="tab", data-toggle="tab") Step 3
+					li(role="presentation")
+						a(href="#step4", aria-controls="step4", role="tab", data-toggle="tab") Step 4
+					li(role="presentation")
+						a(href="#step5", aria-controls="step5", role="tab", data-toggle="tab") Step 5
+			.panel-body
+				.tab-content
+					section.tab-pane.active#step1
+						h3.h4 Step 1
+						.media
+							.media-body
+								form
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text1") First Name
+										.col-sm-9
+											input#text1.form-control(type="text", placeholder="John")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text2") Last Name
+										.col-sm-9
+											input#text2.form-control(type="text", placeholder="Doe")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text3") Email
+										.col-sm-9
+											input#text3.form-control(type="email", placeholder="JohnDoe@email.com")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text4") Phone
+										.col-sm-9
+											input#text4.form-control(type="tel", placeholder="(123)-123-1234")
+							.media-right.credit-app-infobox
+								.panel.panel-default
+									.panel-heading
+										h3.panel-title Some title
+									.panel-body
+										p Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.
+					section.tab-pane#step2
+						h3.h4 Step 2
+						.media
+							.media-body
+								form
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text5") Street Address
+										.col-sm-9
+											input#text5.form-control(type="text", placeholder="1234 John Doe St")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text6") City, State, Zip
+										.col-sm-9
+											input#text6.form-control(type="text", placeholder="Germantown, MD, 20874")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text7") Driver's License Number
+										.col-sm-9
+											input#text7.form-control(type="text", placeholder="1234-5678-9012-3456")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text8") State Issued
+										.col-sm-9
+											select#text8.form-control
+												option Alaska
+												option Maryland
+												option Ohio
+												option Zelda
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text9") Expiration Date
+										.col-sm-9
+											input#text9.form-control(type="date", placeholder="MD")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text10") Social Security Number
+										.col-sm-9
+											input#text10.form-control(type="text", placeholder="XXX-XXX-XXXX")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text11") Date of Birth
+										.col-sm-9
+											input#text11.form-control(type="date", placeholder="MD")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text12") Housing Status
+										.col-sm-9
+											select#text12.form-control
+												option Rent
+												option Own
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text12") Rent/Mortgage Amount
+										.col-sm-9
+											input#text12.form-control(type="text", placeholder="1200")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text13") Move In Date
+										.col-sm-9
+											input#text13.form-control(type="date", placeholder="")
+							.media-right.credit-app-infobox
+								.panel.panel-default
+									.panel-heading
+										h3.panel-title Some title
+									.panel-body
+										p Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.
+					section.tab-pane#step3
+						h3.h4 Step 3
+						.media
+							.media-body
+								form
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text14") Employer
+										.col-sm-9
+											input#text14.form-control(type="text", placeholder="DealerOn")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text15") Occupation
+										.col-sm-9
+											input#text15.form-control(type="text", placeholder="Coffee Guy")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text16") Work Phone
+										.col-sm-9
+											input#text16.form-control(type="tel", placeholder="(123)-123-1234")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text17") Start Date
+										.col-sm-9
+											input#text17.form-control(type="date")-123-1234")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text18") Monthly Gross Salary
+										.col-sm-9
+											input#text18.form-control(type="text", placeholder="2222.22")
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text19") Other Income
+										.col-sm-9
+											input#text19.form-control(type="text", placeholder="2222.22")
+											small.text-muted Almony, Child Support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text20") Sales Consultant
+										.col-sm-9
+											input#text20.form-control(type="text", placeholder="George Lopez")
+								.row
+									.col-sm-offset-3.col-sm-9
+										p This site is secure. To protect your personal information, we have taken steps to ensure your information is transmitted to us over a secure, 128-bit encrypted connection. &copy; 2016 Privacy Policy
+							.media-right.credit-app-infobox
+								.panel.panel-default
+									.panel-heading
+										h3.panel-title Some title
+									.panel-body
+										p Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.
+					section.tab-pane#step4
+						h3.h4 Step 4
+						//	h2.h1 Site Usage Disclaimer & Privacy Policy
+						.media
+							.media-body
+								form
+									.form-group.row
+										.col-sm-6
+											.checkbox
+												label(style="white-space: initial")
+													input(type="checkbox")
+													| If Selected, Dealer reserves the right to share non-public personal information with outside companies and relatioed organizations, such as market research firms, financial providers, and other companies that may provide you with materials about other products or services.
+										.col-sm-6
+											.checkbox
+												label(style="white-space: initial")
+													input(type="checkbox")
+													| I certify that all information containe dherin is true to the best of my knowledge. By affixing my name below, I certify that I am the person submitting this application and I authorize Rothbard Chevrolet to process this information by running credit inquiry This inquiry will be for the purpose of qualifying for auto finance.
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text18") E-Signature
+										.col-sm-9
+											input#text18.form-control(type="text", placeholder="John Doe")
+											small.text-muted (Type Your Name Here)
+									.form-group.row
+										label.col-sm-3.form-control-label(for="text18") Date
+										.col-sm-9
+											input#text18.form-control(type="text", placeholder="Friday, July 08, 2016")
+							.media-right.credit-app-infobox
+								.panel.panel-default
+									.panel-heading
+										h3.panel-title Some title
+									.panel-body
+										p Amet ipsa quaerat cumque rem praesentium! Aliquam iste doloremque totam similique explicabo similique? Corrupti pariatur assumenda quia quisquam officia dolor? Maxime modi velit ipsum veniam sed. Fuga et vero nemo.
+					section.tab-pane#step5
+						h3.h4 Step 5
+						.media
+							.media-body
+								Tab Content In Here
+							.media-right.credit-app-infobox
+								.panel.panel-default
+									.panel-heading
+										h3.panel-title Notification Title
+									.panel-body
+										p Notification Body

@@ -1,0 +1,27 @@
+@mixin navbar-color-variation($input__palette) {
+	@each $class__name, $color in $input__palette {
+
+		$font: check-color($color, 80, inherit, $white);
+		$border: transparent;
+		$background: $color;
+
+		.navbar-#{$class__name} {
+			color: $font;
+			background-color: $background;
+			.navbar-item,
+			.dropdown-item,
+			.dropdown-toggle {
+				border-color: $border;
+				background-color: $background;
+			}
+			.navbar-link,
+			.dropdown-link,
+			.dropdown-toggle {
+				@include state--hover('inherit', $background, $navbar-c);
+				@include state--focus('inherit', $background, $navbar-c);
+				@include state--active('inherit', $background, ($navbar-c * 2));
+				@include state--class('active', 'inherit', $background, ($navbar-c * 2));
+			}
+		}
+	}
+}

@@ -1,2 +1,72 @@
-.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-pack:center;justify-content:center;padding:.5rem .75rem;white-space:nowrap;border:1px solid transparent;border-radius:.3rem;background-color:#e4e4e4}.btn:focus,.btn:hover{background-color:#cdcdcd}.btn:active{background-color:#b6b6b6}.btn.active{color:#fff;background-color:#3561ab}.btn[active=true],.btn[aria-expanded=true]{color:#fff;background-color:#2b4e8a}.btn-block{display:-ms-flexbox;display:flex;width:100%}label.btn input{display:none}label.btn:hover{cursor:pointer}.btn-cta{color:#fff;border-color:transparent;background-color:#f36c0a}.btn-cta:focus,.btn-cta:hover{background-color:#db6109}.btn-cta.active,.btn-cta:active{background-color:#c25608}.btn-main{color:#fff;border-color:transparent;background-color:#3662ad}.btn-main:focus,.btn-main:hover{background-color:#31589c}.btn-main.active,.btn-main:active{background-color:#2b4e8a}
-/*# sourceMappingURL=../map/export/button.css.map */
+.btn {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    background-color: #e4e4e4;
+
+    -ms-flex-pack: center;
+}
+.btn:focus,
+.btn:hover {
+    background-color: #cdcdcd;
+}
+.btn:active {
+    background-color: #b6b6b6;
+}
+.btn.active {
+    color: #fff;
+    background-color: #3561ab;
+}
+.btn[active=true],
+.btn[aria-expanded=true] {
+    color: #fff;
+    background-color: #2b4e8a;
+}
+.btn-block {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+label.btn input {
+    display: none;
+}
+
+label.btn:hover {
+    cursor: pointer;
+}
+.btn-cta {
+    color: #fff;
+    border-color: transparent;
+    background-color: #f36c0a;
+}
+.btn-cta:focus,
+.btn-cta:hover {
+    background-color: #db6109;
+}
+.btn-cta.active,
+.btn-cta:active {
+    background-color: #c25608;
+}
+
+.btn-main {
+    color: #fff;
+    border-color: transparent;
+    background-color: #3662ad;
+}
+.btn-main:focus,
+.btn-main:hover {
+    background-color: #31589c;
+}
+.btn-main.active,
+.btn-main:active {
+    background-color: #2b4e8a;
+}

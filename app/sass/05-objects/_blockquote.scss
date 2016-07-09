@@ -16,21 +16,10 @@ $blockquote-bg: $default__color;
 .blockquote {
     position: relative;
     padding: $blockquote-y ($blockquote-x * 2);
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 4px;
-        height: 100%;
-        content: "";
-        background-color: $blockquote-bg;
-    }
+    border-left: 4px solid $blockquote-bg;
 }
 .blockquote-reversed {
     text-align: right;
-    &:after {
-        right: 0;
-        left: auto;
-    }
+    border-right: 4px solid $blockquote-bg;
+    border-left: 0 none;
 }

@@ -1,2 +1,135 @@
-html{font-size:100%}body{font-family:Avenir,sans-serif;font-weight:400;line-height:1.618;color:#343c4b}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:1.618rem;margin-bottom:.809rem}.h1{font-size:2.44141em}.h2{font-size:1.95313em}.h3{font-size:1.5625em}.h4{font-size:1.25em}.h5{font-size:1em}.h6,.small,small{font-size:.8em}p{margin-bottom:.809em}strong{font-weight:700}em{font-style:italic}a{color:#3662ad}ol ol,ol ul,ul ol,ul ul{padding-left:1rem}address,blockquote,dl,form,ol,table,ul{margin-bottom:1.618em}blockquote cite:before{content:"\2014"}.display-1{font-size:5.96046em}.display-2{font-size:4.76837em}.display-3{font-size:3.8147em}.display-4{font-size:3.05176em}.lead{font-size:1.125em}mark{background-color:#ff0}del,s{text-decoration:line-through}ins,u{text-decoration:underline}abbr[title]{border-bottom:1px dotted}hr{height:1px;border:0;background-color:#343c4b}.dl-horizontal{margin-right:-1rem;margin-left:-1rem}.dl-horizontal:after{content:"";clear:both;display:table}code,kbd,mark,pre,samp{font-family:monospace}kbd{padding:.2rem;color:#fff;background-color:#000}
-/*# sourceMappingURL=../map/export/typography.css.map */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Avenir,sans-serif;
+    font-weight: 400;
+    line-height: 1.618;
+    color: #343c4b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+    margin-top: 1.618rem;
+    margin-bottom: 0.809rem;
+}
+
+.h1 {
+    font-size: 2.44141em;
+}
+
+.h2 {
+    font-size: 1.95313em;
+}
+
+.h3 {
+    font-size: 1.5625em;
+}
+
+.h4 {
+    font-size: 1.25em;
+}
+
+.h5 {
+    font-size: 1em;
+}
+
+.h6,
+.small,
+small {
+    font-size: 0.8em;
+}
+p {
+    margin-bottom: 0.809em;
+}
+strong {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+a {
+    color: #3662ad;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    padding-left: 1rem;
+}
+address,
+blockquote,
+dl,
+form,
+ol,
+table,
+ul {
+    margin-bottom: 1.618em;
+}
+blockquote cite:before {
+    content: "\2014";
+}
+.display-1 {
+    font-size: 5.96046em;
+}
+
+.display-2 {
+    font-size: 4.76837em;
+}
+
+.display-3 {
+    font-size: 3.8147em;
+}
+
+.display-4 {
+    font-size: 3.05176em;
+}
+.lead {
+    font-size: 1.125em;
+}
+mark {
+    background-color: #ff0;
+}
+del,
+s {
+    text-decoration: line-through;
+}
+ins,
+u {
+    text-decoration: underline;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+hr {
+    height: 1px;
+    border: 0;
+    background-color: #343c4b;
+}
+.dl-horizontal {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+.dl-horizontal:after {
+    display: table; 
+    clear: both;
+    content: "";
+}
+code,
+kbd,
+mark,
+pre,
+samp {
+    font-family: monospace;
+}
+
+kbd {
+    padding: 0.2rem;
+    color: #fff;
+    background-color: #000;
+}

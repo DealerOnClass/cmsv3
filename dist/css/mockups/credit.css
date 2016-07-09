@@ -1,0 +1,97 @@
+.credit-app .progress {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.credit-app .nav-pills {
+    position: relative;
+    z-index: 2;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center; 
+
+    -ms-flex-align: center;
+}
+
+.credit-app .nav-pills > li + li {
+    margin: 0;
+}
+
+.credit-app .nav-pills > li,
+.credit-app .nav-pills > li > a {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        flex: 1 1 0;
+    width: auto;
+    border-radius: 0; 
+
+    -ms-flex: 1 1 0;
+}
+
+.credit-app .nav-pills > li.active > a,
+.credit-app .nav-pills > li > a {
+    transition-property: color;
+    color: #fff;
+    background-color: transparent;
+}
+
+.credit-app .nav-pills > li.is-next > a {
+    color: #333;
+}
+
+.credit-app .nav-pills > li > a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.credit-app .nav-pills > li > a:active {
+    background-color: rgba(0,0,0,0.15);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+}
+
+.credit-app .nav-pills > li > a,
+.credit-app .progress .progress-bar {
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    transition-duration: 0.4s;
+}
+
+.credit-app .nav-justified > li a {
+    margin-bottom: 0;
+}
+
+.credit-app-navbar {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.credit-app-titlebar {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+}
+
+.credit-app-infobox {
+    min-width: 20em;
+    padding-left: 30px;
+}
+.credit-app-infobox .panel {
+    margin-bottom: 0;
+}
+
+@media (max-width:767px) {
+    .credit-app-infobox {
+        display: block;
+        padding-left: 0;
+    }
+}

@@ -14,7 +14,7 @@ var paths = {
         dist: './dist/font/',
     },
     html: {
-        src: './app/*.jade',
+        src: './app/**/*.jade',
         dist: './dist/',
     },
     img: {
@@ -88,19 +88,19 @@ function serve() {
 function styles() {
     return gulp.src(paths.styles.src)
         .pipe(plumber())
-		.pipe(sourcemaps.init())
+		//	.pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false
         }))
         .pipe(cssnano({
-            core: true,
+            core: false,
             discardComments: { removeAll: true },
 			discardUnused: false
         }))
-        //	.pipe(csscomb())
-		.pipe(sourcemaps.write('map'))
+        .pipe(csscomb())
+		//	.pipe(sourcemaps.write('map'))
         .pipe(gulp.dest(paths.styles.dist))
         .pipe(browsersync.stream());
 }

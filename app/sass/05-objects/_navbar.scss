@@ -35,6 +35,9 @@ $navbar-bg-active: $primary__color;
     @include state--active("inherit", $navbar-bg, ($navbar-c * 2));
 	@include state--attr("aria-expanded=true", "inherit", $navbar-bg, ($navbar-c * 2));
 }
+.navbar .dropdown-item {
+	border-radius: 0 !important;
+}
 .navbar .open .dropdown-toggle {
 	color: $navbar-fc-active;
 	background-color: $navbar-bg-active;
@@ -97,7 +100,7 @@ $navbar-bg-active: $primary__color;
  */
 //	@include navbar-color-variation($default__palette);
 //	@include navbar-color-variation($inverse__palette);
-//	@include navbar-color-variation($primary__palette);
+@include navbar-color-variation($primary__palette);
 //	@include navbar-color-variation($neutral__palette);
 //	@include navbar-color-variation($state__palette);
 //	@include navbar-color-variation($classic__palette);
