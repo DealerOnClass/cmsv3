@@ -1,0 +1,22 @@
+.oncanvas-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.oncanvas-body {
+    margin-top: calc(2.618rem + 1px);
+}
+
+.oncanvas-body-inner {
+    margin-left: 15em;
+}
+
+.offcanvas-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15em;
+    margin-top: calc(2.618rem + 1px);
+}

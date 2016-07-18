@@ -33,21 +33,21 @@ $navbar-bg-active: $primary__color;
     @include state--hover("inherit", $navbar-bg, $navbar-c);
     @include state--focus("inherit", $navbar-bg, $navbar-c);
     @include state--active("inherit", $navbar-bg, ($navbar-c * 2));
-	@include state--attr("aria-expanded=true", "inherit", $navbar-bg, ($navbar-c * 2));
+    @include state--attr("aria-expanded=true", "inherit", $navbar-bg, ($navbar-c * 2));
 }
 .navbar .dropdown-item {
-	border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 .navbar .open .dropdown-toggle {
-	color: $navbar-fc-active;
-	background-color: $navbar-bg-active;
+    color: $navbar-fc-active;
+    background-color: $navbar-bg-active;
 }
 .navbar-header,
 .navbar-logo {
     margin-right: auto;
 }
 .navbar-header {
-	display: flex;
+    display: flex;
 }
 .navbar .dropdown {
     padding: 0;
@@ -61,38 +61,65 @@ $navbar-bg-active: $primary__color;
         left: auto;
     }
 }
+.navbar-svg {
+    position: relative;
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+    }
+	object,
+	img {
+		$height: 1em;
+		position: relative;
+		height: $height;
+		top: ($height / 4);
+	}
+}
 /*
  * Variations
  */
 .navbar-responsive {
+    flex-direction: column;
+    @media (min-width: $m-tablet) {
+        flex-direction: row;
+    }
+    .navbar-toggle {
+        @media (min-width: $m-tablet) {
+            display: none;
+        }
+    }
+    .navbar-item {
+        flex: 1 0 auto;
+    }
+    .navbar-collapse, {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $m-tablet) {
+            flex-direction: row;
+            height: initial !important;
+        }
+        &.collapse {
+            display: none;
+            @media (min-width: $m-tablet) {
+                display: flex;
+            }
+        }
+        &.in {
+            display: flex;
+        }
+    }
+}
+.navbar-stacked {
+    display: inline-flex;
 	flex-direction: column;
-	@media (min-width: $m-tablet) {
-		flex-direction: row;
-	}
-	.navbar-toggle {
-		@media (min-width: $m-tablet) {
-			display: none;
-		}
-	}
-	.navbar-item {
-		flex: 1 0 auto;
-	}
-	.navbar-collapse, {
-		display: flex;
-		flex-direction: column;
-		@media (min-width: $m-tablet) {
-			height: initial !important;
-			flex-direction: row;
-		}
-		&.collapse {
-			display: none;
-			@media (min-width: $m-tablet) {
-				display: flex;
-			}
-		}
-		&.in {
-			display: flex;
-		}
+	.navbar-item,
+	.dropdown,
+	.dropdown-toggle {
+		flex-grow: 1;
 	}
 }
 /*
@@ -103,4 +130,5 @@ $navbar-bg-active: $primary__color;
 @include navbar-color-variation($primary__palette);
 //	@include navbar-color-variation($neutral__palette);
 //	@include navbar-color-variation($state__palette);
+//	@include navbar-color-variation($classic__palette);
 //	@include navbar-color-variation($classic__palette);

@@ -1,0 +1,255 @@
+extends ../templates/bootstrap-v36.jade
+block style
+	link(rel="stylesheet" href="../css/mockups/vdp.css")
+block title
+	title VDP
+block content
+	main.vdp
+		//
+		//	Breadcrumb
+		nav.vdp-breadcrumb
+			.container
+				.pull-left
+					ol.breadcrumb
+						li
+							a(href="#") Search New
+						li
+							a(href="#") Chevrolet
+						li.active 2016 Chevrolet Silverado 1500 Work Truck Extended Cab
+				.pull-right
+					ul.nav.nav-pills
+						li
+							a(href="#")
+								i.fa.fa-envelope
+								| &nbsp; Email
+						li
+							a(href="#")
+								i.fa.fa-print
+								| &nbsp; Print
+						li
+							a(href="#")
+								i.fa.fa-mobile
+								| &nbsp; Text
+		//
+		//	Carousel
+		.vdp-carousel
+			.container
+				.pull-left
+					ul.nav.nav-pills
+						li
+							a(href="#")
+								i.fa.fa-play-circle
+								| &nbsp; Video
+						li
+							a(href="#")
+								i.fa.fa-tint
+								| &nbsp; Colors
+						li
+							a(href="#")
+								i.fa.fa-refresh
+								| &nbsp; 360&deg;
+			.vdp-carousel-placeholder
+		//
+		//	Body
+		.vdp-body.container(style="margin-bottom: 60px")
+			.row
+				.col-md-8
+					.panel(style="margin-bottom: 1px")
+						.panel-heading
+							ul.list-inline.small
+								li Vin: 3GCUKREC4GG120117
+								li Stock: P23219
+								li Model: CK15543
+							h1.h4 2016 Chevrolet Silverado 1500 Work Truck Extended Cab w/ Cheese
+							ul.list-inline.small
+								li
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star(style="opacity: 0.5")
+									i.fa.fa-star(style="opacity: 0.5")
+								li 3.73(49) Reviews - Edmunds.com
+								li
+									a.btn.btn-sm.btn-default.btn-rounded(href="#")
+										i.fa.fa-check.text-muted
+										span.text-muted
+											| &nbsp;Confirm Availability
+						.panel-body
+							.row
+								.col-sm-6
+									ul.list-unstyled
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps City/Hwy
+												h3.h4(style="margin: 0") 30/20mpg
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps Body Style
+												h3.h4(style="margin: 0") 4WD Crew Cab 143.5" LT w/2LT
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps Ext/Int
+												h3.h4(style="margin: 0")
+													i.fa.fa-drop
+													| Ruby Metallic /
+													i.fa.fa-drop
+													| Dark Ash
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps Horsepower
+												h3.h4(style="margin: 0") 349hp
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps Engine
+												h3.h4(style="margin: 0") 8Cyl - 6.7L
+										li.media
+											.media-left
+												img(src="http://placehold.it/24x24")
+											.media-body
+												small.text-small-caps Transmission
+												h3.h4(style="margin: 0") 6 Speed FWD
+								.col-sm-6
+									h3.h4 Vehicle Description
+									p This car is made of cheese. All rebates to dealer. All prior sales excluded. In stock units only. 0% offers may be in lieu of factory rebates, and are based on approved tier 1 credit through GM Financial. Leases include 10K miles per year with $0.25 per mile over penalty. Purchase Payment based on tier credit through preferred lender. Lease Payment based on approved tier 1 credit through GM Financial. Payment includes title, registration...read more
+									h3.h4 Eligible Benefits
+									ul.list-inline
+										li
+											img(src="http://placehold.it/60x40")
+										li
+											img(src="http://placehold.it/60x40")
+										li
+											img(src="http://placehold.it/60x40")
+										li
+											img(src="http://placehold.it/60x40")
+					.panel
+						.panel-heading(style="padding: 0; margin: -16px -16px 0;")
+							ul.nav.nav-tabs.nav-justified(role="tablist")
+								li.active(role="presentation")
+									a(role="tab" data-toggle="tab" href="#features") Features
+								li(role="presentation")
+									a(role="tab" data-toggle="tab" href="#options") Options
+								li(role="presentation")
+									a(role="tab" data-toggle="tab" href="#reviews") Reviews
+								li(role="presentation")
+									a(role="tab" data-toggle="tab" href="#warranty") Warranty
+						.panel-body(style="max-height: 320px; overflow: auto; margin: -1px -16px -16px 0;")
+							.tab-content
+								.tab-pane#features.active(role="tabpanel")
+									h3.h4 Comfort
+									ul
+										li Audio system with AM/FM radio, CD player (reads MP3 format), digital media card, digital radio, satellite radio, touch screen, color screen and MyLink
+										li Steering wheel mounted remote audio controls
+										li Six speakers
+										li Antenna
+										li Cruise control
+										li Trip computer: includes average fuel economy, current fuel economy and range for remaining fuel
+										li Alloy-look trim and none
+										li Remote power locks ; automatic locking
+										li Upholstery cloth
+										li Driver 40/20/40 split front seat manual lumbar, front passenger seat 40/20/40 split front seat, front center seat 40/20/40 split front seat
+										li Split-folding rear seats: split
+										li Leather-trimmed, tilt steering wheel
+										li Power steering type and EPS
+										li Front cup holders
+										li Climate control
+										li Body-color heated driver and passenger power door mirrors
+										li Front and rear windows with one-touch on two windows
+										li Internet navigation system with arrows and voice
+										li ExteriorFront and rear alloy wheels: 17" x 8.0"Chrome front and rear bumpersFront and rear 265/65-17 and all-terrain tiresSafetyABSFour-wheel disc brakes: four ventilatedRear mechanical limited-slip differentialElectronic traction controlHeadlights: low beam bulb with projector beam lenses Bi-XenonHeadlight control with dusk sensorFront fog lightsIntelligent driver and passenger front airbagFront side airbagFront and rear curtain airbagTwo height-adjustable front seat and rear seat head restraintsHeight adjustable driver front seat belts with pre-tensioners, height adjustable passenger front seat belts with pre-tensioners, center front seat beltsRear seat belt, passenger rear seat belt, 3-point center rear seat beltIntermittent windshield wipersTechnicalEngine: 4.3L EcoTec3 V 6 and variable valve timingGasoline direct fuel injectionPrimary fuel type: E85, Secondary fuel type: unleadedPower (SAE): 297 hp @ 5,300 rpm; 330 ft lb of torque @ 3,900 rpmIndependent front wishbone suspension with stabilizer bar and coil springs, rigid rear beam suspension with leaf springsHeavy duty suspensionTransmission: automatic with manual mode and column shifter
+								.tab-pane#options(role="tabpanel")
+									| Options
+								.tab-pane#reviews(role="tabpanel")
+									| Reviews
+								.tab-pane#warranty(role="tabpanel")
+									| Warranty
+				.col-md-4
+					.panel(style="margin-bottom: 1px")
+						.panel-heading(style="padding-bottom: 0;")
+							ul.list-inline.small
+								li MSRP: $51,625
+							h1.h4
+								| Internet Price:
+								span &nbsp;$45,432
+							ul.list-inline(style="vertical-align: middle;")
+								li.small
+									| Lease
+									br
+									| $880/mo
+								li.small
+									| Finance
+									br
+									| $880/mo
+								li
+									a.btn.btn-sm.btn-default.btn-rounded(href="#")
+										i.fa.fa-check.text-muted
+										span.text-muted
+											| &nbsp;Only 13 Left!
+						.panel-body(style="padding-top: 0; padding-bottom: 0;")
+							.input-group(style="margin-bottom: 7px")
+								input.form-control(type="text", placeholder="You@email.com")
+								span.input-group-btn
+									button.btn.btn-default(type="button")
+										i.fa.fa-tag
+										| &nbsp;Get Sale Price
+							p.small
+								| Please Note: We provide Savings on our vehicles daily based on current inventory supply. Check to see if this vehicle  qualifies for a Sale Price.
+					.panel
+						.panel-body(style="padding-top: 0;")
+							table.table
+								thead
+									tr
+										th Savings
+								tbody
+									tr.strong
+										td MSRP:
+										td $51,625
+									tr.strong
+										td Dealer Discount:
+										td $3,819
+									tr
+										td WE Retail Consumer Cash:
+										td $2,000
+									tr
+										td West 2016 Bonus Cash:
+										td $500
+									tr
+										td WE Chrysler Capital 2016 Bonus:
+										td $500
+									tr
+										td West 2016 RETAIL Bonus:
+										td $1,000
+									tr
+										td Internet Price:
+										td $45,432
+									tr.strong
+										td OFF MSRP:
+										td $6,283
+								thead
+									tr
+										th Extra Savings
+								tbody
+									tr
+										td 2016 Conquest Lease to Retail:
+										td $1,000
+									tr
+										td 2016 MY USAA Member:
+										td $500
+									tr
+										td 2016 Returning Lessee:
+										td $500
+									tr
+										td 2016/2015 MY Military Program:
+										td $500
+									tr
+										td 2016 Returning Lessee Retail LBC:
+										td $2,000

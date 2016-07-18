@@ -8,21 +8,31 @@
     <title>CMS Shell</title>
   </head>
   <body>
-    <main>
-      <nav class="navbar navbar-responsive navbar-main">
-        <div class="navbar-header">
-          <button data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" class="navbar-item navbar-link navbar-toggle"><i class="fa fa-navicon"></i></button><a href="#" class="navbar-item navbar-link navbar-logo">I"m a Logo</a>
+    <!---->
+    <!--	Nav-->
+    <nav class="oncanvas-nav navbar navbar-responsive navbar-main">
+      <div class="navbar-header">
+        <button data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" class="navbar-item navbar-link navbar-toggle"><i class="fa fa-navicon"></i></button><a href="#" class="navbar-item navbar-link navbar-logo navbar-svg">
+          <object data="../img/dealeron-logo-symbol.svg" type="image/svg+xml"><img src="../img/dealeron-logo-symbol.svg" alt="Dealeron Logo"></object></a><a href="#" class="navbar-item navbar-link navbar-logo">I"m a Logo</a>
+      </div>
+      <div id="navbar-collapse" aria-expanded="true" class="navbar-collapse collapse"><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
+        <button class="navbar-item navbar-link">I"m a button</button>
+        <div class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
+          <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
         </div>
-        <div id="navbar-collapse" aria-expanded="true" class="navbar-collapse collapse"><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
-          <button class="navbar-item navbar-link">I"m a button</button>
-          <div class="dropdown">
-            <button data-toggle="dropdown" class="dropdown-toggle">Dropdown</button>
-            <div class="dropdown-menu"><a href="#" class="dropdown-item dropdown-link">Item 1</a><a href="#" class="dropdown-item dropdown-link">Item 2</a><a href="#" class="dropdown-item dropdown-link">Item 3</a></div>
-          </div>
-        </div>
+      </div>
+    </nav>
+    <!---->
+    <!--	Content-->
+    <main class="oncanvas-body">
+      <nav class="offcanvas-nav navbar navbar-stacked"><span class="navbar-item">I"m text</span><a href="#" class="navbar-item navbar-link">I"m a link</a>
+        <button class="navbar-item navbar-link">I"m a button</button>
       </nav>
-      <div class="container m-y-5 p-y-5">
-        <p>Ipsum eum quod nulla soluta numquam aliquam a tenetur, modi facere ratione dolore. Facere deleniti maxime voluptatum maxime quibusdam. Nihil labore iste quod dolore consectetur reprehenderit facilis est quaerat. Similique.</p>
+      <div class="oncanvas-body-inner">
+        <div class="container m-b-5 p-y-5">
+          <p>Ipsum eum quod nulla soluta numquam aliquam a tenetur, modi facere ratione dolore. Facere deleniti maxime voluptatum maxime quibusdam. Nihil labore iste quod dolore consectetur reprehenderit facilis est quaerat. Similique.</p>
+        </div>
       </div>
     </main>
     <script defer src="../js/jquery.min.js"></script>

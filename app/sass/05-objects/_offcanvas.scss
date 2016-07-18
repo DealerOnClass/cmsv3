@@ -1,0 +1,43 @@
+/*
+ * Units
+ */
+$offcanvas-c: $g-c;
+$offcanvas-r: $g-r;
+$offcanvas-x: $g-x;
+$offcanvas-y: $g-y;
+$offcanvas-nav-width: 15em;
+/*
+ * Base
+ */
+.oncanvas-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.oncanvas-body {
+    margin-top: calc(#{$offcanvas-y * 2 + $t-lh} + 1px);
+}
+.oncanvas-body-inner {
+    margin-left: $offcanvas-nav-width;
+}
+.offcanvas-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $offcanvas-nav-width;
+    margin-top: calc(#{$offcanvas-y * 2 + $t-lh} + 1px);
+}
+/*
+ * Variations
+ */
+/*
+ * Theme
+ */
+//	@include offcanvas-color-variation($default__palette);
+//	@include offcanvas-color-variation($inverse__palette);
+//	@include offcanvas-color-variation($primary__palette);
+//	@include offcanvas-color-variation($neutral__palette);
+//	@include offcanvas-color-variation($state__palette);
+//	@include offcanvas-color-variation($classic__palette);
+

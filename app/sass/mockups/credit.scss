@@ -69,23 +69,23 @@
     width: 100%;
     height: 100%;
     border-radius: 0;
-    .progress-bar {
-        position: relative;
-        &:after {
-            position: absolute;
-            top: 0;
-            right: -30px;
-            display: block;
-            height: 100%;
-			width: 10px;
-            content: "";
-            border: 20px solid transparent;
-			border-top-width: 40px;
-			border-bottom-width: 0;
-			border-left-width: 10px;
-            border-left-color: #5cb85c;
-        }
-    }
+    //	.progress-bar {
+    //	    position: relative;
+    //	    &:after {
+    //	        position: absolute;
+    //	        top: 0;
+    //	        right: -30px;
+    //	        display: block;
+    //	        height: 100%;
+	//			width: 10px;
+    //	        content: "";
+    //	        border: 20px solid transparent;
+	//			border-top-width: 40px;
+	//			border-bottom-width: 0;
+	//			border-left-width: 10px;
+    //	        border-left-color: #5cb85c;
+    //	    }
+    //	}
 }
 .credit-app-infobox {
     min-width: 20em;
